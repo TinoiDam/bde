@@ -1,33 +1,56 @@
+import Image from "next/image";
+
+const linkedinUrl = "https://www.linkedin.com/in/tinoidam/";
+const contactEmail = "tinoi.dam@tfg.nl";
+
 const paragraphs = [
-  "BDE adviseert bestuurders, directies en programmaleiders bij vraagstukken waar data, AI, compliance en uitvoering samenkomen. We brengen complexiteit terug tot heldere keuzes en bestuurbare verandering.",
-  "Onze rol is compact en senior: scherpte aan tafel, structuur in besluitvorming en praktische vertaling naar beleid, processen en teams. Altijd met oog voor risico, tempo en draagvlak.",
-  "Zo ontstaat consulting die niet eindigt bij een adviesdocument, maar bij een organisatie die weet wat er moet gebeuren, wie eigenaar is en hoe de volgende stap wordt gezet.",
+  "BDE helpt organisaties waar informatiehuishouding, data governance, AI en compliance bestuurlijk moeten landen. We brengen complexe IV-vraagstukken terug tot keuzes die directies kunnen nemen en teams kunnen uitvoeren.",
+  "De aanpak is compact en senior: scherpte aan tafel, requirements die kloppen, besluitopties die helder zijn en implementatie die past binnen bestaande programma's, domeinen en IT-landschappen.",
+  "Zo ontstaat consulting die niet eindigt bij een adviesdocument, maar bij eigenaarschap, ritme en operationele borging. Van inzicht in datagebruik tot governance die meetbaar werkt.",
 ];
 
-const markers = ["Data strategy", "AI governance", "Compliance", "Execution"];
+const markers = [
+  "Informatiehuishouding",
+  "Data governance",
+  "AI readiness",
+  "Project delivery",
+];
+
+const proof = [
+  ["600+", "applicaties geanalyseerd"],
+  ["17", "domeinen bestuurlijk verbonden"],
+  ["5", "sectoren: overheid, finance, energie, zorg en utilities"],
+];
 
 const focusAreas = [
   {
     label: "01",
-    title: "Data & AI governance",
-    text: "Ontwerp van eigenaarschap, kaders, ritmes en besluitvorming voor verantwoord datagebruik en AI-toepassing.",
+    title: "Informatiehuishouding & datagebruik",
+    text: "Inzicht in applicaties, datastromen, eigenaarschap en bestuurlijke keuzes voor organisaties met versnipperde informatievoorziening.",
   },
   {
     label: "02",
-    title: "Compliance naar uitvoering",
-    text: "Vertaling van wet- en regelgeving naar werkbare processen, rollen en controls zonder de organisatie te verzwaren.",
+    title: "Data & AI governance",
+    text: "Kaders, rollen, besluitvorming en controls voor verantwoord datagebruik, AI-toepassing en aantoonbare compliance.",
   },
   {
     label: "03",
     title: "Strategische implementatie",
-    text: "Van analyse en boardroombesluit naar programma, prioriteiten, operating model en concrete voortgang.",
+    text: "Van requirements en impactanalyse naar uitvoerbare programma's, prioriteiten, operating model en concrete voortgang.",
   },
 ];
 
 const approach = [
-  "Diagnose van het vraagstuk, het datalandschap en de bestuurlijke context.",
-  "Keuzes expliciet maken: ambitie, risico, governance en uitvoerbaarheid.",
-  "Implementatie begeleiden met heldere rollen, ritme, besluitpunten en overdracht.",
+  "Diagnose van het vraagstuk, het applicatielandschap en de bestuurlijke context.",
+  "Requirements, risico's en besluitopties vertalen naar een helder uitvoeringspad.",
+  "Implementatie begeleiden met eigenaarschap, ritme, besluitpunten en overdracht.",
+];
+
+const credentials = [
+  "Projectleider informatiehuishouding bij DUO rond inzicht in datagebruik en bestuurlijke verankering.",
+  "Ervaring met data governance, FEC en portfoliostructurering bij Rabobank.",
+  "Achtergrond in IV-opdrachten bij Belastingdienst, RIVM en projectdelivery bij ENECO.",
+  "MSc Business Administration, IREB/CPRE, Lean Six Sigma Black Belt en Power BI gecertificeerd.",
 ];
 
 export default function Home() {
@@ -49,7 +72,7 @@ export default function Home() {
             </a>
             <div className="flex items-center gap-7 sm:gap-12">
               <a
-                href="mailto:info@bde.nl"
+                href={`mailto:${contactEmail}`}
                 className="hidden rounded-full border border-white/90 px-12 py-5 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition hover:border-[#d99a2b] hover:text-[#d99a2b] md:inline-flex"
               >
                 Contacteer ons
@@ -78,7 +101,7 @@ export default function Home() {
                 Premium consulting
               </p>
               <h1 className="mt-8 max-w-3xl font-serif text-[4.25rem] font-medium leading-[0.94] tracking-normal text-[#f4f1e8] sm:text-[6rem] lg:text-[6.8rem]">
-                Data, AI en governance met bestuurlijke scherpte
+                Grip op data, AI en informatiehuishouding
               </h1>
             </div>
 
@@ -105,6 +128,66 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-[#001f19] text-[#f4f1e8]">
+        <div className="mx-auto grid max-w-[92rem] gap-14 px-7 py-24 sm:px-12 lg:grid-cols-[0.92fr_1.08fr] lg:px-24 lg:py-32">
+          <div className="relative min-h-[32rem] overflow-hidden border border-white/16">
+            <Image
+              src="/images/tinoi-dam-portrait.jpg"
+              alt="Portret van Tinoi Dam"
+              fill
+              sizes="(min-width: 1024px) 42vw, 100vw"
+              loading="eager"
+              className="object-cover object-[50%_18%]"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,31,25,0)_42%,rgba(0,31,25,0.58)_100%)]" />
+          </div>
+
+          <div className="flex flex-col justify-between gap-14">
+            <div>
+              <p className="text-sm font-extrabold uppercase tracking-[0.42em] text-[#d99a2b]">
+                Senior profiel
+              </p>
+              <h2 className="mt-7 max-w-3xl font-serif text-[3.5rem] font-medium leading-[0.96] sm:text-[5rem]">
+                De verbindende schakel tussen bestuur, business, compliance en IT.
+              </h2>
+              <p className="mt-9 max-w-3xl text-[1.35rem] font-light leading-[1.58] text-[#f4f1e8]/84">
+                Tinoi Dam combineert projectleiding, informatiemanagement en
+                requirements engineering met ervaring in complexe publieke en
+                financiele omgevingen. De nadruk ligt op besluitvorming,
+                implementeerbare oplossingen en duurzame operationele borging.
+              </p>
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href={linkedinUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex w-fit rounded-full border border-white/90 px-8 py-4 text-xs font-extrabold uppercase tracking-[0.14em] text-white transition hover:border-[#d99a2b] hover:text-[#d99a2b]"
+                >
+                  Bekijk LinkedIn
+                </a>
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="inline-flex w-fit rounded-full border border-white/35 px-8 py-4 text-xs font-extrabold uppercase tracking-[0.14em] text-white/82 transition hover:border-white hover:text-white"
+                >
+                  Start gesprek
+                </a>
+              </div>
+            </div>
+
+            <div className="grid gap-6 border-t border-white/16 pt-8 lg:grid-cols-3">
+              {proof.map(([value, label]) => (
+                <div key={value}>
+                  <p className="font-serif text-5xl text-[#d99a2b]">{value}</p>
+                  <p className="mt-3 text-sm font-semibold uppercase leading-6 tracking-[0.18em] text-white/58">
+                    {label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="relative bg-[#f4f1e8] text-[#001f19]">
         <div className="mx-auto grid max-w-[92rem] gap-16 px-7 py-24 sm:px-12 lg:grid-cols-[0.88fr_1.12fr] lg:px-24 lg:py-32">
           <div>
@@ -112,7 +195,7 @@ export default function Home() {
               Waar BDE waarde toevoegt
             </p>
             <h2 className="mt-7 max-w-xl font-serif text-[3.5rem] font-medium leading-[0.96] sm:text-[5rem]">
-              Advies voor momenten waarop ruis kostbaar wordt.
+              Advies voor organisaties waar informatie geen bijzaak is.
             </h2>
           </div>
 
@@ -137,6 +220,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-[#f4f1e8] text-[#001f19]">
+        <div className="mx-auto grid max-w-[92rem] gap-16 px-7 pb-24 sm:px-12 lg:grid-cols-[1fr_1fr] lg:px-24 lg:pb-32">
+          <div>
+            <p className="text-sm font-extrabold uppercase tracking-[0.42em] text-[#b9852a]">
+              Track record
+            </p>
+            <h2 className="mt-7 font-serif text-[3.5rem] font-medium leading-[0.98] sm:text-[4.8rem]">
+              Ervaring in omgevingen waar governance aantoonbaar moet werken.
+            </h2>
+          </div>
+
+          <div className="border-t border-[#001f19]/25">
+            {credentials.map((item) => (
+              <p
+                key={item}
+                className="border-b border-[#001f19]/25 py-7 text-[1.25rem] leading-8 text-[#274039]"
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="relative bg-[#06271f] text-[#f4f1e8]">
         <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(90deg,rgba(255,255,255,0.85)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.85)_1px,transparent_1px)] [background-size:6px_6px]" />
         <div className="relative mx-auto grid max-w-[92rem] gap-16 px-7 py-24 sm:px-12 lg:grid-cols-[1fr_1fr] lg:px-24 lg:py-32">
@@ -145,7 +252,7 @@ export default function Home() {
               Aanpak
             </p>
             <h2 className="mt-7 font-serif text-[3.5rem] font-medium leading-[0.98] sm:text-[5rem]">
-              Senior, precies en dicht op de realiteit van de organisatie.
+              Senior, precies en dicht op de realiteit van programmaorganisaties.
             </h2>
           </div>
 
@@ -165,6 +272,46 @@ export default function Home() {
       </section>
 
       <section className="bg-[#001f19] text-[#f4f1e8]">
+        <div className="mx-auto grid max-w-[92rem] gap-16 px-7 py-24 sm:px-12 lg:grid-cols-[0.95fr_1.05fr] lg:px-24 lg:py-32">
+          <div>
+            <p className="text-sm font-extrabold uppercase tracking-[0.42em] text-[#d99a2b]">
+              Case study
+            </p>
+            <h2 className="mt-7 max-w-3xl font-serif text-[3.5rem] font-medium leading-[0.96] sm:text-[5rem]">
+              Een globale FEC-strategie vertalen naar gedeelde taal en uitvoering.
+            </h2>
+            <p className="mt-9 max-w-2xl text-[1.3rem] font-light leading-[1.58] text-[#f4f1e8]/84">
+              De case laat zien hoe een gefragmenteerde compliance-omgeving kan
+              worden teruggebracht naar een gemeenschappelijk begrippenkader,
+              operating model en governance-aanpak over landen en businesslines
+              heen.
+            </p>
+            <a
+              href="/docs/global-strategies-case.pdf"
+              className="mt-10 inline-flex w-fit rounded-full border border-white/90 px-10 py-5 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition hover:border-[#d99a2b] hover:text-[#d99a2b]"
+            >
+              Bekijk case
+            </a>
+          </div>
+
+          <a
+            href="/docs/global-strategies-case.pdf"
+            aria-label="Bekijk de Global Strategies case study"
+            className="group relative block overflow-hidden border border-white/16 bg-[#0b2f26]"
+          >
+            <Image
+              src="/images/global-strategies-case.png"
+              alt="Preview van de Global Strategies case study"
+              width={1200}
+              height={675}
+              loading="eager"
+              className="h-full min-h-[22rem] w-full object-cover opacity-86 transition duration-500 group-hover:scale-[1.02] group-hover:opacity-100"
+            />
+          </a>
+        </div>
+      </section>
+
+      <section className="bg-[#001f19] text-[#f4f1e8]">
         <div className="mx-auto grid max-w-[92rem] gap-12 px-7 py-24 sm:px-12 lg:grid-cols-[1.1fr_0.9fr] lg:px-24 lg:py-32">
           <h2 className="font-serif text-[3.5rem] font-medium leading-[0.96] sm:text-[5.2rem]">
             Een complex vraagstuk verdient een rustige, scherpe tafel.
@@ -175,12 +322,22 @@ export default function Home() {
               en daarbij geen groot adviesapparaat nodig hebben maar senior
               oordeel, duidelijke keuzes en betrouwbare uitvoering.
             </p>
-            <a
-              href="mailto:info@bde.nl"
-              className="inline-flex w-fit rounded-full border border-white/90 px-10 py-5 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition hover:border-[#d99a2b] hover:text-[#d99a2b]"
-            >
-              Contacteer ons
-            </a>
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <a
+                href={`mailto:${contactEmail}`}
+                className="inline-flex w-fit rounded-full border border-white/90 px-10 py-5 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition hover:border-[#d99a2b] hover:text-[#d99a2b]"
+              >
+                Contacteer ons
+              </a>
+              <a
+                href={linkedinUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex w-fit rounded-full border border-white/35 px-10 py-5 text-sm font-extrabold uppercase tracking-[0.14em] text-white/82 transition hover:border-white hover:text-white"
+              >
+                LinkedIn profiel
+              </a>
+            </div>
           </div>
         </div>
       </section>

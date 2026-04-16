@@ -240,7 +240,7 @@ export default function Home() {
                   alt={`${logo.name} logo`}
                   width={logo.width}
                   height={logo.height}
-                  className="max-h-14 w-auto max-w-[9.5rem] object-contain opacity-65 grayscale transition duration-300 hover:opacity-95 hover:grayscale-0"
+                  className="h-auto max-h-14 w-auto max-w-[9.5rem] object-contain opacity-65 grayscale transition duration-300 hover:opacity-95 hover:grayscale-0"
                 />
                 <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[#6d6860]">
                   {logo.name}

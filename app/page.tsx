@@ -99,6 +99,14 @@ const approach = [
   "Uitvoering organiseren met duidelijke eigenaars, besluitpunten, ritme en overdracht naar de lijn.",
 ];
 
+const maturityDimensions = [
+  "Customer",
+  "Governance",
+  "Process",
+  "Organization & skills",
+  "Behavior & leadership",
+];
+
 const credentials = [
   "Bestuurlijke verankering van inzicht in datagebruik binnen een complex publiek applicatielandschap.",
   "Data governance, FEC en portfoliostructurering in financiele dienstverlening.",
@@ -390,6 +398,53 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f6f4ef] text-[#171514]">
+        <div className="mx-auto grid max-w-[92rem] gap-14 px-6 py-24 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-16 lg:py-32 xl:px-20">
+          <div>
+            <SectionLabel>Diagnostic instrument</SectionLabel>
+            <h2 className="mt-7 max-w-2xl font-serif text-[3rem] font-semibold leading-[0.98] sm:text-[4.6rem]">
+              Volwassenheid zichtbaar maken voordat verandering wordt ingezet.
+            </h2>
+            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#4b4843]">
+              De Lean Maturity Scan maakt het gesprek over uitvoering concreet:
+              waar zit frictie, welke managementroutines ontbreken, en wat is
+              de eerstvolgende stap die werkelijk helpt?
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              {maturityDimensions.map((dimension) => (
+                <span
+                  key={dimension}
+                  className="border border-[#171514]/18 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#6d6860]"
+                >
+                  {dimension}
+                </span>
+              ))}
+            </div>
+            <a
+              href="/docs/lean-maturity-scan.pdf"
+              className="mt-10 inline-flex w-fit border border-[#171514]/25 px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#171514] transition hover:border-[#7a3038] hover:text-[#7a3038]"
+            >
+              Open scan preview
+            </a>
+          </div>
+
+          <a
+            href="/docs/lean-maturity-scan.pdf"
+            aria-label="Open de Lean Maturity Scan preview"
+            className="group relative block min-h-[22rem] overflow-hidden border border-[#171514]/12 bg-[#171514]"
+          >
+            <Image
+              src="/images/lean-maturity-scan.png"
+              alt="Preview van de BDE Lean Maturity Scan"
+              fill
+              sizes="(min-width: 1024px) 42rem, 100vw"
+              loading="eager"
+              className="object-contain p-5 opacity-92 transition duration-500 group-hover:scale-[1.015] group-hover:opacity-100"
+            />
+          </a>
         </div>
       </section>
 

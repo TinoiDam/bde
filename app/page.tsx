@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 const linkedinUrl = "https://www.linkedin.com/in/tinoidam/";
+const githubPrototypeUrl =
+  "https://github.com/TinoiDam/Control-layer-affine-prototype";
 const contactEmail = "tinoi.dam@tfg.nl";
 
 const paragraphs = [
@@ -20,6 +22,28 @@ const proof = [
   ["600+", "applicaties geanalyseerd"],
   ["17", "domeinen bestuurlijk verbonden"],
   ["5", "sectoren: overheid, finance, energie, zorg en utilities"],
+];
+
+const aiGovernancePrinciples = [
+  {
+    title: "Policy-enforced control layer",
+    text: "AI-clients krijgen geen directe schrijf- of leesmacht. Een centrale control layer bepaalt scope, toegestane bronnen, output-routing en auditlogging.",
+  },
+  {
+    title: "Default deny & least privilege",
+    text: "Toegang wordt pas verleend wanneer projectscope, objecttype, vertrouwelijkheid en risico expliciet passen binnen de policy.",
+  },
+  {
+    title: "Auditability by design",
+    text: "Elke read, write, policybeslissing en state-diff wordt reproduceerbaar vastgelegd zodat AI-ondersteund werk uitlegbaar blijft.",
+  },
+];
+
+const prototypeSignals = [
+  "PROJECT_STATE als canonieke bron",
+  "TRACKER en WORK_SUMMARY als gecontroleerde write targets",
+  "MCP- en backend-adapters zonder governance-logica",
+  "Human approval voor high-impact writes",
 ];
 
 const focusAreas = [
@@ -128,25 +152,108 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="relative bg-[#06271f] text-[#f4f1e8]">
+        <div className="absolute inset-0 opacity-[0.05] [background-image:linear-gradient(90deg,rgba(255,255,255,0.85)_1px,transparent_1px),linear-gradient(rgba(255,255,255,0.85)_1px,transparent_1px)] [background-size:6px_6px]" />
+        <div className="relative mx-auto grid max-w-[92rem] gap-16 px-7 py-24 sm:px-12 lg:grid-cols-[0.9fr_1.1fr] lg:px-24 lg:py-32">
+          <div>
+            <p className="text-sm font-extrabold uppercase tracking-[0.42em] text-[#d99a2b]">
+              AI governance
+            </p>
+            <h2 className="mt-7 max-w-3xl font-serif text-[3.5rem] font-medium leading-[0.96] sm:text-[5rem]">
+              AI als bestuurbare laag, niet als losse tool.
+            </h2>
+            <p className="mt-9 max-w-2xl text-[1.3rem] font-light leading-[1.58] text-[#f4f1e8]/84">
+              BDE ontwikkelt thought leadership rond een policy-enforced control
+              layer voor AI project governance: een architectuur waarin
+              retrieval, write-back, approval en auditability expliciet worden
+              afgedwongen voordat AI output operationeel effect krijgt.
+            </p>
+            <a
+              href={githubPrototypeUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-10 inline-flex w-fit rounded-full border border-white/90 px-10 py-5 text-sm font-extrabold uppercase tracking-[0.14em] text-white transition hover:border-[#d99a2b] hover:text-[#d99a2b]"
+            >
+              Bekijk prototype
+            </a>
+          </div>
+
+          <div className="grid gap-8">
+            {aiGovernancePrinciples.map((principle, index) => (
+              <article
+                key={principle.title}
+                className="grid gap-6 border-t border-white/16 pt-8 sm:grid-cols-[5rem_1fr]"
+              >
+                <span className="font-serif text-4xl text-[#d99a2b]">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="text-2xl font-semibold">{principle.title}</h3>
+                  <p className="mt-4 max-w-2xl text-lg leading-8 text-[#f4f1e8]/76">
+                    {principle.text}
+                  </p>
+                </div>
+              </article>
+            ))}
+            <div className="grid gap-4 border-t border-white/16 pt-8 sm:grid-cols-2">
+              {prototypeSignals.map((signal) => (
+                <p
+                  key={signal}
+                  className="text-xs font-extrabold uppercase leading-6 tracking-[0.18em] text-white/58"
+                >
+                  {signal}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#001f19] text-[#f4f1e8]">
-        <div className="mx-auto grid max-w-[92rem] gap-14 px-7 py-24 sm:px-12 lg:grid-cols-[0.92fr_1.08fr] lg:px-24 lg:py-32">
-          <div className="relative min-h-[32rem] overflow-hidden border border-white/16">
-            <Image
-              src="/images/tinoi-dam-portrait.jpg"
-              alt="Portret van Tinoi Dam"
-              fill
-              sizes="(min-width: 1024px) 42vw, 100vw"
-              loading="eager"
-              className="object-cover object-[50%_18%]"
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,31,25,0)_42%,rgba(0,31,25,0.58)_100%)]" />
+        <div className="mx-auto grid max-w-[92rem] gap-14 px-7 py-24 sm:px-12 lg:grid-cols-[0.82fr_1.18fr] lg:px-24 lg:py-32">
+          <div>
+            <p className="text-sm font-extrabold uppercase tracking-[0.42em] text-[#d99a2b]">
+              Senior profiel
+            </p>
+            <div className="mt-8 flex items-start gap-6">
+              <div className="relative h-28 w-24 shrink-0 overflow-hidden border border-white/16 sm:h-36 sm:w-28">
+                <Image
+                  src="/images/tinoi-dam-portrait.jpg"
+                  alt="Portret van Tinoi Dam"
+                  fill
+                  sizes="112px"
+                  className="object-cover object-[50%_18%]"
+                />
+              </div>
+              <div>
+                <p className="font-serif text-4xl font-medium leading-none text-[#f4f1e8]">
+                  Tinoi Dam
+                </p>
+                <p className="mt-3 text-xs font-extrabold uppercase leading-6 tracking-[0.18em] text-white/58">
+                  Projectleider IHH / data governance / AI control
+                </p>
+              </div>
+            </div>
+            <div className="mt-10 flex flex-col gap-4">
+              <a
+                href={linkedinUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex w-fit rounded-full border border-white/90 px-8 py-4 text-xs font-extrabold uppercase tracking-[0.14em] text-white transition hover:border-[#d99a2b] hover:text-[#d99a2b]"
+              >
+                Bekijk LinkedIn
+              </a>
+              <a
+                href={`mailto:${contactEmail}`}
+                className="inline-flex w-fit rounded-full border border-white/35 px-8 py-4 text-xs font-extrabold uppercase tracking-[0.14em] text-white/82 transition hover:border-white hover:text-white"
+              >
+                Start gesprek
+              </a>
+            </div>
           </div>
 
           <div className="flex flex-col justify-between gap-14">
             <div>
-              <p className="text-sm font-extrabold uppercase tracking-[0.42em] text-[#d99a2b]">
-                Senior profiel
-              </p>
               <h2 className="mt-7 max-w-3xl font-serif text-[3.5rem] font-medium leading-[0.96] sm:text-[5rem]">
                 De verbindende schakel tussen bestuur, business, compliance en IT.
               </h2>
@@ -156,22 +263,6 @@ export default function Home() {
                 financiele omgevingen. De nadruk ligt op besluitvorming,
                 implementeerbare oplossingen en duurzame operationele borging.
               </p>
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={linkedinUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex w-fit rounded-full border border-white/90 px-8 py-4 text-xs font-extrabold uppercase tracking-[0.14em] text-white transition hover:border-[#d99a2b] hover:text-[#d99a2b]"
-                >
-                  Bekijk LinkedIn
-                </a>
-                <a
-                  href={`mailto:${contactEmail}`}
-                  className="inline-flex w-fit rounded-full border border-white/35 px-8 py-4 text-xs font-extrabold uppercase tracking-[0.14em] text-white/82 transition hover:border-white hover:text-white"
-                >
-                  Start gesprek
-                </a>
-              </div>
             </div>
 
             <div className="grid gap-6 border-t border-white/16 pt-8 lg:grid-cols-3">

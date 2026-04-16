@@ -12,6 +12,45 @@ const trustSignals = [
   ["5", "sectoren: overheid, finance, energie, zorg en utilities"],
 ];
 
+const experienceLogos = [
+  {
+    name: "Rabobank",
+    src: "/images/logos/rabobank.svg",
+    width: 180,
+    height: 33,
+  },
+  {
+    name: "DUO",
+    src: "/images/logos/duo.png",
+    width: 160,
+    height: 80,
+  },
+  {
+    name: "RIVM",
+    src: "/images/logos/rivm.svg",
+    width: 160,
+    height: 40,
+  },
+  {
+    name: "Belastingdienst",
+    src: "/images/logos/belastingdienst.svg",
+    width: 180,
+    height: 72,
+  },
+  {
+    name: "Eneco",
+    src: "/images/logos/eneco.svg",
+    width: 150,
+    height: 64,
+  },
+  {
+    name: "Fudura",
+    src: "/images/logos/fudura.svg",
+    width: 150,
+    height: 40,
+  },
+];
+
 const services = [
   {
     label: "01",
@@ -174,6 +213,37 @@ export default function Home() {
                 </span>
                 <span className="max-w-[14rem] text-xs font-semibold uppercase leading-5 tracking-[0.14em] text-[#f6f4ef]/54">
                   {label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#171514]/12 bg-[#f6f4ef] text-[#171514]">
+        <div className="mx-auto grid max-w-[92rem] gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[0.42fr_1fr] lg:px-16 xl:px-20">
+          <div>
+            <SectionLabel>Ervaringscontext</SectionLabel>
+            <p className="mt-4 max-w-sm text-sm leading-6 text-[#6d6860]">
+              Organisaties en opdrachtomgevingen waar vergelijkbare governance-,
+              informatie- en uitvoeringsvraagstukken speelden.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-px overflow-hidden border border-[#171514]/10 bg-[#171514]/10 sm:grid-cols-3 lg:grid-cols-6">
+            {experienceLogos.map((logo) => (
+              <div
+                key={logo.name}
+                className="flex min-h-32 flex-col items-center justify-center gap-4 bg-[#f6f4ef] px-5 py-6"
+              >
+                <Image
+                  src={logo.src}
+                  alt={`${logo.name} logo`}
+                  width={logo.width}
+                  height={logo.height}
+                  className="max-h-14 w-auto max-w-[9.5rem] object-contain opacity-65 grayscale transition duration-300 hover:opacity-95 hover:grayscale-0"
+                />
+                <span className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[#6d6860]">
+                  {logo.name}
                 </span>
               </div>
             ))}

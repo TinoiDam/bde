@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Fraunces, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const serif = Cormorant_Garamond({
+const serif = Fraunces({
   subsets: ["latin"],
   variable: "--font-serif",
   weight: ["500", "600"],
 });
 
-const sans = Manrope({
+const sans = IBM_Plex_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
-  title: "BDE | Data, AI & Governance Advies",
+  title: "BDE Management Consulting B.V. | AI Governance & Strategic Implementation",
   description:
-    "Premium consulting voor organisaties die data, AI en governance willen vertalen naar bestuurlijke keuzes en uitvoerbare verandering.",
+    "Senior boutique advisory voor informatiehuishouding, AI governance, compliance en strategische implementatie met lage uitvoeringsrisico's.",
 } satisfies Metadata;
 
 export default function RootLayout({

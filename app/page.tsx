@@ -141,7 +141,7 @@ export default function Home() {
   return (
     <main className="bg-[var(--color-bg-default)] text-[var(--color-text-primary)]">
       <section className="border-b border-[var(--color-divider)] bg-[var(--color-bg-default)]">
-        <div className="mx-auto max-w-[1100px] px-6 py-6 sm:px-8 lg:px-10">
+        <div className="mx-auto max-w-[1100px] px-6 py-2.5 sm:px-8 sm:py-3 lg:px-10">
           <header className="flex items-center justify-between gap-8">
             <a
               href="#"

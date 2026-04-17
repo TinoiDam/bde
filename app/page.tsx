@@ -25,27 +25,39 @@ const experienceNames = [
 const portfolioItems = [
   {
     company: "DUO",
-    description: "Applicatielandschap en raadpleeg-logging compliance teruggebracht naar scope, domeinen en implementatiestrategie.",
+    context: "Raadpleeg-logging compliance over een breed applicatielandschap.",
+    action: "Scope, domeinen en implementatiestrategie expliciet gemaakt.",
+    result: "600+ applicaties geanalyseerd, 106 applicaties in scope en 17 domeinen verbonden.",
   },
   {
     company: "Rabobank",
-    description: "FEC definition management en organisatieontwerp vertaald naar besluitstructuur in internationale context.",
+    context: "FEC definition management in internationale governance-context.",
+    action: "Organisatieontwerp vertaald naar rollen, definities en besluitstructuur.",
+    result: "Meer gedeelde taal rond eigenaarschap en uitvoerbare implementatie.",
   },
   {
     company: "RIVM",
-    description: "Informatievoorziening en governance in een omgeving waar betrouwbaarheid, publieke verantwoordelijkheid en uitvoering samenkomen.",
+    context: "Publieke omgeving waar betrouwbaarheid, informatie en uitvoering samenkomen.",
+    action: "Governancevraagstukken gestructureerd rond besluitbaarheid en verantwoordelijkheid.",
+    result: "Meer controle op richting, afhankelijkheden en uitvoeringskeuzes.",
   },
   {
     company: "Belastingdienst",
-    description: "Complexe IV-vraagstukken gestructureerd rond eigenaarschap, besluitvorming en beheersbare uitvoering.",
+    context: "Complexe IV-vraagstukken met meerdere organisatorische afhankelijkheden.",
+    action: "Eigenaarschap, besluitvorming en beheersbare uitvoering geordend.",
+    result: "Minder interpretatieruimte in bestuurlijke en operationele keuzes.",
   },
   {
     company: "Eneco",
-    description: "Portfolio- en implementatiecontext waarin business, IT en operationele afhankelijkheden expliciet gemaakt worden.",
+    context: "Portfolio- en implementatiekeuzes met business- en IT-afhankelijkheden.",
+    action: "Operationele afhankelijkheden expliciet gemaakt voor besluitvorming.",
+    result: "Meer samenhang tussen ambitie, risico, capaciteit en uitvoering.",
   },
   {
     company: "Fudura",
-    description: "Uitvoeringsvraagstukken verbonden aan structuur, ritme en besluitbaarheid binnen een technische bedrijfscontext.",
+    context: "Technische bedrijfscontext met uitvoerings- en afstemmingsvraagstukken.",
+    action: "Structuur, ritme en besluitbaarheid verbonden aan lopend werk.",
+    result: "Meer uitvoeringsduidelijkheid zonder extra organisatielaag.",
   },
 ];
 
@@ -53,32 +65,32 @@ const services = [
   {
     label: "01",
     title: "Informatiehuishouding & IV",
-    text: "Applicaties, datagebruik, eigenaarschap en besluitvorming terugbrengen naar een bestuurbaar geheel.",
+    text: "Applicaties, datagebruik, eigenaarschap en besluitvorming terugbrengen naar controleerbare structuren.",
   },
   {
     label: "02",
     title: "Governance & besluitstructuur",
-    text: "Richting vertalen naar duidelijke besluitpunten, rollen, afhankelijkheden en uitvoerbare control.",
+    text: "Richting vertalen naar besluitpunten, rollen, afhankelijkheden en verdedigbare uitvoering.",
   },
   {
     label: "03",
     title: "Portfolio & implementatie",
-    text: "Ambitie, risico en capaciteit verbinden aan keuzes die bestuurlijk houdbaar en operationeel uitvoerbaar zijn.",
+    text: "Ambitie, risico en capaciteit verbinden aan keuzes met meetbare voortgang.",
   },
   {
     label: "04",
     title: "AI control & auditability",
-    text: "AI toepassen met beleid, contextcontrole, menselijke goedkeuring en reproduceerbare verantwoording.",
+    text: "AI toepassen met contextcontrole, menselijke goedkeuring en reproduceerbare verantwoording.",
   },
 ];
 
 const approach = [
-  "Huidige situatie in kaart brengen.",
-  "Gewenste situatie definiëren.",
-  "Gaps identificeren tussen ambitie, techniek en gedrag.",
-  "Opties formuleren met afwegingen en consequenties.",
-  "Besluitvorming afstemmen.",
-  "Roadmap bepalen die de organisatie kan dragen.",
+  "Huidige structuur, risico's en afhankelijkheden expliciet maken.",
+  "Gewenste besluit- en uitvoeringsstructuur definiëren.",
+  "Gaps identificeren tussen richting, governance en uitvoering.",
+  "Opties formuleren met consequenties en verdedigbaarheid.",
+  "Besluitvorming organiseren rond eigenaarschap.",
+  "Roadmap bepalen met meetbare voortgang.",
 ];
 
 const aiControls = [
@@ -86,6 +98,16 @@ const aiControls = [
   ["Policy-enforced write-back", "Output alleen naar vooraf toegestane objecten en workflows."],
   ["Auditability by design", "Bronnen, beslissingen en state-diffs reproduceerbaar vastgelegd."],
   ["Human approval", "Menselijke goedkeuring waar impact of risico dat vereist."],
+];
+
+const capabilityPrinciples = [
+  ["Outcome over activity", "Elke interventie leidt tot een besluit, structuur of meetbare voortgang."],
+  ["Risk-reduction framing", "Werk voorkomt stagnatie, misalignment of governance failure."],
+  ["Defendability", "Uitkomsten zijn uitlegbaar en verdedigbaar op board- of programmaniveau."],
+  ["Consistency of signal", "Positionering, taal en uitvoering sluiten zonder tegenspraak op elkaar aan."],
+  ["Scale signaling", "Complexiteit, scope en stakeholderomgeving worden expliciet gemaakt."],
+  ["Governance language", "Communicatie vertrekt vanuit besluitvorming, niet vanuit supportactiviteit."],
+  ["Anti-ambiguity", "Geen vage bijdrage: altijd eigenaarschap of structurele impact."],
 ];
 
 const credentials = [
@@ -157,18 +179,18 @@ export default function Home() {
           <div>
             <SectionLabel>Bestuur / techniek / gedrag</SectionLabel>
             <h1 className="heading-xl mt-10 max-w-3xl text-balance">
-              Richting omzetten in gecontroleerde uitvoering.
+              Richting naar gecontroleerde uitvoering.
             </h1>
           </div>
           <div className="self-end border-t border-white/14 pt-8 lg:pt-10">
             <p className="max-w-[38rem] text-[1.18rem] font-light leading-8 text-white/78 sm:text-[1.32rem]">
               {brandName} werkt op het snijvlak van governance,
               informatievoorziening en AI-context in omgevingen waar richting
-              bestaat, maar uitvoering nog niet structureel beheerst is.
+              bestaat, maar uitvoering nog niet structureel gestuurd wordt.
             </p>
             <p className="mt-7 max-w-[38rem] leading-7 text-white/58">
-              De inzet is helder: minder interpretatie, minder belasting voor de
-              organisatie en meer controle op wat er werkelijk verandert.
+              De inzet is helder: minder interpretatie, minder organisatiebelasting
+              en meer verdedigbare voortgang.
             </p>
             <div className="mt-9">
               <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
@@ -242,25 +264,25 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="ai-control" className="section-block dark-hue-section text-[var(--color-text-inverse)]">
+      <section id="ai-control" className="section-block bg-[var(--color-surface-primary)]">
         <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.46fr_1fr] lg:px-10">
           <div>
             <SectionLabel>AI control-layer</SectionLabel>
-            <h2 className="heading-lg mt-7 max-w-lg text-[var(--color-text-inverse)]">
+            <h2 className="heading-lg mt-7 max-w-lg">
               AI-governance buiten het model afdwingen.
             </h2>
           </div>
           <div>
-            <p className="max-w-[44rem] text-lg font-light leading-8 text-white/72">
+            <p className="max-w-[44rem] text-lg font-light leading-8 text-[var(--color-text-secondary)]">
               Het control-layer prototype is een bewijsstuk voor enterprise AI:
               context, policy, write-back en auditability worden niet aan het
               model overgelaten, maar in de operationele laag gecontroleerd.
             </p>
-            <div className="mt-9 grid border-l border-t border-white/14 sm:grid-cols-2">
+            <div className="mt-9 grid border-l border-t border-[var(--color-border)] sm:grid-cols-2">
               {aiControls.map(([title, text]) => (
-                <article key={title} className="border-b border-r border-white/14 p-6">
+                <article key={title} className="border-b border-r border-[var(--color-border)] p-6">
                   <h3 className="font-semibold tracking-normal">{title}</h3>
-                  <p className="mt-4 text-sm leading-6 text-white/58">{text}</p>
+                  <p className="mt-4 text-sm leading-6 text-[var(--color-text-secondary)]">{text}</p>
                 </article>
               ))}
             </div>
@@ -269,7 +291,7 @@ export default function Home() {
                 href={githubPrototypeUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm font-semibold uppercase tracking-[0.14em] underline decoration-[var(--color-accent)] underline-offset-8 transition hover:text-[var(--color-accent)]"
+                className="text-link"
               >
                 Open prototype
               </a>
@@ -301,11 +323,11 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2 className="heading-lg max-w-3xl">Verbindt richting, besluitvorming en uitvoering.</h2>
+            <h2 className="heading-lg max-w-3xl">Brengt richting in gecontroleerde uitvoering.</h2>
             <p className="mt-7 max-w-[44rem] text-lg font-light leading-8 text-[var(--color-text-secondary)]">
               Strategieën en frameworks stranden wanneer organisaties afhaken op
               abstractie. Het werk zit in de vertaling: wat moet veranderen, wie
-              moet besluiten en hoe landt het zonder onnodige organisatiebelasting?
+              moet besluiten en wat is verdedigbaar op programmaniveau?
             </p>
             <div className="mt-9 grid gap-5 border-t border-[var(--color-border)] pt-7 sm:grid-cols-2">
               {credentials.map((credential) => (
@@ -314,6 +336,23 @@ export default function Home() {
                 </p>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-block bg-[var(--color-bg-default)]">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.36fr_1fr] lg:px-10">
+          <div>
+            <SectionLabel>Werkprincipes</SectionLabel>
+            <h2 className="heading-lg mt-7 max-w-sm text-balance">Uitkomst boven activiteit.</h2>
+          </div>
+          <div className="grid border-l border-t border-[var(--color-border)] sm:grid-cols-2">
+            {capabilityPrinciples.map(([title, text]) => (
+              <article key={title} className="border-b border-r border-[var(--color-border)] p-6">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">{title}</h3>
+                <p className="mt-4 text-sm leading-6 text-[var(--color-text-secondary)]">{text}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -366,6 +405,7 @@ export default function Home() {
             imageSrc="/images/lean-maturity-scan.png"
             imageAlt="Preview van de BDE Lean Maturity Scan"
             tags={maturityDimensions}
+            compact
           />
         </div>
       </section>
@@ -386,25 +426,36 @@ export default function Home() {
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
                   {item.company}
                 </h3>
-                <p className="mt-4 max-w-[32rem] text-sm leading-6 text-[var(--color-text-secondary)]">
-                  {item.description}
-                </p>
+                <div className="mt-5 grid gap-4 text-sm leading-6 text-[var(--color-text-secondary)]">
+                  <p>
+                    <span className="font-semibold text-[var(--color-text-primary)]">Context: </span>
+                    {item.context}
+                  </p>
+                  <p>
+                    <span className="font-semibold text-[var(--color-text-primary)]">Action: </span>
+                    {item.action}
+                  </p>
+                  <p>
+                    <span className="font-semibold text-[var(--color-text-primary)]">Result: </span>
+                    {item.result}
+                  </p>
+                </div>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="case" className="section-block dark-hue-section text-[var(--color-text-inverse)]">
+      <section id="case" className="section-block bg-[var(--color-surface-primary)]">
         <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.42fr_1fr] lg:px-10">
           <div>
             <SectionLabel>Case study</SectionLabel>
-            <h2 className="heading-lg mt-7 max-w-lg text-[var(--color-text-inverse)]">
+            <h2 className="heading-lg mt-7 max-w-lg">
               Gedeelde taal voor globale FEC-governance.
             </h2>
-            <p className="mt-7 max-w-[38rem] leading-7 text-white/62">
+            <p className="mt-7 max-w-[38rem] leading-7 text-[var(--color-text-secondary)]">
               Compliance-fragmentatie vertaald naar definities, eigenaarschap,
-              besluitrechten en uitvoerbare implementatie.
+              besluitrechten en gecontroleerde uitvoering.
             </p>
             <div className="mt-9">
               <PrimaryLink href="/docs/global-strategies-case.pdf">Open volledige deck</PrimaryLink>
@@ -416,17 +467,18 @@ export default function Home() {
             imageSrc="/images/global-strategies-case.png"
             imageAlt="Preview van de Global Strategies case study"
             tags={["FEC", "Governance", "Definitions"]}
+            compact
           />
         </div>
       </section>
 
       <section className="section-block bg-[var(--color-bg-default)]">
         <div className="mx-auto grid max-w-[1100px] gap-10 px-6 sm:px-8 lg:grid-cols-[0.62fr_0.38fr] lg:px-10">
-          <h2 className="heading-lg max-w-2xl">Voor werk dat te belangrijk is om als capaciteit te behandelen.</h2>
+          <h2 className="heading-lg max-w-2xl">Voor werk dat verdedigbare uitvoering vraagt.</h2>
           <div className="border-t border-[var(--color-border)] pt-7">
             <p className="max-w-[34rem] leading-7 text-[var(--color-text-secondary)]">
               Governance, informatievoorziening en AI verantwoord operationaliseren
-              zonder onnodige complexiteit toe te voegen.
+              met eigenaarschap, besluitvorming en meetbare voortgang.
             </p>
             <div className="mt-9">
               <PrimaryLink href={`mailto:${contactEmail}`}>Neem contact op</PrimaryLink>
@@ -435,7 +487,7 @@ export default function Home() {
               href={linkedinUrl}
               target="_blank"
               rel="noreferrer"
-              className="mt-7 inline-flex text-sm font-semibold uppercase tracking-[0.14em] underline decoration-[var(--color-accent)] underline-offset-8 transition hover:text-[var(--color-accent)]"
+              className="text-link mt-7"
             >
               Bekijk profiel
             </a>

@@ -7,6 +7,7 @@ type SlideDeckPreviewProps = {
   imageAlt: string;
   tags?: string[];
   className?: string;
+  compact?: boolean;
 };
 
 export function SlideDeckPreview({
@@ -16,10 +17,15 @@ export function SlideDeckPreview({
   imageAlt,
   tags = [],
   className = "",
+  compact = false,
 }: SlideDeckPreviewProps) {
   return (
     <div className={`slide-preview ${className}`}>
-      <a href={href} aria-label={title} className="slide-preview__frame">
+      <a
+        href={href}
+        aria-label={title}
+        className={`slide-preview__frame${compact ? " slide-preview__frame--compact" : ""}`}
+      >
         <Image
           src={imageSrc}
           alt={imageAlt}

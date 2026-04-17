@@ -295,7 +295,7 @@ export default function Home() {
               <div>
                 <p className="text-2xl font-semibold tracking-[-0.03em]">Tinoi Dam</p>
                 <p className="mt-3 max-w-52 text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.16em] text-[var(--color-text-secondary)]">
-                  Governance / IV / AI-context
+                  Founder | Management Consultant
                 </p>
               </div>
             </div>

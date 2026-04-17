@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #e7e1d6;
-  --foreground: #111417;
-  --accent: #5f7476;
-  --ink: #111417;
-  --stone: #e7e1d6;
-  --paper: #f4f0e8;
-  --smoke: #c8c5bb;
+  --color-primary: #121314;
+  --color-secondary: #4f5256;
+  --color-accent: #7a4a4a;
+  --color-bg-default: #f4f5f6;
+  --color-bg-alt: #e7e1d6;
+  --color-text-inverse: #f4f0e8;
+  --color-text-primary: #121314;
+  --color-text-secondary: #4f5256;
+  --color-surface-primary: #f4f5f6;
+  --color-surface-secondary: #e7e1d6;
+  --color-border: rgba(79, 82, 86, 0.18);
+  --color-divider: rgba(79, 82, 86, 0.12);
 }
 
 * {
@@ -20,29 +25,70 @@ html {
 
 body {
   margin: 0;
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), sans-serif;
+  background: var(--color-bg-default);
+  color: var(--color-text-primary);
+  font-family: var(--font-primary), sans-serif;
   text-rendering: geometricPrecision;
 }
 
 ::selection {
-  background: var(--accent);
-  color: var(--paper);
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
 }
 
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.section-block {
+  padding-block: 64px;
 }
 
-.fade-up {
-  animation: fade-up 700ms ease both;
+.section-label {
+  color: var(--color-accent);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.heading-lg {
+  color: inherit;
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.button-link {
+  align-items: center;
+  border: 1px solid var(--color-secondary);
+  color: inherit;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  padding: 1rem 1.25rem;
+  text-transform: uppercase;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.button-link:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.tag {
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  padding: 0.6rem 0.72rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .section-block {
+    padding-block: 80px;
+  }
 }

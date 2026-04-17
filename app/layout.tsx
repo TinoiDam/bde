@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Fraunces, IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Sans, Inter } from "next/font/google";
 import "./globals.css";
 
-const serif = Fraunces({
+const primary = Inter({
   subsets: ["latin"],
-  variable: "--font-serif",
-  weight: ["500", "600"],
+  variable: "--font-primary",
+  weight: ["400", "500", "600", "700"],
 });
 
-const sans = IBM_Plex_Sans({
+const secondary = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-secondary",
   weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
-  title: "BDE Management Consulting | AI Governance & Strategic Implementation",
+  title: "BDE Management Consulting | Governance, IV & AI-context",
   description:
-    "Advisory voor informatiehuishouding, AI governance, compliance en veranderopgaven waar bestuur, business en IT samen moeten bewegen.",
+    "Governance, informatievoorziening en AI-context vertaald naar controleerbare structuren, uitvoerbare portfolio's en heldere implementatie.",
 } satisfies Metadata;
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="nl" className={`${primary.variable} ${secondary.variable}`}>
       <body>{children}</body>
     </html>
   );

@@ -6,10 +6,10 @@ const githubPrototypeUrl =
   "https://github.com/TinoiDam/Control-layer-affine-prototype";
 const contactEmail = "tinoi.dam@tfg.nl";
 
-const trustSignals = [
-  ["600+", "applicaties in bestuurlijke analyse"],
+const metrics = [
+  ["600+", "applicaties geanalyseerd"],
   ["106", "applicaties in scope gebracht"],
-  ["17", "domeinen verbonden rond datagebruik"],
+  ["17", "domeinen verbonden"],
 ];
 
 const experienceNames = [
@@ -24,52 +24,47 @@ const experienceNames = [
 const services = [
   {
     label: "01",
-    title: "Informatiehuishouding & informatievoorziening",
-    text: "Applicaties, datagebruik, eigenaarschap en besluitvorming terugbrengen naar een bestuurbaar geheel, zonder extra ruis voor de organisatie.",
+    title: "Informatiehuishouding & IV",
+    text: "Applicaties, datagebruik, eigenaarschap en besluitvorming terugbrengen naar een bestuurbaar geheel.",
   },
   {
     label: "02",
-    title: "AI governance & enterprise control",
-    text: "AI operationaliseren met beleid, control layers, auditability, approval flows en duidelijke grenzen tussen model-output en bestuurlijke verantwoordelijkheid.",
+    title: "Governance & besluitstructuur",
+    text: "Richting vertalen naar duidelijke besluitpunten, rollen, afhankelijkheden en uitvoerbare control.",
   },
   {
     label: "03",
-    title: "Portfolio & strategic implementation",
-    text: "Ambitie, risico, capaciteit en afhankelijkheden vertalen naar keuzes, ritme en voortgang die bestuurlijk houdbaar en operationeel uitvoerbaar zijn.",
+    title: "Portfolio & implementatie",
+    text: "Ambitie, risico en capaciteit verbinden aan keuzes die bestuurlijk houdbaar en operationeel uitvoerbaar zijn.",
   },
   {
     label: "04",
-    title: "Requirements & decision support",
-    text: "Complexe eisen, impactanalyses en compliancevraagstukken terugbrengen tot opties met heldere afwegingen, consequenties en besluitpunten.",
-  },
-];
-
-const controlPrinciples = [
-  {
-    title: "Governed retrieval",
-    text: "AI krijgt alleen context die binnen projectscope, objecttype en vertrouwelijkheid past. Geen model-gedreven datagraaien.",
-  },
-  {
-    title: "Policy-enforced write-back",
-    text: "Output wordt alleen naar vooraf toegestane objecten gerouteerd, zoals PROJECT_STATE, TRACKER of WORK_SUMMARY.",
-  },
-  {
-    title: "Auditability by design",
-    text: "Elke bron, beslissing, write target en state-diff wordt reproduceerbaar vastgelegd voor toezicht en verantwoording.",
-  },
-  {
-    title: "Human approval where it matters",
-    text: "High-impact writes blijven onder menselijke goedkeuring. Automatisering versnelt, maar neemt governance niet over.",
+    title: "AI control & auditability",
+    text: "AI toepassen met beleid, contextcontrole, menselijke goedkeuring en reproduceerbare verantwoording.",
   },
 ];
 
 const approach = [
-  "Huidige situatie in kaart brengen: processen, technologie, mensen, governance en afhankelijkheden.",
-  "Gewenste situatie definiëren in taal die bestuur, business en IT samen kunnen gebruiken.",
-  "Gaps identificeren tussen ambitie, technische realiteit en menselijk gedrag.",
-  "Concrete opties formuleren met afwegingen, consequenties en uitvoeringsrisico's.",
-  "Benodigde besluitvorming afstemmen voordat het werk de organisatie in gaat.",
-  "Roadmap bepalen met een ritme dat voortgang maakt en de lijn niet overbelast.",
+  "Huidige situatie in kaart brengen.",
+  "Gewenste situatie definiëren.",
+  "Gaps identificeren tussen ambitie, techniek en gedrag.",
+  "Opties formuleren met afwegingen en consequenties.",
+  "Besluitvorming afstemmen.",
+  "Roadmap bepalen die de organisatie kan dragen.",
+];
+
+const aiControls = [
+  ["Governed retrieval", "Alleen context binnen scope, objecttype en vertrouwelijkheid."],
+  ["Policy-enforced write-back", "Output alleen naar vooraf toegestane objecten en workflows."],
+  ["Auditability by design", "Bronnen, beslissingen en state-diffs reproduceerbaar vastgelegd."],
+  ["Human approval", "Menselijke goedkeuring waar impact of risico dat vereist."],
+];
+
+const credentials = [
+  "DUO: 600+ applicaties geanalyseerd, 106 in scope gebracht en 17 domeinen verbonden rond raadpleeg-logging compliance.",
+  "Rabobank: organisatieontwerp en FEC definition management in internationale context.",
+  "IV-, portfolio- en governanceopdrachten in publieke, financiële, zorg- en energieomgevingen.",
+  "MSc Business Administration, IREB/CPRE, Lean Six Sigma Black Belt en Power BI gecertificeerd.",
 ];
 
 const maturityDimensions = [
@@ -80,101 +75,83 @@ const maturityDimensions = [
   "Behavior & leadership",
 ];
 
-const credentials = [
-  "DUO: 600+ applicaties geanalyseerd, 106 in scope gebracht en 17 domeinen verbonden rond raadpleeg-logging compliance.",
-  "Rabobank: organisatieontwerp en FEC definition management in een internationale context over meerdere continenten.",
-  "IV-, portfolio- en governanceopdrachten in publieke, financiële, zorg- en energieomgevingen.",
-  "MSc Business Administration, IREB/CPRE, Lean Six Sigma Black Belt en Power BI gecertificeerd.",
-];
-
 function SectionLabel({ children }: { children: React.ReactNode }) {
+  return <p className="section-label">{children}</p>;
+}
+
+function PrimaryLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <p className="text-xs font-semibold uppercase leading-6 tracking-[0.28em] text-[#5f7476]">
+    <a href={href} className="button-link">
       {children}
-    </p>
+    </a>
   );
 }
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#e7e1d6] text-[#111417]">
-      <section className="relative bg-[#111417] text-[#f4f0e8]">
-        <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.08)_0%,transparent_28%),radial-gradient(circle_at_80%_18%,rgba(95,116,118,0.34),transparent_30%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-px bg-[#f4f0e8]/18" />
-
-        <div className="relative mx-auto flex min-h-[86svh] w-full max-w-[92rem] flex-col px-6 py-7 sm:px-10 lg:px-16 xl:px-20">
-          <header className="flex items-center justify-between gap-6">
+    <main className="bg-[var(--color-bg-default)] text-[var(--color-text-primary)]">
+      <section className="border-b border-[var(--color-divider)] bg-[var(--color-bg-default)]">
+        <div className="mx-auto max-w-[1100px] px-6 py-6 sm:px-8 lg:px-10">
+          <header className="flex items-center justify-between gap-8">
             <a
               href="#"
               aria-label={`${brandName} home`}
-              className="max-w-[13rem] text-[0.8rem] font-semibold uppercase leading-5 tracking-[0.24em] text-[#f4f0e8]"
+              className="max-w-52 text-[0.72rem] font-semibold uppercase leading-5 tracking-[0.24em]"
             >
               {brandName}
             </a>
-            <nav className="hidden items-center gap-8 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[#f4f0e8]/68 lg:flex">
-              <a href="#expertise" className="transition hover:text-[#f4f0e8]">
+            <nav className="hidden items-center gap-8 text-[0.72rem] font-medium uppercase tracking-[0.18em] text-[var(--color-text-secondary)] md:flex">
+              <a href="#expertise" className="transition hover:text-[var(--color-accent)]">
                 Expertise
               </a>
-              <a href="#ai-control" className="transition hover:text-[#f4f0e8]">
+              <a href="#ai-control" className="transition hover:text-[var(--color-accent)]">
                 AI control
               </a>
-              <a href="#case" className="transition hover:text-[#f4f0e8]">
+              <a href="#case" className="transition hover:text-[var(--color-accent)]">
                 Case
               </a>
             </nav>
             <a
               href={`mailto:${contactEmail}`}
-              className="hidden border border-[#f4f0e8]/55 px-6 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[#f4f0e8] transition hover:border-[#8aa0a0] hover:text-[#c8d2cf] sm:inline-flex"
+              className="hidden text-[0.72rem] font-semibold uppercase tracking-[0.18em] underline decoration-[var(--color-accent)] decoration-1 underline-offset-8 transition hover:text-[var(--color-accent)] sm:inline-flex"
             >
-              Discreet gesprek
+              Contact
             </a>
           </header>
+        </div>
+      </section>
 
-          <div className="grid flex-1 items-end gap-16 pb-12 pt-20 lg:grid-cols-[1.04fr_0.96fr] lg:gap-20 lg:pb-16 lg:pt-24">
-            <div className="fade-up">
-              <SectionLabel>Bestuur / techniek / gedrag</SectionLabel>
-              <h1 className="mt-7 max-w-4xl font-serif text-[3.7rem] font-semibold leading-[0.94] text-[#f4f0e8] sm:text-[5.8rem] lg:text-[6.6rem]">
-                Ambitie vertalen naar werk dat klopt.
-              </h1>
-            </div>
-
-            <div className="fade-up max-w-2xl lg:pb-4">
-              <p className="text-[1.28rem] font-light leading-[1.58] text-[#f4f0e8]/82 sm:text-[1.55rem]">
-                {brandName} ondersteunt bestuurders en programmadirecties bij
-                vraagstukken waar informatiehuishouding, AI governance,
-                compliance en uitvoering samenkomen.
-              </p>
-              <p className="mt-8 text-lg leading-8 text-[#c8c5bb]">
-                Geen losse capaciteit. Wel helder oordeel, structuur en
-                uitvoeringskracht voor werk dat zorgvuldig moet landen, met
-                minimale belasting van de business.
-              </p>
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="#ai-control"
-                  className="inline-flex w-fit items-center border border-[#8aa0a0] bg-[#5f7476] px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#f4f0e8] transition hover:bg-transparent"
-                >
-                  Bekijk AI governance
-                </a>
-                <a
-                  href={linkedinUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex w-fit items-center border border-[#f4f0e8]/35 px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#f4f0e8]/82 transition hover:border-[#f4f0e8] hover:text-[#f4f0e8]"
-                >
-                  LinkedIn
-                </a>
-              </div>
+      <section className="bg-[var(--color-primary)] text-[var(--color-text-inverse)]">
+        <div className="mx-auto grid max-w-[1100px] gap-16 px-6 py-20 sm:px-8 sm:py-24 lg:grid-cols-[0.96fr_0.74fr] lg:px-10 lg:py-28">
+          <div>
+            <SectionLabel>Bestuur / techniek / gedrag</SectionLabel>
+            <h1 className="mt-10 max-w-3xl text-[3.25rem] font-semibold leading-[0.98] tracking-[-0.055em] sm:text-[5rem] lg:text-[5.75rem]">
+              Richting omzetten in gecontroleerde uitvoering.
+            </h1>
+          </div>
+          <div className="self-end border-t border-white/14 pt-8 lg:pt-10">
+            <p className="max-w-[38rem] text-[1.18rem] font-light leading-8 text-white/78 sm:text-[1.32rem]">
+              {brandName} werkt op het snijvlak van governance,
+              informatievoorziening en AI-context in omgevingen waar richting
+              bestaat, maar uitvoering nog niet structureel beheerst is.
+            </p>
+            <p className="mt-7 max-w-[38rem] leading-7 text-white/58">
+              De inzet is helder: minder interpretatie, minder belasting voor de
+              organisatie en meer controle op wat er werkelijk verandert.
+            </p>
+            <div className="mt-9">
+              <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
             </div>
           </div>
-
-          <div className="grid gap-5 border-t border-[#f4f0e8]/14 py-7 sm:grid-cols-3">
-            {trustSignals.map(([value, label]) => (
+        </div>
+        <div className="border-t border-white/12">
+          <div className="mx-auto grid max-w-[1100px] gap-6 px-6 py-7 sm:grid-cols-3 sm:px-8 lg:px-10">
+            {metrics.map(([value, label]) => (
               <div key={value} className="flex items-baseline gap-4">
-                <span className="font-serif text-4xl font-semibold text-[#c8d2cf]">
+                <span className="text-3xl font-semibold tracking-[-0.04em] text-[var(--color-text-inverse)]">
                   {value}
                 </span>
-                <span className="max-w-[14rem] text-xs font-semibold uppercase leading-5 tracking-[0.14em] text-[#f4f0e8]/54">
+                <span className="max-w-40 text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.16em] text-white/45">
                   {label}
                 </span>
               </div>
@@ -183,22 +160,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-[#111417]/12 bg-[#f4f0e8] text-[#111417]">
-        <div className="mx-auto grid max-w-[92rem] gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[0.42fr_1fr] lg:px-16 xl:px-20">
+      <section className="border-b border-[var(--color-divider)] bg-[var(--color-surface-primary)]">
+        <div className="mx-auto grid max-w-[1100px] gap-10 px-6 py-16 sm:px-8 lg:grid-cols-[0.34fr_1fr] lg:px-10">
           <div>
             <SectionLabel>Ervaringscontext</SectionLabel>
-            <p className="mt-4 max-w-sm text-sm leading-6 text-[#687174]">
-              Organisaties en opdrachtomgevingen waar vergelijkbare governance-,
-              informatie- en uitvoeringsvraagstukken speelden.
+            <p className="mt-5 max-w-sm text-sm leading-6 text-[var(--color-text-secondary)]">
+              Opdrachtomgevingen waar governance, informatie en uitvoering
+              samen moesten vallen.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-px overflow-hidden border border-[#111417]/10 bg-[#111417]/10 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="grid grid-cols-2 border-l border-t border-[var(--color-border)] sm:grid-cols-3 lg:grid-cols-6">
             {experienceNames.map((name) => (
               <div
                 key={name}
-                className="flex min-h-32 items-center justify-center bg-[#f4f0e8] px-5 py-6"
+                className="flex min-h-28 items-center justify-center border-b border-r border-[var(--color-border)] px-4 py-6"
               >
-                <span className="text-center text-[0.9rem] font-semibold uppercase tracking-[0.18em] text-[#3f4648] opacity-75 transition duration-300 hover:opacity-100 sm:text-[0.95rem]">
+                <span className="text-center text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-text-secondary)]">
                   {name}
                 </span>
               </div>
@@ -207,28 +184,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="expertise" className="bg-[#e7e1d6] text-[#111417]">
-        <div className="mx-auto grid max-w-[92rem] gap-14 px-6 py-24 sm:px-10 lg:grid-cols-[0.72fr_1.28fr] lg:px-16 lg:py-32 xl:px-20">
+      <section id="expertise" className="section-block bg-[var(--color-bg-alt)]">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.38fr_1fr] lg:px-10">
           <div>
             <SectionLabel>Expertise</SectionLabel>
-            <h2 className="mt-7 max-w-xl font-serif text-[3rem] font-semibold leading-[0.98] sm:text-[4.8rem]">
-              Expertise, vertaald naar beweging.
-            </h2>
+            <h2 className="heading-lg mt-7 max-w-md">Structuur voor werk dat niet vaag mag blijven.</h2>
           </div>
-          <div className="grid border-t border-[#111417]/18">
+          <div className="border-t border-[var(--color-border)]">
             {services.map((service) => (
               <article
                 key={service.label}
-                className="grid gap-6 border-b border-[#111417]/18 py-8 sm:grid-cols-[5.5rem_1fr]"
+                className="grid gap-5 border-b border-[var(--color-border)] py-7 sm:grid-cols-[4rem_1fr]"
               >
-                <span className="font-serif text-4xl font-semibold text-[#5f7476]">
+                <span className="text-sm font-semibold tracking-[0.18em] text-[var(--color-accent)]">
                   {service.label}
                 </span>
                 <div>
-                  <h3 className="text-2xl font-semibold tracking-[-0.01em]">
-                    {service.title}
-                  </h3>
-                  <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f5658]">
+                  <h3 className="text-xl font-semibold tracking-[-0.02em]">{service.title}</h3>
+                  <p className="mt-3 max-w-[42rem] leading-7 text-[var(--color-text-secondary)]">
                     {service.text}
                   </p>
                 </div>
@@ -238,83 +211,74 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="ai-control" className="bg-[#1f2426] text-[#f4f0e8]">
-        <div className="mx-auto grid max-w-[92rem] gap-16 px-6 py-24 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-16 lg:py-32 xl:px-20">
+      <section id="ai-control" className="section-block bg-[var(--color-primary)] text-[var(--color-text-inverse)]">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.46fr_1fr] lg:px-10">
           <div>
-            <SectionLabel>AI control-layer thinking</SectionLabel>
-            <h2 className="mt-7 max-w-3xl font-serif text-[3rem] font-semibold leading-[0.98] sm:text-[4.8rem]">
-              AI governance die operationeel afdwingbaar is.
+            <SectionLabel>AI control-layer</SectionLabel>
+            <h2 className="heading-lg mt-7 max-w-lg text-[var(--color-text-inverse)]">
+              AI-governance buiten het model afdwingen.
             </h2>
-            <p className="mt-8 max-w-2xl text-[1.2rem] font-light leading-8 text-[#d9d5cb]">
-              Het control-layer prototype is geen technisch bijproject, maar een
-              strategisch bewijsstuk: AI kan pas enterprise-ready worden wanneer
-              context, policy, write-back en auditability buiten het model
-              worden afgedwongen.
-            </p>
-            <a
-              href={githubPrototypeUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-10 inline-flex w-fit border border-[#f4f0e8]/35 px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#f4f0e8] transition hover:border-[#c8d2cf] hover:text-[#c8d2cf]"
-            >
-              Open prototype
-            </a>
           </div>
-
-          <div className="grid gap-5 sm:grid-cols-2">
-            {controlPrinciples.map((principle) => (
-              <article
-                key={principle.title}
-                className="border border-[#f4f0e8]/14 p-6 transition hover:border-[#c8d2cf]/55"
+          <div>
+            <p className="max-w-[44rem] text-lg font-light leading-8 text-white/72">
+              Het control-layer prototype is een bewijsstuk voor enterprise AI:
+              context, policy, write-back en auditability worden niet aan het
+              model overgelaten, maar in de operationele laag gecontroleerd.
+            </p>
+            <div className="mt-9 grid border-l border-t border-white/14 sm:grid-cols-2">
+              {aiControls.map(([title, text]) => (
+                <article key={title} className="border-b border-r border-white/14 p-6">
+                  <h3 className="font-semibold tracking-[-0.01em]">{title}</h3>
+                  <p className="mt-4 text-sm leading-6 text-white/58">{text}</p>
+                </article>
+              ))}
+            </div>
+            <div className="mt-9">
+              <a
+                href={githubPrototypeUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-semibold uppercase tracking-[0.14em] underline decoration-[var(--color-accent)] underline-offset-8 transition hover:text-[var(--color-accent)]"
               >
-                <h3 className="text-xl font-semibold">{principle.title}</h3>
-                <p className="mt-5 leading-7 text-[#d9d5cb]">
-                  {principle.text}
-                </p>
-              </article>
-            ))}
+                Open prototype
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f4f0e8] text-[#111417]">
-        <div className="mx-auto grid max-w-[92rem] gap-14 px-6 py-24 sm:px-10 lg:grid-cols-[0.78fr_1.22fr] lg:px-16 lg:py-32 xl:px-20">
+      <section className="section-block bg-[var(--color-surface-primary)]">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.34fr_1fr] lg:px-10">
           <div>
             <SectionLabel>Profiel</SectionLabel>
             <div className="mt-7 flex items-start gap-5">
-              <div className="relative h-24 w-20 shrink-0 overflow-hidden border border-[#111417]/15">
+              <div className="relative h-20 w-16 shrink-0 overflow-hidden border border-[var(--color-border)]">
                 <Image
                   src="/images/tinoi-dam-portrait.jpg"
                   alt="Portret van Tinoi Dam"
                   fill
-                  sizes="80px"
+                  sizes="64px"
                   className="object-cover object-[50%_18%]"
                 />
               </div>
               <div>
-                <p className="font-serif text-4xl font-semibold leading-none">
-                  Tinoi Dam
-                </p>
-                <p className="mt-3 text-xs font-semibold uppercase leading-5 tracking-[0.16em] text-[#687174]">
-                  AI governance / informatiehuishouding / veranderstructuur
+                <p className="text-2xl font-semibold tracking-[-0.03em]">Tinoi Dam</p>
+                <p className="mt-3 max-w-52 text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.16em] text-[var(--color-text-secondary)]">
+                  Governance / IV / AI-context
                 </p>
               </div>
             </div>
           </div>
-
           <div>
-            <h2 className="max-w-3xl font-serif text-[2.9rem] font-semibold leading-[1] sm:text-[4.4rem]">
-              Een brug tussen boardroom, business, compliance en IT.
-            </h2>
-            <p className="mt-8 max-w-3xl text-xl font-light leading-9 text-[#4f5658]">
-              De waarde zit in het reduceren van onzekerheid: de huidige
-              situatie scherp krijgen, abstracte kaders vertalen naar
-              begrijpelijke keuzes en uitvoering organiseren zonder de
-              organisatie te overvragen.
+            <h2 className="heading-lg max-w-3xl">Verbindt richting, besluitvorming en uitvoering.</h2>
+            <p className="mt-7 max-w-[44rem] text-lg font-light leading-8 text-[var(--color-text-secondary)]">
+              Strategieën en frameworks stranden wanneer organisaties afhaken op
+              abstractie. Het werk zit in de vertaling: wat moet veranderen, wie
+              moet besluiten en hoe landt het zonder onnodige organisatiebelasting?
             </p>
-            <div className="mt-10 grid gap-4 border-t border-[#111417]/18 pt-8 sm:grid-cols-2">
+            <div className="mt-9 grid gap-5 border-t border-[var(--color-border)] pt-7 sm:grid-cols-2">
               {credentials.map((credential) => (
-                <p key={credential} className="leading-7 text-[#4f5658]">
+                <p key={credential} className="text-sm leading-6 text-[var(--color-text-secondary)]">
                   {credential}
                 </p>
               ))}
@@ -323,158 +287,127 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#e7e1d6] text-[#111417]">
-        <div className="mx-auto grid max-w-[92rem] gap-14 px-6 py-24 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-16 lg:py-32 xl:px-20">
+      <section className="section-block bg-[var(--color-bg-alt)]">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.38fr_1fr] lg:px-10">
           <div>
             <SectionLabel>Aanpak</SectionLabel>
-            <h2 className="mt-7 max-w-2xl font-serif text-[3rem] font-semibold leading-[0.98] sm:text-[4.8rem]">
-              Zo weinig mogelijk belasting. Zo veel mogelijk voortgang.
-            </h2>
+            <h2 className="heading-lg mt-7 max-w-md">Van ongedefinieerd naar besluitbaar.</h2>
           </div>
-          <div className="grid gap-7">
+          <div className="border-t border-[var(--color-border)]">
             {approach.map((step, index) => (
               <div
                 key={step}
-                className="grid gap-5 border-t border-[#111417]/18 pt-7 sm:grid-cols-[4rem_1fr]"
+                className="grid gap-5 border-b border-[var(--color-border)] py-5 sm:grid-cols-[4rem_1fr]"
               >
-                <span className="font-serif text-4xl font-semibold text-[#5f7476]">
+                <span className="text-sm font-semibold tracking-[0.18em] text-[var(--color-accent)]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <p className="text-[1.35rem] font-light leading-9 text-[#3f4648]">
-                  {step}
-                </p>
+                <p className="text-lg leading-7 tracking-[-0.01em]">{step}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f4f0e8] text-[#111417]">
-        <div className="mx-auto grid max-w-[92rem] gap-14 px-6 py-24 sm:px-10 lg:grid-cols-[0.9fr_1.1fr] lg:px-16 lg:py-32 xl:px-20">
+      <section className="section-block bg-[var(--color-surface-primary)]">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.44fr_1fr] lg:px-10">
           <div>
             <SectionLabel>Diagnostic instrument</SectionLabel>
-            <h2 className="mt-7 max-w-2xl font-serif text-[3rem] font-semibold leading-[0.98] sm:text-[4.6rem]">
-              Volwassenheid zichtbaar maken voordat verandering wordt ingezet.
-            </h2>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#4f5658]">
-              De Lean Maturity Scan maakt het gesprek over uitvoering concreet:
-              waar zit frictie, welke managementroutines ontbreken, en wat is
-              de eerstvolgende stap die werkelijk helpt?
+            <h2 className="heading-lg mt-7 max-w-lg">Volwassenheid zichtbaar maken voordat verandering start.</h2>
+            <p className="mt-7 max-w-[40rem] leading-7 text-[var(--color-text-secondary)]">
+              De Lean Maturity Scan maakt frictie, ontbrekende managementroutines
+              en de eerstvolgende zinvolle stap expliciet.
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
+            <div className="mt-7 flex flex-wrap gap-2">
               {maturityDimensions.map((dimension) => (
-                <span
-                  key={dimension}
-                  className="border border-[#111417]/18 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#687174]"
-                >
+                <span key={dimension} className="tag">
                   {dimension}
                 </span>
               ))}
             </div>
-            <a
-              href="/docs/lean-maturity-scan.pdf"
-              className="mt-10 inline-flex w-fit border border-[#111417]/25 px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#111417] transition hover:border-[#5f7476] hover:text-[#5f7476]"
-            >
-              Open scan preview
-            </a>
+            <div className="mt-9">
+              <PrimaryLink href="/docs/lean-maturity-scan.pdf">Open scan preview</PrimaryLink>
+            </div>
           </div>
-
           <a
             href="/docs/lean-maturity-scan.pdf"
             aria-label="Open de Lean Maturity Scan preview"
-            className="group relative block min-h-[22rem] overflow-hidden border border-[#111417]/12 bg-[#111417]"
+            className="relative block min-h-[20rem] overflow-hidden border border-[var(--color-border)] bg-[var(--color-primary)]"
           >
             <Image
               src="/images/lean-maturity-scan.png"
               alt="Preview van de BDE Lean Maturity Scan"
               fill
-              sizes="(min-width: 1024px) 42rem, 100vw"
-              loading="eager"
-              className="object-contain p-5 opacity-92 transition duration-500 group-hover:scale-[1.015] group-hover:opacity-100"
+              sizes="(min-width: 1024px) 560px, 100vw"
+              className="object-contain p-5"
             />
           </a>
         </div>
       </section>
 
-      <section id="case" className="bg-[#111417] text-[#f4f0e8]">
-        <div className="mx-auto max-w-[92rem] px-6 py-24 sm:px-10 lg:px-16 lg:py-32 xl:px-20">
-          <div className="grid gap-12 lg:grid-cols-[0.82fr_1.18fr]">
-            <div>
-              <SectionLabel>Case study</SectionLabel>
-              <h2 className="mt-7 max-w-2xl font-serif text-[3rem] font-semibold leading-[0.98] sm:text-[4.8rem]">
-                Gedeelde taal voor globale FEC-governance.
-              </h2>
-              <p className="mt-8 max-w-2xl text-lg leading-8 text-[#d9d5cb]">
-                Een strategische governancecase waarin compliance-fragmentatie
-                wordt vertaald naar definities, eigenaarschap,
-                besluitrechten en uitvoerbare implementatie.
-              </p>
-              <a
-                href="/docs/global-strategies-case.pdf"
-                className="mt-10 inline-flex w-fit border border-[#f4f0e8]/35 px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#f4f0e8] transition hover:border-[#c8d2cf] hover:text-[#c8d2cf]"
+      <section id="case" className="section-block bg-[var(--color-primary)] text-[var(--color-text-inverse)]">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.42fr_1fr] lg:px-10">
+          <div>
+            <SectionLabel>Case study</SectionLabel>
+            <h2 className="heading-lg mt-7 max-w-lg text-[var(--color-text-inverse)]">
+              Gedeelde taal voor globale FEC-governance.
+            </h2>
+            <p className="mt-7 max-w-[38rem] leading-7 text-white/62">
+              Compliance-fragmentatie vertaald naar definities, eigenaarschap,
+              besluitrechten en uitvoerbare implementatie.
+            </p>
+            <div className="mt-9">
+              <PrimaryLink href="/docs/global-strategies-case.pdf">Open volledige deck</PrimaryLink>
+            </div>
+          </div>
+          <div>
+            <div className="border border-white/14 bg-[var(--color-primary)] p-2">
+              <object
+                data="/docs/global-strategies-case.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH"
+                type="application/pdf"
+                aria-label="Scrollable PDF preview van de Global Strategies case study"
+                className="h-[28rem] w-full bg-[var(--color-text-inverse)] sm:h-[36rem]"
               >
-                Open volledige deck
-              </a>
-            </div>
-
-            <div className="min-w-0">
-              <div className="overflow-hidden border border-[#f4f0e8]/14 bg-[#1f2426] p-2 shadow-[0_30px_80px_rgba(0,0,0,0.22)]">
-                <object
-                  data="/docs/global-strategies-case.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH"
-                  type="application/pdf"
-                  aria-label="Scrollable PDF preview van de Global Strategies case study"
-                  className="h-[32rem] w-full bg-[#f4f0e8] sm:h-[38rem]"
+                <a
+                  href="/docs/global-strategies-case.pdf"
+                  className="relative block h-[26rem] overflow-hidden bg-[var(--color-primary)]"
                 >
-                  <a
-                    href="/docs/global-strategies-case.pdf"
-                    className="group relative block h-[28rem] overflow-hidden bg-[#111417]"
-                  >
-                    <Image
-                      src="/images/global-strategies-case.png"
-                      alt="Preview van de Global Strategies case study"
-                      fill
-                      sizes="(min-width: 1024px) 42rem, 100vw"
-                      loading="eager"
-                      className="object-contain p-5 opacity-92 transition duration-500 group-hover:scale-[1.015] group-hover:opacity-100"
-                    />
-                  </a>
-                </object>
-              </div>
-              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.16em] text-[#f4f0e8]/44">
-                Scroll door de originele PDF-preview
-              </p>
+                  <Image
+                    src="/images/global-strategies-case.png"
+                    alt="Preview van de Global Strategies case study"
+                    fill
+                    sizes="(min-width: 1024px) 620px, 100vw"
+                    className="object-contain p-5"
+                  />
+                </a>
+              </object>
             </div>
+            <p className="mt-4 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-white/38">
+              Originele PDF-preview
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#e7e1d6] text-[#111417]">
-        <div className="mx-auto grid max-w-[92rem] gap-10 px-6 py-24 sm:px-10 lg:grid-cols-[1fr_0.82fr] lg:px-16 lg:py-32 xl:px-20">
-          <h2 className="max-w-4xl font-serif text-[3rem] font-semibold leading-[0.98] sm:text-[5rem]">
-            Voor werk dat te belangrijk is om als capaciteit te behandelen.
-          </h2>
-          <div className="flex flex-col justify-between gap-9">
-            <p className="text-xl font-light leading-9 text-[#4f5658]">
-              Een rustige tafel voor organisaties die governance,
-              informatievoorziening en AI verantwoord willen operationaliseren
+      <section className="section-block bg-[var(--color-bg-default)]">
+        <div className="mx-auto grid max-w-[1100px] gap-10 px-6 sm:px-8 lg:grid-cols-[0.62fr_0.38fr] lg:px-10">
+          <h2 className="heading-lg max-w-2xl">Voor werk dat te belangrijk is om als capaciteit te behandelen.</h2>
+          <div className="border-t border-[var(--color-border)] pt-7">
+            <p className="max-w-[34rem] leading-7 text-[var(--color-text-secondary)]">
+              Governance, informatievoorziening en AI verantwoord operationaliseren
               zonder onnodige complexiteit toe te voegen.
             </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <a
-                href={`mailto:${contactEmail}`}
-                className="inline-flex w-fit border border-[#5f7476] bg-[#5f7476] px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#f4f0e8] transition hover:bg-transparent hover:text-[#5f7476]"
-              >
-                Neem contact op
-              </a>
-              <a
-                href={linkedinUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex w-fit border border-[#111417]/25 px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-[#111417] transition hover:border-[#5f7476] hover:text-[#5f7476]"
-              >
-                Bekijk profiel
-              </a>
+            <div className="mt-9">
+              <PrimaryLink href={`mailto:${contactEmail}`}>Neem contact op</PrimaryLink>
             </div>
+            <a
+              href={linkedinUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-7 inline-flex text-sm font-semibold uppercase tracking-[0.14em] underline decoration-[var(--color-accent)] underline-offset-8 transition hover:text-[var(--color-accent)]"
+            >
+              Bekijk profiel
+            </a>
           </div>
         </div>
       </section>

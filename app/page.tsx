@@ -175,14 +175,14 @@ export default function Home() {
       </section>
 
       <section className="dark-hue-section text-[var(--color-text-inverse)]">
-        <div className="site-container layout-grid layout-grid--hero py-20 sm:py-24 lg:py-28">
-          <div>
+        <div className="site-container hero-grid py-20 sm:py-24 lg:py-28">
+          <div className="hero-grid__heading">
             <SectionLabel>Bestuur / techniek / gedrag</SectionLabel>
             <h1 className="heading-xl mt-10 max-w-[60rem] text-balance">
               Richting naar gecontroleerde uitvoering.
             </h1>
           </div>
-          <div className="self-end border-t border-white/14 pt-8 lg:pt-10">
+          <div className="hero-grid__body hairline-top pt-8 lg:pt-10">
             <p className="max-w-[38rem] text-[1.18rem] font-light leading-8 text-white/78 sm:text-[1.32rem]">
               {brandName} werkt op het snijvlak van governance,
               informatievoorziening en AI-context in omgevingen waar richting
@@ -197,10 +197,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="border-t border-white/12">
-          <div className="site-container layout-grid layout-grid--metrics py-7 sm:grid-cols-3">
+        <div className="hero-metrics">
+          <div className="site-container hero-grid hero-grid__metrics py-7">
             {metrics.map(([value, label]) => (
-              <div key={value} className="flex items-baseline gap-4">
+              <div key={value} className="metric-item">
                 <span className="text-3xl font-semibold tracking-normal text-[var(--color-text-inverse)]">
                   {value}
                 </span>
@@ -213,7 +213,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-[var(--color-divider)] bg-[var(--color-surface-primary)]">
+      <section className="matrix-section border-b border-[var(--color-divider)]">
         <div className="site-container layout-grid layout-grid--section py-16">
           <div>
             <SectionLabel>Ervaringscontext</SectionLabel>
@@ -222,11 +222,11 @@ export default function Home() {
               samen moesten vallen.
             </p>
           </div>
-          <div className="grid grid-cols-2 border-l border-t border-[var(--color-border)] sm:grid-cols-3 lg:grid-cols-6">
+          <div className="soft-matrix grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
             {experienceNames.map((name) => (
               <div
                 key={name}
-                className="flex min-h-28 items-center justify-center border-b border-r border-[var(--color-border)] px-4 py-6"
+                className="soft-cell flex min-h-28 items-center justify-center px-4 py-6"
               >
                 <span className="text-center text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-text-secondary)]">
                   {name}
@@ -238,16 +238,16 @@ export default function Home() {
       </section>
 
       <section id="expertise" className="section-block bg-[var(--color-bg-alt)]">
-        <div className="site-container layout-grid layout-grid--section">
+        <div className="site-container layout-grid layout-grid--section layout-grid--expertise">
           <div>
             <SectionLabel>Expertise</SectionLabel>
             <h2 className="heading-lg mt-7 max-w-[34rem]">Structuur voor werk dat niet vaag mag blijven.</h2>
           </div>
-          <div className="border-t border-[var(--color-border)]">
+          <div className="service-list">
             {services.map((service) => (
               <article
                 key={service.label}
-                className="grid gap-5 border-b border-[var(--color-border)] py-7 sm:grid-cols-[4rem_1fr]"
+                className="service-item"
               >
                 <span className="text-sm font-semibold tracking-[0.18em] text-[var(--color-accent)]">
                   {service.label}
@@ -264,7 +264,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="ai-control" className="section-block bg-[var(--color-surface-primary)]">
+      <section id="ai-control" className="matrix-section section-block">
         <div className="site-container layout-grid layout-grid--section-wide">
           <div>
             <SectionLabel>AI control-layer</SectionLabel>
@@ -278,9 +278,9 @@ export default function Home() {
               context, policy, write-back en auditability worden niet aan het
               model overgelaten, maar in de operationele laag gecontroleerd.
             </p>
-            <div className="mt-9 grid border-l border-t border-[var(--color-border)] sm:grid-cols-2">
+            <div className="soft-matrix mt-9 sm:grid-cols-2">
               {aiControls.map(([title, text]) => (
-                <article key={title} className="border-b border-r border-[var(--color-border)] p-6">
+                <article key={title} className="soft-cell p-6">
                   <h3 className="font-semibold tracking-normal">{title}</h3>
                   <p className="mt-4 text-sm leading-6 text-[var(--color-text-secondary)]">{text}</p>
                 </article>
@@ -329,7 +329,7 @@ export default function Home() {
               abstractie. Het werk zit in de vertaling: wat moet veranderen, wie
               moet besluiten en wat is verdedigbaar op programmaniveau?
             </p>
-            <div className="mt-9 grid gap-5 border-t border-[var(--color-border)] pt-7 sm:grid-cols-2">
+            <div className="hairline-top mt-9 grid gap-5 pt-7 sm:grid-cols-2">
               {credentials.map((credential) => (
                 <p key={credential} className="text-sm leading-6 text-[var(--color-text-secondary)]">
                   {credential}
@@ -340,15 +340,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-block bg-[var(--color-bg-default)]">
+      <section className="matrix-section section-block">
         <div className="site-container layout-grid layout-grid--section">
           <div>
             <SectionLabel>Werkprincipes</SectionLabel>
             <h2 className="heading-lg mt-7 max-w-[32rem] text-balance">Uitkomst boven activiteit.</h2>
           </div>
-          <div className="grid border-l border-t border-[var(--color-border)] sm:grid-cols-2">
+          <div className="principle-list">
             {capabilityPrinciples.map(([title, text]) => (
-              <article key={title} className="border-b border-r border-[var(--color-border)] p-6">
+              <article key={title} className="principle-item">
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">{title}</h3>
                 <p className="mt-4 text-sm leading-6 text-[var(--color-text-secondary)]">{text}</p>
               </article>
@@ -363,11 +363,11 @@ export default function Home() {
             <SectionLabel>Aanpak</SectionLabel>
             <h2 className="heading-lg mt-7 max-w-[32rem] text-balance">Besluitbaar maken.</h2>
           </div>
-          <div className="border-t border-[var(--color-border)]">
+          <div className="approach-list">
             {approach.map((step, index) => (
               <div
                 key={step}
-                className="grid gap-5 border-b border-[var(--color-border)] py-5 sm:grid-cols-[4rem_1fr]"
+                className="approach-item"
               >
                 <span className="text-sm font-semibold tracking-[0.18em] text-[var(--color-accent)]">
                   {String(index + 1).padStart(2, "0")}
@@ -417,11 +417,11 @@ export default function Home() {
             <SectionLabel>Portfolio</SectionLabel>
             <h2 className="heading-lg mt-7 max-w-[32rem] text-balance">Portfolio-context.</h2>
           </div>
-          <div className="grid border-l border-t border-[var(--color-border)] sm:grid-cols-2">
+          <div className="soft-matrix sm:grid-cols-2">
             {portfolioItems.map((item) => (
               <article
                 key={item.company}
-                className="border-b border-r border-[var(--color-border)] p-6 sm:p-7"
+                className="soft-cell p-6 sm:p-7"
               >
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
                   {item.company}
@@ -475,7 +475,7 @@ export default function Home() {
       <section className="section-block bg-[var(--color-bg-default)]">
         <div className="site-container layout-grid layout-grid--closing">
           <h2 className="heading-lg max-w-[56rem]">Voor werk dat verdedigbare uitvoering vraagt.</h2>
-          <div className="border-t border-[var(--color-border)] pt-7">
+          <div className="hairline-top pt-7">
             <p className="max-w-[34rem] leading-7 text-[var(--color-text-secondary)]">
               Governance, informatievoorziening en AI verantwoord operationaliseren
               met eigenaarschap, besluitvorming en meetbare voortgang.

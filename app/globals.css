@@ -4,16 +4,16 @@
   --color-primary: #141b18;
   --color-primary-soft: #21302a;
   --color-secondary: #4f5256;
-  --color-accent: #7e5252;
+  --color-accent: #6e4444;
   --color-bg-default: #f4f5f6;
-  --color-bg-alt: #f6f4f1;
+  --color-bg-alt: #f3f2ef;
   --color-text-inverse: #f4f0e8;
   --color-text-primary: #162120;
   --color-text-secondary: #4f5256;
   --color-surface-primary: #f4f5f6;
   --color-surface-secondary: #e7e1d6;
   --color-border: rgba(79, 82, 86, 0.18);
-  --color-divider: rgba(79, 82, 86, 0.12);
+  --color-divider: rgba(79, 82, 86, 0.18);
   --color-border-inverse: rgba(244, 240, 232, 0.14);
   --color-text-inverse-secondary: rgba(244, 240, 232, 0.62);
 }

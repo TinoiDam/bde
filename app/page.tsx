@@ -179,7 +179,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-[1100px] gap-6 px-6 py-7 sm:grid-cols-3 sm:px-8 lg:px-10">
             {metrics.map(([value, label]) => (
               <div key={value} className="flex items-baseline gap-4">
-                <span className="text-3xl font-semibold tracking-[-0.04em] text-[var(--color-text-inverse)]">
+                <span className="text-3xl font-semibold tracking-normal text-[var(--color-text-inverse)]">
                   {value}
                 </span>
                 <span className="max-w-40 text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.16em] text-white/45">
@@ -231,7 +231,7 @@ export default function Home() {
                   {service.label}
                 </span>
                 <div>
-                  <h3 className="text-xl font-semibold tracking-[-0.02em]">{service.title}</h3>
+                  <h3 className="text-xl font-semibold tracking-normal">{service.title}</h3>
                   <p className="mt-3 max-w-[42rem] leading-7 text-[var(--color-text-secondary)]">
                     {service.text}
                   </p>
@@ -259,7 +259,7 @@ export default function Home() {
             <div className="mt-9 grid border-l border-t border-white/14 sm:grid-cols-2">
               {aiControls.map(([title, text]) => (
                 <article key={title} className="border-b border-r border-white/14 p-6">
-                  <h3 className="font-semibold tracking-[-0.01em]">{title}</h3>
+                  <h3 className="font-semibold tracking-normal">{title}</h3>
                   <p className="mt-4 text-sm leading-6 text-white/58">{text}</p>
                 </article>
               ))}
@@ -283,19 +283,19 @@ export default function Home() {
           <div>
             <SectionLabel>Profiel</SectionLabel>
             <div className="mt-7 flex items-start gap-5">
-              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-[var(--color-border)] bg-[var(--color-surface-secondary)]">
+              <div className="relative aspect-[4/5] h-24 shrink-0 overflow-hidden border border-[var(--color-border)] bg-[var(--color-surface-secondary)]">
                 <Image
                   src="/images/tinoi-dam-portrait.jpg"
                   alt="Portret van Tinoi Dam"
                   fill
-                  sizes="80px"
-                  className="object-cover object-[50%_18%]"
+                  sizes="96px"
+                  className="object-cover object-[50%_16%]"
                 />
               </div>
               <div>
-                <p className="text-2xl font-semibold tracking-[-0.03em]">Tinoi Dam</p>
+                <p className="text-2xl font-semibold tracking-normal">Tinoi Dam</p>
                 <p className="mt-3 max-w-52 text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.16em] text-[var(--color-text-secondary)]">
-                  Founder | Management Consultant
+                  Partner | Management Consultant
                 </p>
               </div>
             </div>
@@ -333,7 +333,7 @@ export default function Home() {
                 <span className="text-sm font-semibold tracking-[0.18em] text-[var(--color-accent)]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <p className="text-lg leading-7 tracking-[-0.01em]">{step}</p>
+                <p className="text-lg leading-7 tracking-normal">{step}</p>
               </div>
             ))}
           </div>

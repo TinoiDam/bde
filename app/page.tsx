@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SlideDeckPreview } from "./components/SlideDeckPreview";
 
 const brandName = "BDE Management Consulting";
 const linkedinUrl = "https://www.linkedin.com/in/tinoidam/";
@@ -19,6 +20,33 @@ const experienceNames = [
   "Belastingdienst",
   "Eneco",
   "Fudura",
+];
+
+const portfolioItems = [
+  {
+    company: "DUO",
+    description: "Applicatielandschap en raadpleeg-logging compliance teruggebracht naar scope, domeinen en implementatiestrategie.",
+  },
+  {
+    company: "Rabobank",
+    description: "FEC definition management en organisatieontwerp vertaald naar besluitstructuur in internationale context.",
+  },
+  {
+    company: "RIVM",
+    description: "Informatievoorziening en governance in een omgeving waar betrouwbaarheid, publieke verantwoordelijkheid en uitvoering samenkomen.",
+  },
+  {
+    company: "Belastingdienst",
+    description: "Complexe IV-vraagstukken gestructureerd rond eigenaarschap, besluitvorming en beheersbare uitvoering.",
+  },
+  {
+    company: "Eneco",
+    description: "Portfolio- en implementatiecontext waarin business, IT en operationele afhankelijkheden expliciet gemaakt worden.",
+  },
+  {
+    company: "Fudura",
+    description: "Uitvoeringsvraagstukken verbonden aan structuur, ritme en besluitbaarheid binnen een technische bedrijfscontext.",
+  },
 ];
 
 const services = [
@@ -96,7 +124,7 @@ export default function Home() {
             <a
               href="#"
               aria-label={`${brandName} home`}
-              className="max-w-52 text-[0.72rem] font-semibold uppercase leading-5 tracking-[0.24em]"
+              className="whitespace-nowrap text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.18em] sm:text-[0.72rem] sm:tracking-[0.22em]"
             >
               {brandName}
             </a>
@@ -106,6 +134,9 @@ export default function Home() {
               </a>
               <a href="#ai-control" className="transition hover:text-[var(--color-accent)]">
                 AI control
+              </a>
+              <a href="#portfolio" className="transition hover:text-[var(--color-accent)]">
+                Portfolio
               </a>
               <a href="#case" className="transition hover:text-[var(--color-accent)]">
                 Case
@@ -121,11 +152,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[var(--color-primary)] text-[var(--color-text-inverse)]">
+      <section className="dark-hue-section text-[var(--color-text-inverse)]">
         <div className="mx-auto grid max-w-[1100px] gap-16 px-6 py-20 sm:px-8 sm:py-24 lg:grid-cols-[0.96fr_0.74fr] lg:px-10 lg:py-28">
           <div>
             <SectionLabel>Bestuur / techniek / gedrag</SectionLabel>
-            <h1 className="mt-10 max-w-3xl text-[3.25rem] font-semibold leading-[0.98] tracking-[-0.055em] sm:text-[5rem] lg:text-[5.75rem]">
+            <h1 className="heading-xl mt-10 max-w-3xl text-balance">
               Richting omzetten in gecontroleerde uitvoering.
             </h1>
           </div>
@@ -211,7 +242,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="ai-control" className="section-block bg-[var(--color-primary)] text-[var(--color-text-inverse)]">
+      <section id="ai-control" className="section-block dark-hue-section text-[var(--color-text-inverse)]">
         <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.46fr_1fr] lg:px-10">
           <div>
             <SectionLabel>AI control-layer</SectionLabel>
@@ -252,12 +283,12 @@ export default function Home() {
           <div>
             <SectionLabel>Profiel</SectionLabel>
             <div className="mt-7 flex items-start gap-5">
-              <div className="relative h-20 w-16 shrink-0 overflow-hidden border border-[var(--color-border)]">
+              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-[var(--color-border)] bg-[var(--color-surface-secondary)]">
                 <Image
                   src="/images/tinoi-dam-portrait.jpg"
                   alt="Portret van Tinoi Dam"
                   fill
-                  sizes="64px"
+                  sizes="80px"
                   className="object-cover object-[50%_18%]"
                 />
               </div>
@@ -291,7 +322,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.38fr_1fr] lg:px-10">
           <div>
             <SectionLabel>Aanpak</SectionLabel>
-            <h2 className="heading-lg mt-7 max-w-md">Van ongedefinieerd naar besluitbaar.</h2>
+            <h2 className="heading-lg mt-7 max-w-sm text-balance">Besluitbaar maken.</h2>
           </div>
           <div className="border-t border-[var(--color-border)]">
             {approach.map((step, index) => (
@@ -329,23 +360,42 @@ export default function Home() {
               <PrimaryLink href="/docs/lean-maturity-scan.pdf">Open scan preview</PrimaryLink>
             </div>
           </div>
-          <a
+          <SlideDeckPreview
+            title="Open de Lean Maturity Scan preview"
             href="/docs/lean-maturity-scan.pdf"
-            aria-label="Open de Lean Maturity Scan preview"
-            className="relative block min-h-[20rem] overflow-hidden border border-[var(--color-border)] bg-[var(--color-primary)]"
-          >
-            <Image
-              src="/images/lean-maturity-scan.png"
-              alt="Preview van de BDE Lean Maturity Scan"
-              fill
-              sizes="(min-width: 1024px) 560px, 100vw"
-              className="object-contain p-5"
-            />
-          </a>
+            imageSrc="/images/lean-maturity-scan.png"
+            imageAlt="Preview van de BDE Lean Maturity Scan"
+            tags={maturityDimensions}
+          />
         </div>
       </section>
 
-      <section id="case" className="section-block bg-[var(--color-primary)] text-[var(--color-text-inverse)]">
+
+      <section id="portfolio" className="section-block bg-[var(--color-bg-alt)]">
+        <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.34fr_1fr] lg:px-10">
+          <div>
+            <SectionLabel>Portfolio</SectionLabel>
+            <h2 className="heading-lg mt-7 max-w-sm text-balance">Portfolio-context.</h2>
+          </div>
+          <div className="grid border-l border-t border-[var(--color-border)] sm:grid-cols-2">
+            {portfolioItems.map((item) => (
+              <article
+                key={item.company}
+                className="border-b border-r border-[var(--color-border)] p-6 sm:p-7"
+              >
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
+                  {item.company}
+                </h3>
+                <p className="mt-4 max-w-[32rem] text-sm leading-6 text-[var(--color-text-secondary)]">
+                  {item.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="case" className="section-block dark-hue-section text-[var(--color-text-inverse)]">
         <div className="mx-auto grid max-w-[1100px] gap-12 px-6 sm:px-8 lg:grid-cols-[0.42fr_1fr] lg:px-10">
           <div>
             <SectionLabel>Case study</SectionLabel>
@@ -360,32 +410,13 @@ export default function Home() {
               <PrimaryLink href="/docs/global-strategies-case.pdf">Open volledige deck</PrimaryLink>
             </div>
           </div>
-          <div>
-            <div className="border border-white/14 bg-[var(--color-primary)] p-2">
-              <object
-                data="/docs/global-strategies-case.pdf#toolbar=0&navpanes=0&scrollbar=1&view=FitH"
-                type="application/pdf"
-                aria-label="Scrollable PDF preview van de Global Strategies case study"
-                className="h-[28rem] w-full bg-[var(--color-text-inverse)] sm:h-[36rem]"
-              >
-                <a
-                  href="/docs/global-strategies-case.pdf"
-                  className="relative block h-[26rem] overflow-hidden bg-[var(--color-primary)]"
-                >
-                  <Image
-                    src="/images/global-strategies-case.png"
-                    alt="Preview van de Global Strategies case study"
-                    fill
-                    sizes="(min-width: 1024px) 620px, 100vw"
-                    className="object-contain p-5"
-                  />
-                </a>
-              </object>
-            </div>
-            <p className="mt-4 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-white/38">
-              Originele PDF-preview
-            </p>
-          </div>
+          <SlideDeckPreview
+            title="Open volledige Global FEC governance deck"
+            href="/docs/global-strategies-case.pdf"
+            imageSrc="/images/global-strategies-case.png"
+            imageAlt="Preview van de Global Strategies case study"
+            tags={["FEC", "Governance", "Definitions"]}
+          />
         </div>
       </section>
 

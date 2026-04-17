@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #161d1b;
-  --color-primary-soft: #1e2a25;
+  --color-primary: #182320;
+  --color-primary-soft: #22312b;
   --color-secondary: #4f5256;
   --color-accent: #7e5252;
   --color-bg-default: #f4f5f6;
@@ -41,8 +41,8 @@ body {
 
 .dark-hue-section {
   background:
-    radial-gradient(circle at 70% 20%, rgba(31, 47, 46, 0.32), transparent 55%),
-    linear-gradient(120deg, #162120 0%, #1f2f2e 100%);
+    radial-gradient(circle at 70% 20%, rgba(34, 49, 43, 0.34), transparent 58%),
+    linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary-soft) 100%);
 }
 
 .section-block {

@@ -140,7 +140,7 @@ function PrimaryLink({ href, children }: { href: string; children: React.ReactNo
 export default function Home() {
   return (
     <main className="bg-[var(--color-bg-default)] text-[var(--color-text-primary)]">
-      <section className="border-b border-[var(--color-divider)] bg-[var(--color-bg-default)]">
+      <section className="bg-[var(--color-bg-default)]">
         <div className="site-container py-2.5 sm:py-3">
           <header className="flex items-center justify-between gap-8">
             <a
@@ -213,7 +213,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="matrix-section border-b border-[var(--color-divider)]">
+      <section className="matrix-section">
         <div className="site-container layout-grid layout-grid--section py-16">
           <div>
             <SectionLabel>Ervaringscontext</SectionLabel>
@@ -254,7 +254,7 @@ export default function Home() {
                 </span>
                 <div>
                   <h3 className="text-xl font-semibold tracking-normal">{service.title}</h3>
-                  <p className="mt-3 max-w-[42rem] leading-7 text-[var(--color-text-secondary)]">
+                  <p className="max-w-[28rem] text-[0.95rem] text-[var(--color-text-secondary)]">
                     {service.text}
                   </p>
                 </div>
@@ -405,7 +405,6 @@ export default function Home() {
             imageSrc="/images/lean-maturity-scan.png"
             imageAlt="Preview van de BDE Lean Maturity Scan"
             tags={maturityDimensions}
-            compact
           />
         </div>
       </section>
@@ -467,7 +466,6 @@ export default function Home() {
             imageSrc="/images/global-strategies-case.png"
             imageAlt="Preview van de Global Strategies case study"
             tags={["FEC", "Governance", "Definitions"]}
-            compact
           />
         </div>
       </section>

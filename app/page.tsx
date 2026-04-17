@@ -272,17 +272,17 @@ export default function Home() {
               AI-governance buiten het model afdwingen.
             </h2>
           </div>
-          <div>
+          <div className="ai-system">
             <p className="max-w-[44rem] text-lg font-light leading-8 text-[var(--color-text-secondary)]">
               Het control-layer prototype is een bewijsstuk voor enterprise AI:
               context, policy, write-back en auditability worden niet aan het
               model overgelaten, maar in de operationele laag gecontroleerd.
             </p>
-            <div className="soft-matrix mt-9 sm:grid-cols-2">
+            <div className="soft-matrix sm:grid-cols-2">
               {aiControls.map(([title, text]) => (
-                <article key={title} className="soft-cell p-6">
+                <article key={title} className="soft-cell">
                   <h3 className="font-semibold tracking-normal">{title}</h3>
-                  <p className="mt-4 text-sm leading-6 text-[var(--color-text-secondary)]">{text}</p>
+                  <p className="text-sm text-[var(--color-text-secondary)]">{text}</p>
                 </article>
               ))}
             </div>
@@ -381,7 +381,7 @@ export default function Home() {
 
       <section className="section-block bg-[var(--color-surface-primary)]">
         <div className="site-container layout-grid layout-grid--media">
-          <div>
+          <div className="evidence-copy">
             <SectionLabel>Diagnostic instrument</SectionLabel>
             <h2 className="heading-lg mt-7 max-w-[42rem]">Volwassenheid zichtbaar maken voordat verandering start.</h2>
             <p className="mt-7 max-w-[40rem] leading-7 text-[var(--color-text-secondary)]">
@@ -416,16 +416,16 @@ export default function Home() {
             <SectionLabel>Portfolio</SectionLabel>
             <h2 className="heading-lg mt-7 max-w-[32rem] text-balance">Portfolio-context.</h2>
           </div>
-          <div className="soft-matrix sm:grid-cols-2">
+          <div className="soft-matrix portfolio-system">
             {portfolioItems.map((item) => (
               <article
                 key={item.company}
-                className="soft-cell p-6 sm:p-7"
+                className="soft-cell"
               >
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
                   {item.company}
                 </h3>
-                <div className="mt-5 grid gap-4 text-sm leading-6 text-[var(--color-text-secondary)]">
+                <div className="grid text-sm text-[var(--color-text-secondary)]">
                   <p>
                     <span className="font-semibold text-[var(--color-text-primary)]">Context: </span>
                     {item.context}
@@ -447,7 +447,7 @@ export default function Home() {
 
       <section id="case" className="section-block bg-[var(--color-surface-primary)]">
         <div className="site-container layout-grid layout-grid--media">
-          <div>
+          <div className="evidence-copy">
             <SectionLabel>Case study</SectionLabel>
             <h2 className="heading-lg mt-7 max-w-[42rem]">
               Gedeelde taal voor globale FEC-governance.

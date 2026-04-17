@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #e9e6df;
-  --foreground: #171514;
-  --accent: #7a3038;
-  --ink: #171514;
-  --stone: #e9e6df;
-  --paper: #f6f4ef;
-  --smoke: #c9cbc8;
+  --background: #e7e1d6;
+  --foreground: #111417;
+  --accent: #5f7476;
+  --ink: #111417;
+  --stone: #e7e1d6;
+  --paper: #f4f0e8;
+  --smoke: #c8c5bb;
 }
 
 * {
@@ -45,21 +45,4 @@ body {
 
 .fade-up {
   animation: fade-up 700ms ease both;
-}
-
-.deck-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(122, 48, 56, 0.6) rgba(23, 21, 20, 0.08);
-}
-
-.deck-scroll::-webkit-scrollbar {
-  height: 8px;
-}
-
-.deck-scroll::-webkit-scrollbar-track {
-  background: rgba(23, 21, 20, 0.08);
-}
-
-.deck-scroll::-webkit-scrollbar-thumb {
-  background: rgba(122, 48, 56, 0.65);
 }

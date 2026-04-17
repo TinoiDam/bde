@@ -15,9 +15,9 @@ const sans = IBM_Plex_Sans({
 });
 
 export const metadata = {
-  title: "BDE Management Consulting B.V. | AI Governance & Strategic Implementation",
+  title: "BDE Management Consulting | AI Governance & Strategic Implementation",
   description:
-    "Senior boutique advisory voor informatiehuishouding, AI governance, compliance en strategische implementatie met lage uitvoeringsrisico's.",
+    "Advisory voor informatiehuishouding, AI governance, compliance en veranderopgaven waar bestuur, business en IT samen moeten bewegen.",
 } satisfies Metadata;
 
 export default function RootLayout({

@@ -198,8 +198,8 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-metrics">
-          <div className="site-container hero-grid hero-grid__metrics py-7">
-            {metrics.map(([value, label]) => (
+          <div className="site-container hero-grid hero-grid__metrics">
+            {metrics.slice(0, 1).map(([value, label]) => (
               <div key={value} className="metric-item">
                 <span className="text-3xl font-semibold tracking-normal text-[var(--color-text-inverse)]">
                   {value}
@@ -209,12 +209,24 @@ export default function Home() {
                 </span>
               </div>
             ))}
+            <div className="hero-grid__metric-pair">
+              {metrics.slice(1).map(([value, label]) => (
+                <div key={value} className="metric-item">
+                  <span className="text-3xl font-semibold tracking-normal text-[var(--color-text-inverse)]">
+                    {value}
+                  </span>
+                  <span className="max-w-40 text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.16em] text-white/45">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="matrix-section">
-        <div className="site-container layout-grid layout-grid--section py-16">
+      <section className="matrix-section experience-section">
+        <div className="site-container layout-grid layout-grid--section">
           <div>
             <SectionLabel>Ervaringscontext</SectionLabel>
             <p className="mt-5 max-w-sm text-sm leading-6 text-[var(--color-text-secondary)]">
@@ -222,16 +234,9 @@ export default function Home() {
               samen moesten vallen.
             </p>
           </div>
-          <div className="soft-matrix grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="experience-register">
             {experienceNames.map((name) => (
-              <div
-                key={name}
-                className="soft-cell flex min-h-28 items-center justify-center px-4 py-6"
-              >
-                <span className="text-center text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-text-secondary)]">
-                  {name}
-                </span>
-              </div>
+              <span key={name}>{name}</span>
             ))}
           </div>
         </div>

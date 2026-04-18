@@ -251,8 +251,8 @@ body {
 
 .hero-statement {
   display: grid;
-  gap: clamp(0.1rem, 0.2vw, 0.3rem);
-  grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
+  gap: 0;
+  grid-template-columns: 1fr 1fr;
   padding-block: clamp(10rem, 13vw, 11.5rem) clamp(0rem, 1vw, 1rem);
   position: relative;
   transform: translateX(clamp(3rem, 6.5vw, 9rem));
@@ -271,7 +271,7 @@ body {
   max-width: min(33rem, 100%);
   position: relative;
   z-index: 2;
-  transform: translate(clamp(2.5rem, 3.2vw, 4.5rem), clamp(-3.75rem, -5vh, -2.5rem));
+  transform: translate(clamp(3.5rem, 4.5vw, 6rem), clamp(-3.75rem, -5vh, -2.5rem));
 }
 
 .hero-statement__top {
@@ -331,13 +331,13 @@ body {
   align-self: start;
   display: grid;
   gap: 0;
-  justify-self: start;
+  margin-left: clamp(-15rem, -12vw, -8.5rem);
   max-width: 22rem;
   padding-bottom: clamp(5rem, 7vw, 7rem);
   padding-top: 0;
   position: relative;
   z-index: -1;
-  transform: translate(clamp(-8.5rem, -6.5vw, -5rem), calc(100% + clamp(1.5rem, 2vh, 2.5rem)));
+  transform: translateY(calc(100% + clamp(1.5rem, 2vh, 2.5rem)));
 }
 
 .hero-statement__body p {

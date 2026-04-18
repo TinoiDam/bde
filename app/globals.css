@@ -250,14 +250,14 @@ body {
 }
 
 .hero-statement {
-  /* Headline: moved up 300% (increased vertical space) */
+  /* Headline: moved back down 200% */
   --lead-x: clamp(16%, 18vw, 22%);
-  --lead-y: clamp(6rem, 10vh, 14vh);
+  --lead-y: clamp(10rem, 14vh, 20vh);
   --lead-width: clamp(52rem, 58vw, 63rem);
 
-  /* Secondary: moved up 300% (increased vertical space) */
+  /* Secondary: moved back down 200% */
   --body-x: clamp(52%, 54vw, 56%);
-  --body-y: clamp(22rem, 30vh, 38vh);
+  --body-y: clamp(26rem, 40vh, 50vh);
   --body-width: clamp(17rem, 20vw, 24rem);
 
   min-height: 100svh;

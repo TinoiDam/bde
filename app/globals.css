@@ -255,9 +255,9 @@ body {
   --lead-y: clamp(12rem, 18vh, 24vh);
   --lead-width: clamp(52rem, 58vw, 63rem);
 
-  /* Secondary: centered composition, gap reduced 300% (overlapping start) */
+  /* Secondary: vertical space increased 250% (moved down) */
   --body-x: clamp(52%, 54vw, 56%);
-  --body-y: clamp(28rem, 38vh, 45vh);
+  --body-y: clamp(38rem, 50vh, 60vh);
   --body-width: clamp(17rem, 20vw, 24rem);
 
   min-height: 100svh;

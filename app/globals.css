@@ -271,7 +271,7 @@ body {
   max-width: min(33rem, 100%);
   position: relative;
   z-index: 2;
-  transform: translate(clamp(3.5rem, 4.5vw, 6rem), clamp(-3.75rem, -5vh, -2.5rem));
+  transform: translate(clamp(4rem, 5.2vw, 7rem), clamp(-3.75rem, -5vh, -2.5rem));
 }
 
 .hero-statement__top {
@@ -331,7 +331,7 @@ body {
   align-self: start;
   display: grid;
   gap: 0;
-  margin-left: clamp(-15rem, -12vw, -8.5rem);
+  margin-left: clamp(-18rem, -14.5vw, -10rem);
   max-width: 22rem;
   padding-bottom: clamp(5rem, 7vw, 7rem);
   padding-top: 0;

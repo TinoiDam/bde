@@ -310,7 +310,6 @@ body {
   letter-spacing: -0.015em;
   line-height: 1.12;
   margin: 0;
-  max-width: 50rem;
   transform: translateX(clamp(0.5rem, 1.2vw, 1.8rem));
 }
 

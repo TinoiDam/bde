@@ -337,7 +337,7 @@ body {
   padding-top: 0;
   position: relative;
   z-index: -1;
-  transform: translateY(calc(100% + clamp(1.5rem, 2vh, 2.5rem)));
+  transform: translateY(calc(120% + clamp(1.5rem, 2vh, 2.5rem)));
 }
 
 .hero-statement__body p {

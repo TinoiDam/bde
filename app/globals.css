@@ -253,6 +253,8 @@ body {
   display: grid;
   gap: 0;
   grid-template-columns: 1fr 1fr;
+  margin-inline: auto;
+  max-width: 60rem;
   padding-block: clamp(10rem, 13vw, 11.5rem) clamp(0rem, 1vw, 1rem);
   position: relative;
   transform: translateX(0);

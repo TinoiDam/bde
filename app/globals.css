@@ -255,8 +255,8 @@ body {
   --lead-y: clamp(26rem, 35vh, 42vh);
   --lead-width: clamp(52rem, 58vw, 63rem);
 
-  /* Secondary: visual center at 72–78% x, 55–60% y, width 18–22% */
-  --body-x: clamp(62%, 65vw, 69%);
+  /* Secondary: gap reduced to ~2% (from 8–10%) */
+  --body-x: clamp(56%, 59vw, 62%);
   --body-y: clamp(43rem, 55vh, 62vh);
   --body-width: clamp(17rem, 20vw, 24rem);
 

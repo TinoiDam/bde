@@ -250,14 +250,14 @@ body {
 }
 
 .hero-statement {
-  --lead-x: clamp(2rem, 12%, 8rem);
-  --lead-width: clamp(50rem, 65vw, 85rem);
+  --lead-x: clamp(2rem, 8%, 6rem);
+  --lead-width: clamp(55rem, 75vw, 95rem);
   --lead-y: clamp(8rem, 13vw, 11.5rem);
 
-  --body-x: clamp(50%, 55vw, 70%);
-  --body-width: clamp(18rem, 30vw, 40rem);
-  --body-y: clamp(14rem, 26vw, 30rem);
-  --body-opacity: 0.75;
+  --body-x: clamp(20rem, 32%, 35%);
+  --body-width: clamp(18rem, 28vw, 38rem);
+  --body-y: clamp(16rem, 28vw, 32rem);
+  --body-opacity: 0.72;
 
   min-height: 100svh;
   position: relative;

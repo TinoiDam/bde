@@ -339,7 +339,7 @@ body {
   padding-top: 0;
   position: relative;
   z-index: -1;
-  transform: translate(clamp(3rem, 3vw, 4rem), calc(120% + clamp(1.5rem, 2vh, 2.5rem)));
+  transform: translate(clamp(4rem, 4.2vw, 5.5rem), calc(120% + clamp(1.5rem, 2vh, 2.5rem)));
 }
 
 .hero-statement__body p {

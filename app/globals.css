@@ -250,6 +250,13 @@ body {
 }
 
 .hero-statement {
+  --lead-x: 5%;
+  --lead-y: clamp(10rem, 20%, 16rem);
+  --lead-width: clamp(50rem, 55vw, 75rem);
+  --body-x: 50%;
+  --body-y: clamp(32rem, 53%, 40rem);
+  --body-width: clamp(16rem, 21vw, 32rem);
+
   min-height: 100svh;
   position: relative;
   z-index: 1;
@@ -259,10 +266,10 @@ body {
   display: grid;
   gap: 0;
   grid-template-rows: auto auto;
-  left: 5%;
+  left: var(--lead-x);
   position: absolute;
-  top: clamp(10rem, 20%, 16rem);
-  width: clamp(50rem, 55vw, 75rem);
+  top: var(--lead-y);
+  width: var(--lead-width);
   z-index: 2;
 }
 
@@ -322,11 +329,11 @@ body {
 .hero-statement__body {
   display: grid;
   gap: 0;
-  left: clamp(50%, 55%, 62%);
+  left: var(--body-x);
   opacity: 0.70;
   position: absolute;
-  top: clamp(32rem, 53%, 40rem);
-  width: clamp(16rem, 21vw, 32rem);
+  top: var(--body-y);
+  width: var(--body-width);
   z-index: -1;
 }
 

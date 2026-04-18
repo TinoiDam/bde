@@ -279,7 +279,6 @@ body {
 .hero-statement__top {
   display: grid;
   gap: clamp(0.8rem, 1.2vw, 1.2rem);
-  max-width: 36rem;
 }
 
 .hero-statement__bottom {

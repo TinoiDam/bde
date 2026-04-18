@@ -7,21 +7,6 @@ const githubPrototypeUrl =
   "https://github.com/TinoiDam/Control-layer-affine-prototype";
 const contactEmail = "tinoi.dam@tfg.nl";
 
-const metrics = [
-  ["600+", "applicaties geanalyseerd"],
-  ["106", "applicaties in scope gebracht"],
-  ["17", "domeinen verbonden"],
-];
-
-const experienceNames = [
-  "Rabobank",
-  "DUO",
-  "RIVM",
-  "Belastingdienst",
-  "Eneco",
-  "Fudura",
-];
-
 const portfolioItems = [
   {
     company: "DUO",
@@ -59,6 +44,16 @@ const portfolioItems = [
     action: "Structuur, ritme en besluitbaarheid verbonden aan lopend werk.",
     result: "Meer uitvoeringsduidelijkheid zonder extra organisatielaag.",
   },
+];
+
+const heroClients: { name: string; src: string; w: number; h: number; style?: React.CSSProperties }[] = [
+  { name: "4Blue", src: "/images/logos/4blue.png", w: 980, h: 412, style: { height: 30 } },
+  { name: "Eneco", src: "/images/logos/eneco.png", w: 800, h: 400, style: { height: 40 } },
+  { name: "Rabobank", src: "/images/logos/rabobank.svg", w: 541, h: 98, style: { height: 18 } },
+  { name: "Belastingdienst", src: "/images/logos/belastingdienst.png", w: 1536, h: 1024, style: { height: 150 } },
+  { name: "RIVM", src: "/images/logos/rivm.png", w: 1536, h: 1024, style: { height: 180 } },
+  { name: "Fudura", src: "/images/logos/fudura.png", w: 1536, h: 1024, style: { height: 110 } },
+  { name: "DUO", src: "/images/logos/duo.png", w: 1536, h: 1024, style: { height: 150 } },
 ];
 
 const services = [
@@ -139,110 +134,126 @@ function PrimaryLink({ href, children }: { href: string; children: React.ReactNo
 
 export default function Home() {
   return (
-    <main className="bg-[var(--color-bg-default)] text-[var(--color-text-primary)]">
-      <section className="bg-[var(--color-bg-default)]">
-        <div className="site-container py-2.5 sm:py-3">
-          <header className="flex items-center justify-between gap-8">
-            <a
-              href="#"
-              aria-label={`${brandName} home`}
-              className="whitespace-nowrap text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.18em] sm:text-[0.72rem] sm:tracking-[0.22em]"
-            >
-              {brandName}
-            </a>
-            <nav className="hidden items-center gap-8 text-[0.72rem] font-medium uppercase tracking-[0.18em] text-[var(--color-text-secondary)] md:flex">
-              <a href="#expertise" className="transition hover:text-[var(--color-accent)]">
-                Expertise
-              </a>
-              <a href="#ai-control" className="transition hover:text-[var(--color-accent)]">
-                AI control
-              </a>
-              <a href="#portfolio" className="transition hover:text-[var(--color-accent)]">
-                Portfolio
-              </a>
-              <a href="#case" className="transition hover:text-[var(--color-accent)]">
-                Case
-              </a>
-            </nav>
-            <a
-              href={`mailto:${contactEmail}`}
-              className="hidden text-[0.72rem] font-semibold uppercase tracking-[0.18em] underline decoration-[var(--color-accent)] decoration-1 underline-offset-8 transition hover:text-[var(--color-accent)] sm:inline-flex"
-            >
-              Contact
-            </a>
-          </header>
-        </div>
-      </section>
-
-      <section className="dark-hue-section text-[var(--color-text-inverse)]">
-        <div className="site-container hero-grid py-20 sm:py-24 lg:py-28">
-          <div className="hero-grid__heading">
-            <SectionLabel>Bestuur / techniek / gedrag</SectionLabel>
-            <h1 className="heading-xl mt-10 max-w-[60rem] text-balance">
-              Richting naar gecontroleerde uitvoering.
-            </h1>
-          </div>
-          <div className="hero-grid__body hairline-top pt-8 lg:pt-10">
-            <p className="max-w-[38rem] text-[1.18rem] font-light leading-8 text-white/78 sm:text-[1.32rem]">
-              {brandName} werkt op het snijvlak van governance,
-              informatievoorziening en AI-context in omgevingen waar richting
-              bestaat, maar uitvoering nog niet structureel gestuurd wordt.
-            </p>
-            <p className="mt-7 max-w-[38rem] leading-7 text-white/58">
-              De inzet is helder: minder interpretatie, minder organisatiebelasting
-              en meer verdedigbare voortgang.
-            </p>
-            <div className="mt-9">
-              <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
+    <main className="site-shell">
+      <div className="hero-editorial-flow">
+        <section className="dark-hue-section text-[var(--color-text-inverse)]">
+          <div className="site-nav-section">
+            <div className="site-container site-nav">
+              <header className="site-nav__inner">
+                <a
+                  href="#"
+                  aria-label={`${brandName} home`}
+                  className="site-nav__brand"
+                >
+                  {brandName}
+                </a>
+                <nav className="site-nav__links" aria-label="Primary navigation">
+                  <a href="#expertise" className="site-nav__link site-nav__link--active">
+                    Expertise
+                  </a>
+                  <a href="#ai-control" className="site-nav__link">
+                    AI control
+                  </a>
+                  <a href="#portfolio" className="site-nav__link">
+                    Portfolio
+                  </a>
+                  <a href="#case" className="site-nav__link">
+                    Case
+                  </a>
+                </nav>
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="site-nav__contact"
+                >
+                  Contact
+                </a>
+              </header>
             </div>
           </div>
-        </div>
-        <div className="hero-metrics">
-          <div className="site-container hero-grid hero-grid__metrics">
-            {metrics.slice(0, 1).map(([value, label]) => (
-              <div key={value} className="metric-item">
-                <span className="text-3xl font-semibold tracking-normal text-[var(--color-text-inverse)]">
-                  {value}
-                </span>
-                <span className="max-w-40 text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.16em] text-white/45">
-                  {label}
-                </span>
+          <div className="site-container hero-statement">
+            <div className="hero-statement__lead">
+              <div className="hero-statement__top">
+                <h1>
+                  Wanneer beleid en strategie vastlopen in de praktijk, ontstaat behoefte aan concrete keuzes en uitvoering.
+                </h1>
               </div>
-            ))}
-            <div className="hero-grid__metric-pair">
-              {metrics.slice(1).map(([value, label]) => (
-                <div key={value} className="metric-item">
-                  <span className="text-3xl font-semibold tracking-normal text-[var(--color-text-inverse)]">
-                    {value}
-                  </span>
-                  <span className="max-w-40 text-[0.68rem] font-semibold uppercase leading-5 tracking-[0.16em] text-white/45">
-                    {label}
-                  </span>
-                </div>
+              <div className="hero-statement__bottom">
+                <p className="hero-statement__intro">
+                  In veranderopgaven botsen bestuurlijke keuzes met technische
+                  realiteit en menselijk gedrag.
+                </p>
+                <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
+              </div>
+            </div>
+            <div className="hero-statement__body">
+              <p>
+                De vraag is niet scherp. Plannen sluiten niet aan. Of uitvoering
+                stokt.
+              </p>
+              <p>
+                Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
+                keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
+                En wordt het uitgevoerd in de organisatie.
+              </p>
+            </div>
+          </div>
+          <div className="hero-clients" aria-label="Opdrachtomgevingen">
+            <p>Voorgangers</p>
+            <div>
+              {heroClients.map((client) => (
+                <Image
+                  key={client.name}
+                  src={client.src}
+                  alt={client.name}
+                  width={client.w}
+                  height={client.h}
+                  className="hero-clients__logo"
+                  style={client.style}
+                />
               ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="matrix-section experience-section">
-        <div className="site-container layout-grid layout-grid--section">
-          <div>
-            <SectionLabel>Ervaringscontext</SectionLabel>
-            <p className="mt-5 max-w-sm text-sm leading-6 text-[var(--color-text-secondary)]">
-              Opdrachtomgevingen waar governance, informatie en uitvoering
-              samen moesten vallen.
-            </p>
+        <section className="editorial-section">
+          <div className="site-container editorial-composition">
+            <div className="editorial-anchor">
+              <SectionLabel>Waar het misgaat</SectionLabel>
+              <h2>Niet elk probleem is het echte probleem.</h2>
+            </div>
+            <div className="editorial-notes">
+              <article className="editorial-note">
+                <p className="editorial-note__label">Mismatch</p>
+                <h3>De vraag klopt niet.</h3>
+                <p>
+                  De vraag en het onderliggende probleem vallen niet samen. Dit
+                  wordt uit elkaar gehaald en opnieuw gedefinieerd, zodat
+                  duidelijk wordt waar daadwerkelijk op gestuurd moet worden.
+                </p>
+              </article>
+              <article className="editorial-note">
+                <p className="editorial-note__label">Uitvoerbaarheid</p>
+                <h3>Plannen werken niet.</h3>
+                <p>
+                  Plannen sluiten niet aan op hoe de organisatie werkt. Wat nodig
+                  is om ze uitvoerbaar te maken wordt expliciet gemaakt en
+                  vertaald naar concrete keuzes.
+                </p>
+              </article>
+              <article className="editorial-note">
+                <p className="editorial-note__label">Uitvoering</p>
+                <h3>Het gebeurt niet.</h3>
+                <p>
+                  Afhankelijkheden, eigenaarschap en besluitvorming worden
+                  expliciet gemaakt, zodat uitvoering daadwerkelijk plaatsvindt.
+                </p>
+              </article>
+            </div>
           </div>
-          <div className="experience-register">
-            {experienceNames.map((name) => (
-              <span key={name}>{name}</span>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <section id="expertise" className="section-block bg-[var(--color-bg-alt)]">
+      <section id="expertise" className="section-block content-layer">
         <div className="site-container layout-grid layout-grid--section layout-grid--expertise">
           <div>
             <SectionLabel>Expertise</SectionLabel>
@@ -254,11 +265,11 @@ export default function Home() {
                 key={service.label}
                 className="service-item"
               >
-                <span className="text-sm font-semibold tracking-[0.18em] text-[var(--color-accent)]">
-                  {service.label}
-                </span>
                 <div>
-                  <h3 className="text-xl font-semibold tracking-normal">{service.title}</h3>
+                  <div className="service-item__head">
+                    <span>{service.label}</span>
+                    <h3>{service.title}</h3>
+                  </div>
                   <p className="max-w-[28rem] text-[0.95rem] text-[var(--color-text-secondary)]">
                     {service.text}
                   </p>
@@ -269,7 +280,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="ai-control" className="matrix-section section-block">
+      <section id="ai-control" className="section-block content-layer content-layer--compact">
         <div className="site-container layout-grid layout-grid--section-wide">
           <div>
             <SectionLabel>AI control-layer</SectionLabel>
@@ -283,9 +294,9 @@ export default function Home() {
               context, policy, write-back en auditability worden niet aan het
               model overgelaten, maar in de operationele laag gecontroleerd.
             </p>
-            <div className="soft-matrix sm:grid-cols-2">
+            <div className="ai-control-grid">
               {aiControls.map(([title, text]) => (
-                <article key={title} className="soft-cell">
+                <article key={title} className="ai-control-item">
                   <h3 className="font-semibold tracking-normal">{title}</h3>
                   <p className="text-sm text-[var(--color-text-secondary)]">{text}</p>
                 </article>
@@ -305,7 +316,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-block bg-[var(--color-surface-primary)]">
+      <section className="section-block content-layer">
         <div className="site-container layout-grid layout-grid--section">
           <div>
             <SectionLabel>Profiel</SectionLabel>
@@ -345,7 +356,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="matrix-section section-block">
+      <section className="section-block content-layer content-layer--compact">
         <div className="site-container layout-grid layout-grid--section">
           <div>
             <SectionLabel>Werkprincipes</SectionLabel>
@@ -362,7 +373,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-block bg-[var(--color-bg-alt)]">
+      <section className="section-block content-layer">
         <div className="site-container layout-grid layout-grid--section">
           <div>
             <SectionLabel>Aanpak</SectionLabel>
@@ -384,7 +395,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-block bg-[var(--color-surface-primary)]">
+      <section className="section-block content-layer evidence-layer">
         <div className="site-container layout-grid layout-grid--media">
           <div className="evidence-copy">
             <SectionLabel>Diagnostic instrument</SectionLabel>
@@ -415,17 +426,17 @@ export default function Home() {
       </section>
 
 
-      <section id="portfolio" className="section-block bg-[var(--color-bg-alt)]">
+      <section id="portfolio" className="section-block content-layer evidence-layer">
         <div className="site-container layout-grid layout-grid--section">
           <div>
             <SectionLabel>Portfolio</SectionLabel>
             <h2 className="heading-lg mt-7 max-w-[32rem] text-balance">Portfolio-context.</h2>
           </div>
-          <div className="soft-matrix portfolio-system">
+          <div className="portfolio-system">
             {portfolioItems.map((item) => (
               <article
                 key={item.company}
-                className="soft-cell"
+                className="portfolio-case"
               >
                 <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
                   {item.company}
@@ -450,7 +461,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="case" className="section-block bg-[var(--color-surface-primary)]">
+      <section id="case" className="section-block content-layer evidence-layer">
         <div className="site-container layout-grid layout-grid--media">
           <div className="evidence-copy">
             <SectionLabel>Case study</SectionLabel>
@@ -475,7 +486,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-block bg-[var(--color-bg-default)]">
+      <section className="section-block content-layer closing-layer">
         <div className="site-container layout-grid layout-grid--closing">
           <h2 className="heading-lg max-w-[56rem]">Voor werk dat verdedigbare uitvoering vraagt.</h2>
           <div className="hairline-top pt-7">

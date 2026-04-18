@@ -250,12 +250,15 @@ body {
 }
 
 .hero-statement {
-  --lead-x: clamp(5%, 5.5vw, 6%);
-  --lead-y: clamp(14rem, 18vh, 20vh);
-  --lead-width: clamp(56rem, 60vw, 65rem);
-  --body-x: clamp(70%, 72vw, 74%);
-  --body-y: clamp(36rem, 48vh, 52vh);
-  --body-width: clamp(19rem, 22vw, 25rem);
+  /* Headline: visual center at 30–35% x, 35–40% y, width 55–60% */
+  --lead-x: clamp(2%, 3vw, 7%);
+  --lead-y: clamp(26rem, 35vh, 42vh);
+  --lead-width: clamp(52rem, 58vw, 63rem);
+
+  /* Secondary: visual center at 72–78% x, 55–60% y, width 18–22% */
+  --body-x: clamp(62%, 65vw, 69%);
+  --body-y: clamp(43rem, 55vh, 62vh);
+  --body-width: clamp(17rem, 20vw, 24rem);
 
   min-height: 100svh;
   position: relative;

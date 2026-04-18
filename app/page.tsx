@@ -174,9 +174,9 @@ export default function Home() {
             <div className="hero-statement__lead">
               <div className="hero-statement__top">
                 <h1>
-                  Wanneer beleid en strategie vastlopen in de praktijk, ontstaat{" "}
+                  Wanneer beleid en strategie vastlopen in de praktijk,
                   <br />
-                  behoefte aan concrete keuzes en uitvoering.
+                  ontstaat behoefte aan concrete keuzes en uitvoering.
                 </h1>
               </div>
               <div className="hero-statement__bottom">

@@ -322,7 +322,7 @@ body {
 .hero-statement__body {
   display: grid;
   gap: 0;
-  left: clamp(65%, 70%, 75%);
+  left: clamp(50%, 55%, 62%);
   opacity: 0.70;
   position: absolute;
   top: clamp(32rem, 53%, 40rem);

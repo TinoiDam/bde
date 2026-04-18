@@ -255,7 +255,7 @@ body {
   grid-template-columns: 1fr 1fr;
   padding-block: clamp(10rem, 13vw, 11.5rem) clamp(0rem, 1vw, 1rem);
   position: relative;
-  transform: translateX(clamp(3rem, 6.5vw, 9rem));
+  transform: translateX(0);
   z-index: 1;
 }
 

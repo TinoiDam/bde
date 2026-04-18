@@ -252,7 +252,7 @@ body {
 .hero-statement {
   display: grid;
   gap: clamp(0.1rem, 0.2vw, 0.3rem);
-  grid-template-columns: minmax(0, 1.4fr) minmax(20rem, 0.6fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
   padding-block: clamp(10rem, 13vw, 11.5rem) clamp(0rem, 1vw, 1rem);
   position: relative;
   transform: translateX(clamp(3rem, 6.5vw, 9rem));
@@ -337,7 +337,7 @@ body {
   padding-top: 0;
   position: relative;
   z-index: -1;
-  transform: translate(clamp(-8.5rem, -6.5vw, -5rem), clamp(2.8rem, 3.5vh, 4.2rem));
+  transform: translate(clamp(-8.5rem, -6.5vw, -5rem), calc(100% + clamp(1.5rem, 2vh, 2.5rem)));
 }
 
 .hero-statement__body p {

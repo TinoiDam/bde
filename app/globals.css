@@ -250,14 +250,14 @@ body {
 }
 
 .hero-statement {
-  /* Headline: centered horizontally like nav menu */
+  /* Headline: moved up 300% (increased vertical space) */
   --lead-x: clamp(16%, 18vw, 22%);
-  --lead-y: clamp(12rem, 18vh, 24vh);
+  --lead-y: clamp(6rem, 10vh, 14vh);
   --lead-width: clamp(52rem, 58vw, 63rem);
 
-  /* Secondary: vertical space increased 250% (moved down) */
+  /* Secondary: moved up 300% (increased vertical space) */
   --body-x: clamp(52%, 54vw, 56%);
-  --body-y: clamp(38rem, 50vh, 60vh);
+  --body-y: clamp(22rem, 30vh, 38vh);
   --body-width: clamp(17rem, 20vw, 24rem);
 
   min-height: 100svh;

@@ -250,15 +250,6 @@ body {
 }
 
 .hero-statement {
-  --lead-x: clamp(2rem, 10%, 5rem);
-  --lead-width: clamp(50rem, 70vw, 85rem);
-  --lead-y: clamp(8rem, 13vw, 11.5rem);
-
-  --body-x: clamp(45%, 74%, 82%);
-  --body-width: clamp(18rem, 26vw, 36rem);
-  --body-y: clamp(18rem, 30vw, 34rem);
-  --body-opacity: 0.70;
-
   min-height: 100svh;
   position: relative;
   z-index: 1;
@@ -268,10 +259,10 @@ body {
   display: grid;
   gap: 0;
   grid-template-rows: auto auto;
-  left: var(--lead-x);
+  left: 5%;
   position: absolute;
-  top: var(--lead-y);
-  width: var(--lead-width);
+  top: clamp(10rem, 20%, 16rem);
+  width: clamp(50rem, 62vw, 80rem);
   z-index: 2;
 }
 
@@ -330,11 +321,11 @@ body {
 .hero-statement__body {
   display: grid;
   gap: 0;
-  left: var(--body-x);
-  opacity: var(--body-opacity);
+  left: clamp(70%, 76%, 82%);
+  opacity: 0.70;
   position: absolute;
-  top: var(--body-y);
-  width: var(--body-width);
+  top: clamp(35rem, 57%, 42rem);
+  width: clamp(16rem, 21vw, 32rem);
   z-index: -1;
 }
 

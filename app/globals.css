@@ -251,8 +251,8 @@ body {
 
 .hero-statement {
   display: grid;
-  gap: clamp(0.96rem, 1.6vw, 2.24rem);
-  grid-template-columns: minmax(0, 1.12fr) minmax(20rem, 0.88fr);
+  gap: clamp(0.3rem, 0.5vw, 0.8rem);
+  grid-template-columns: minmax(0, 1.4fr) minmax(20rem, 0.6fr);
   padding-block: clamp(10rem, 13vw, 11.5rem) clamp(0rem, 1vw, 1rem);
   position: relative;
   transform: translateX(clamp(3rem, 6.5vw, 9rem));
@@ -268,8 +268,10 @@ body {
   display: grid;
   gap: 0;
   grid-template-rows: auto auto;
-  max-width: min(36rem, 100%);
-  transform: translate(clamp(6rem, 6vw, 7.8rem), clamp(-1.15rem, -2vh, -0.75rem));
+  max-width: min(33rem, 100%);
+  position: relative;
+  z-index: 2;
+  transform: translate(clamp(1.5rem, 2.2vw, 3.5rem), clamp(-3.75rem, -5vh, -2.5rem));
 }
 
 .hero-statement__top {
@@ -301,10 +303,10 @@ body {
 
 .hero-statement__lead h1 {
   color: inherit;
-  font-size: clamp(1.36rem, 1.78vw, 2.05rem);
-  font-weight: 480;
-  letter-spacing: -0.012em;
-  line-height: 1.14;
+  font-size: clamp(1.52rem, 2.15vw, 2.45rem);
+  font-weight: 490;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
   margin: 0;
 }
 
@@ -330,32 +332,34 @@ body {
   display: grid;
   gap: 0;
   justify-self: start;
-  max-width: 29rem;
+  max-width: 22rem;
   padding-bottom: clamp(5rem, 7vw, 7rem);
   padding-top: 0;
-  transform: translate(clamp(-6.9rem, -5.29vw, -4.89rem), 106%);
+  position: relative;
+  z-index: -1;
+  transform: translate(clamp(-3.5rem, -2.8vw, -2rem), calc(106% + clamp(2.5rem, 3vw, 4rem)));
 }
 
 .hero-statement__body p {
   color: var(--color-text-inverse);
-  font-size: clamp(0.68rem, 0.72vw, 0.76rem);
-  font-weight: 360;
-  line-height: 1.6;
+  font-size: clamp(0.62rem, 0.65vw, 0.68rem);
+  font-weight: 350;
+  line-height: 1.58;
   margin: 0;
-  opacity: 0.6;
-  max-width: 27rem;
+  opacity: 0.45;
+  max-width: 24rem;
 }
 
 .hero-statement__body p:nth-child(n+2) {
-  opacity: 0.6;
+  opacity: 0.42;
 }
 
 .hero-statement__body p:first-child {
-  font-size: clamp(0.9rem, 1vw, 1.06rem);
-  font-weight: 410;
+  font-size: clamp(0.78rem, 0.85vw, 0.92rem);
+  font-weight: 390;
   line-height: 1.52;
-  opacity: 0.9;
-  margin-bottom: clamp(1.25rem, 1.6vw, 1.75rem);
+  opacity: 0.7;
+  margin-bottom: clamp(1rem, 1.4vw, 1.5rem);
 }
 
 .hero-statement__body p:nth-child(2) {

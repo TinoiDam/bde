@@ -262,7 +262,7 @@ body {
   left: 5%;
   position: absolute;
   top: clamp(10rem, 20%, 16rem);
-  width: clamp(50rem, 62vw, 80rem);
+  width: clamp(50rem, 55vw, 75rem);
   z-index: 2;
 }
 
@@ -299,6 +299,7 @@ body {
   letter-spacing: -0.015em;
   line-height: 1.12;
   margin: 0;
+  max-width: 45rem;
 }
 
 .hero-statement__intro {
@@ -321,10 +322,10 @@ body {
 .hero-statement__body {
   display: grid;
   gap: 0;
-  left: clamp(70%, 76%, 82%);
+  left: clamp(65%, 70%, 75%);
   opacity: 0.70;
   position: absolute;
-  top: clamp(35rem, 57%, 42rem);
+  top: clamp(32rem, 53%, 40rem);
   width: clamp(16rem, 21vw, 32rem);
   z-index: -1;
 }

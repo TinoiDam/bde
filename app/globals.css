@@ -250,10 +250,14 @@ body {
 }
 
 .hero-statement {
-  --lead-x: clamp(5%, 50% - 40vw, 20%);
+  --lead-x: clamp(2rem, 12%, 8rem);
+  --lead-width: clamp(50rem, 65vw, 85rem);
   --lead-y: clamp(8rem, 13vw, 11.5rem);
-  --body-x: clamp(45%, 50% + 15vw, 70%);
-  --body-y: clamp(20rem, 28vw, 30rem);
+
+  --body-x: clamp(50%, 55vw, 70%);
+  --body-width: clamp(18rem, 30vw, 40rem);
+  --body-y: clamp(14rem, 26vw, 30rem);
+  --body-opacity: 0.75;
 
   min-height: 100svh;
   position: relative;
@@ -265,9 +269,9 @@ body {
   gap: 0;
   grid-template-rows: auto auto;
   left: var(--lead-x);
-  max-width: 80rem;
   position: absolute;
   top: var(--lead-y);
+  width: var(--lead-width);
   z-index: 2;
 }
 
@@ -327,10 +331,10 @@ body {
   display: grid;
   gap: 0;
   left: var(--body-x);
-  max-width: 22rem;
-  opacity: 0.7;
+  opacity: var(--body-opacity);
   position: absolute;
   top: var(--body-y);
+  width: var(--body-width);
   z-index: -1;
 }
 
@@ -341,7 +345,6 @@ body {
   line-height: 1.58;
   margin: 0;
   opacity: 0.45;
-  max-width: 24rem;
 }
 
 .hero-statement__body p:nth-child(n+2) {
@@ -356,9 +359,6 @@ body {
   margin-bottom: clamp(1rem, 1.4vw, 1.5rem);
 }
 
-.hero-statement__body p:nth-child(2) {
-  max-width: 25rem;
-}
 
 .hero-clients {
   align-items: center;

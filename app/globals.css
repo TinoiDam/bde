@@ -265,7 +265,7 @@ body {
   gap: 0;
   grid-template-rows: auto auto;
   left: var(--lead-x);
-  max-width: 55rem;
+  max-width: 80rem;
   position: absolute;
   top: var(--lead-y);
   z-index: 2;

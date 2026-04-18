@@ -255,9 +255,9 @@ body {
   --lead-y: clamp(10rem, 14vh, 20vh);
   --lead-width: clamp(52rem, 58vw, 63rem);
 
-  /* Secondary: moved back down 200% */
-  --body-x: clamp(52%, 54vw, 56%);
-  --body-y: clamp(26rem, 40vh, 50vh);
+  /* Secondary: pulled into composition with tension */
+  --body-x: clamp(64%, 66vw, 68%);
+  --body-y: clamp(36rem, 48vh, 50vh);
   --body-width: clamp(17rem, 20vw, 24rem);
 
   min-height: 100svh;

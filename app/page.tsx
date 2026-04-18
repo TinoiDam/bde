@@ -170,7 +170,7 @@ export default function Home() {
               </header>
             </div>
           </div>
-          <div className="site-container hero-statement">
+          <div className="hero-statement">
             <div className="hero-statement__lead">
               <div className="hero-statement__top">
                 <h1>

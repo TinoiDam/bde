@@ -359,6 +359,15 @@ body {
   letter-spacing: 0.04em;
 }
 
+.hero-statement__break {
+  color: #CCD0CF;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 14px;
+  height: 14px;
+}
+
 .hero-statement__body {
   display: flex;
   flex-direction: column;

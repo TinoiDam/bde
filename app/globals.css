@@ -360,9 +360,9 @@ body {
 
 .hero-statement__body-anchor {
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.2rem;
   margin-top: 4rem;
-  align-items: center;
 }
 
 .hero-statement__break {

@@ -284,8 +284,9 @@ body {
 .hero-statement {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 7rem 1.5rem 2rem;
+  gap: 2.5rem;
+  min-height: 100svh;
+  padding: 5rem 1.25rem 2.5rem;
   position: relative;
   z-index: 1;
 }
@@ -293,9 +294,7 @@ body {
 .hero-statement__lead {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 1.75rem;
-  margin-bottom: auto;
+  gap: 1.25rem;
   position: static;
   width: auto;
   z-index: 2;
@@ -304,18 +303,29 @@ body {
 .hero-statement > .button-link {
   align-self: flex-start;
   color: #CCD0CF;
-  margin-top: 1.2rem;
-  font-size: 0.68rem;
-  font-weight: 520;
+  margin-top: 0.75rem;
+  font-size: 0.65rem;
+  font-weight: 500;
   letter-spacing: 0.12em;
-  opacity: 0.9;
+  opacity: 0.85;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .hero-statement__bottom {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.75rem;
   max-width: 100%;
+}
+
+.hero-statement__top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .hero-statement__eyebrow {
@@ -332,16 +342,47 @@ body {
 .hero-statement__lead h1 {
   color: #CCD0CF;
   font-family: var(--font-editorial);
-  font-size: 2.4rem;
-  font-weight: 620;
-  letter-spacing: -0.035em;
-  line-height: 1.15;
+  font-size: 1.65rem;
+  font-weight: 520;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
   margin: 0;
   max-width: 100%;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+}
+
+.hero-statement__intro {
+  font-size: 0.9rem;
+  font-weight: 380;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 100%;
+  opacity: 0.65;
+}
+
+.hero-statement__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  opacity: 0.7;
+  position: static;
+  width: auto;
+  z-index: 1;
+}
+
+.hero-statement__body p {
+  color: #CCD0CF;
+  font-size: 0.85rem;
+  font-weight: 350;
+  line-height: 1.58;
+  margin: 0;
+  opacity: 0.45;
+}
+
+.hero-statement__body p:first-child {
+  font-size: 0.9rem;
+  font-weight: 390;
+  line-height: 1.52;
+  opacity: 0.7;
 }
 
 .hero-statement__intro {
@@ -393,34 +434,36 @@ body {
 
 
 .hero-clients {
-  display: none;
+  border-top: 1px solid rgba(244, 240, 232, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  position: static;
+  width: 100%;
 }
 
 .hero-clients p {
   color: rgba(244, 240, 232, 0.5);
-  font-size: 0.56rem;
+  font-size: 0.55rem;
   font-weight: 600;
   letter-spacing: 0.18em;
-  line-height: 1.2;
   margin: 0;
   text-transform: uppercase;
 }
 
 .hero-clients div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem 1.25rem;
   align-items: center;
-  justify-items: center;
-  max-width: 100%;
-  padding-inline: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  justify-content: flex-start;
 }
 
 .hero-clients__logo {
   filter: brightness(0) invert(1);
-  height: 32px;
-  max-width: 100%;
-  opacity: 0.65;
+  height: 24px;
+  opacity: 0.55;
   width: auto;
 }
 
@@ -435,72 +478,28 @@ body {
 
 @media (min-width: 640px) {
   .hero-statement {
-    min-height: 100svh;
-    padding: 8rem 2.5rem 2.5rem;
-  }
-
-  .hero-statement__lead {
-    gap: 1.75rem;
-    margin-top: 2.5rem;
-    margin-bottom: auto;
-  }
-
-  .hero-statement > .button-link {
-    margin-top: 1.6rem;
-    font-size: 0.68rem;
-    font-weight: 520;
-    letter-spacing: 0.12em;
-    opacity: 0.9;
+    padding: 6rem 2rem 3rem;
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(2.4rem, 4.5vw, 2.8rem);
-    font-weight: 620;
-    line-height: 1.15;
-    letter-spacing: -0.035em;
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    font-size: clamp(1.65rem, 3.5vw, 2.2rem);
   }
 
   .hero-statement__intro {
-    margin-top: 3.75rem;
-    font-size: clamp(0.88rem, 0.95vw, 1rem);
-    font-weight: 380;
-    line-height: 1.6;
-    max-width: 22rem;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    max-width: 36rem;
   }
 
-  .hero-statement__problems {
-    font-size: clamp(0.8rem, 1vw, 0.9rem);
-    font-weight: 380;
-    line-height: 1.5;
-  }
-
-  .hero-statement__body-anchor {
-    margin-top: 4.5rem;
-  }
-
-  .hero-statement__break {
-    margin-top: 0;
-  }
-
-  .hero-statement__body--solution {
-    margin-top: 2rem;
+  .hero-statement__body {
+    max-width: 32rem;
   }
 
   .hero-clients {
-    padding: 2.5rem;
-    gap: 1.25rem;
-  }
-
-  .hero-clients div {
-    gap: 1.75rem 1.5rem;
+    padding: 2rem;
   }
 
   .hero-clients__logo {
-    height: clamp(32px, 3.5vw, 42px);
+    height: clamp(24px, 3vw, 36px);
   }
 }
 
@@ -524,11 +523,18 @@ body {
     width: var(--lead-width);
   }
 
+  .hero-statement__lead h1 {
+    font-size: clamp(1.65rem, 2.35vw, 2.65rem);
+    line-height: 1.12;
+    max-width: 55rem;
+  }
+
   .hero-statement__intro {
+    font-size: clamp(0.75rem, 0.8vw, 0.85rem);
+    max-width: 27rem;
     left: var(--lead-x);
     position: absolute;
     top: clamp(26rem, 32vh, 38vh);
-    margin-top: 0;
   }
 
   .hero-statement > .button-link {
@@ -541,41 +547,31 @@ body {
     opacity: 0.9;
   }
 
+  .hero-statement__body {
+    left: var(--body-x);
+    position: absolute;
+    top: var(--body-y);
+    width: var(--body-width);
+  }
+
+  .hero-statement__body p {
+    font-size: clamp(0.62rem, 0.65vw, 0.68rem);
+  }
+
+  .hero-statement__body p:first-child {
+    font-size: clamp(0.78rem, 0.85vw, 0.92rem);
+    margin-bottom: clamp(1rem, 1.4vw, 1.5rem);
+  }
+
   .hero-statement__body-anchor {
     left: var(--body-x);
     position: absolute;
     top: var(--body-y);
     width: var(--body-width);
-    margin-top: 0;
   }
 
   .hero-statement__body--solution {
     margin-top: 2.2rem;
-  }
-
-  .hero-statement__lead h1 {
-    font-size: clamp(2.4rem, 3.5vw, 3.2rem);
-    font-weight: 620;
-    line-height: 1.15;
-    max-width: 60rem;
-    letter-spacing: -0.035em;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .hero-statement__intro {
-    font-size: clamp(0.88rem, 0.9vw, 0.95rem);
-    font-weight: 380;
-    max-width: 22rem;
-    line-height: 1.6;
-    margin-top: 0;
-  }
-
-  .hero-statement__body p {
-    font-size: clamp(0.62rem, 0.65vw, 0.68rem);
-    line-height: 1.6;
   }
 
   .hero-clients {

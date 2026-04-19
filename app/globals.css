@@ -324,13 +324,7 @@ body {
 }
 
 .hero-statement__body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  opacity: 0.7;
-  position: static;
-  width: auto;
-  z-index: 1;
+  display: none;
 }
 
 .hero-statement__body p {

@@ -304,7 +304,7 @@ body {
 .hero-statement > .button-link {
   align-self: flex-start;
   color: #CCD0CF;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   font-size: 0.68rem;
   font-weight: 520;
   letter-spacing: 0.12em;
@@ -449,7 +449,7 @@ body {
   }
 
   .hero-statement > .button-link {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     font-size: 0.68rem;
     font-weight: 520;
     letter-spacing: 0.12em;
@@ -532,7 +532,7 @@ body {
   .hero-statement > .button-link {
     left: var(--lead-x);
     position: absolute;
-    top: clamp(26rem, 32vh, 38vh);
+    top: clamp(24rem, 30vh, 36vh);
     font-size: 0.68rem;
     font-weight: 520;
     letter-spacing: 0.12em;

@@ -332,13 +332,13 @@ body {
 
 .hero-statement > .button-link {
   align-self: center;
-  color: #050708;
+  color: #000000;
   font-size: 0.62rem;
   font-weight: 850;
   letter-spacing: 0.18em;
   text-decoration: none;
   border: 1px solid rgba(22, 33, 32, 0.08);
-  background: linear-gradient(to bottom, #FAFAF8 0%, #F0ECE6 100%);
+  background: linear-gradient(to bottom, #FDFDFC 0%, #F8F6F2 100%);
   cursor: pointer;
   padding: 1.35rem 2.8rem;
   margin: 0;
@@ -350,7 +350,7 @@ body {
   white-space: nowrap;
   transition: all 240ms ease;
   border-radius: 9999px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(224, 184, 119, 0.12), 0 0 36px rgba(224, 184, 119, 0.08);
   text-transform: uppercase;
 }
 
@@ -359,12 +359,13 @@ body {
 }
 
 .cta-arrow {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 700;
   opacity: 1;
-  color: #050708;
+  color: #000000;
   transition: transform 240ms ease;
   display: inline-block;
+  margin-left: 0.2rem;
 }
 
 .hero-statement > .button-link::after {
@@ -372,9 +373,9 @@ body {
 }
 
 .hero-statement > .button-link:hover {
-  background: linear-gradient(to bottom, #F5F1E8 0%, #E9E1D1 100%);
+  background: linear-gradient(to bottom, #F9F7F4 0%, #F1EEEA 100%);
   border-color: rgba(22, 33, 32, 0.15);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 32px rgba(224, 184, 119, 0.18), 0 0 48px rgba(224, 184, 119, 0.12);
   transform: translateY(-2px);
 }
 

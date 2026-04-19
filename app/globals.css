@@ -252,9 +252,9 @@ body {
 .hero-statement {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.75rem;
   min-height: 100svh;
-  padding: 5rem 1.25rem 2.5rem;
+  padding: 3.5rem 1.5rem 3rem;
   position: relative;
   z-index: 1;
 }
@@ -262,7 +262,7 @@ body {
 .hero-statement__lead {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
   position: static;
   width: auto;
   z-index: 2;
@@ -271,13 +271,13 @@ body {
 .hero-statement__top {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .hero-statement__bottom {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   max-width: 100%;
 }
 
@@ -298,19 +298,19 @@ body {
 
 .hero-statement__lead h1 {
   color: inherit;
-  font-size: 1.65rem;
+  font-size: 1.75rem;
   font-weight: 520;
   letter-spacing: -0.015em;
-  line-height: 1.2;
+  line-height: 1.25;
   margin: 0;
   max-width: 100%;
 }
 
 .hero-statement__intro {
   color: var(--color-text-inverse);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 380;
-  line-height: 1.6;
+  line-height: 1.65;
   margin: 0;
   max-width: 100%;
   opacity: 0.65;
@@ -318,7 +318,7 @@ body {
 
 .hero-statement__bottom .button-link {
   align-self: flex-start;
-  margin-top: 0;
+  margin-top: 0.25rem;
   opacity: 0.9;
   letter-spacing: 0.04em;
 }
@@ -353,8 +353,8 @@ body {
   border-top: 1px solid rgba(244, 240, 232, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  padding: 1.5rem 1.25rem;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
   position: static;
   width: 100%;
   z-index: 1;
@@ -362,7 +362,7 @@ body {
 
 .hero-clients p {
   color: rgba(244, 240, 232, 0.5);
-  font-size: 0.55rem;
+  font-size: 0.56rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   line-height: 1.2;
@@ -373,7 +373,7 @@ body {
 .hero-clients div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: 1.5rem 1.25rem;
   align-items: center;
   justify-items: center;
   max-width: 100%;
@@ -382,7 +382,7 @@ body {
 
 .hero-clients__logo {
   filter: brightness(0) invert(1);
-  height: 28px;
+  height: 32px;
   max-width: 100%;
   opacity: 0.58;
   width: auto;

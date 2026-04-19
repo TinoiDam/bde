@@ -324,13 +324,13 @@ body {
   line-height: 1.65;
   margin: 0;
   max-width: 100%;
-  opacity: 1;
+  opacity: 0.75;
 }
 
-.hero-statement__bottom .button-link {
+.hero-statement__top .button-link {
   align-self: flex-start;
-  margin-top: 0.25rem;
-  opacity: 0.9;
+  margin-top: 0.5rem;
+  opacity: 0.65;
   letter-spacing: 0.04em;
 }
 
@@ -359,7 +359,7 @@ body {
   font-weight: 390;
   line-height: 1.52;
   color: #C9D1D9;
-  opacity: 1;
+  opacity: 0.85;
   margin-bottom: 0;
 }
 

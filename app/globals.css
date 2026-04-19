@@ -956,9 +956,9 @@ body {
   content: "";
   height: 1px;
   left: 0;
-  opacity: 0.28;
+  opacity: 0.65;
   position: absolute;
-  right: 0;
+  right: -2rem;
   transition: opacity 160ms ease;
 }
 

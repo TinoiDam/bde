@@ -136,7 +136,7 @@ body {
 }
 
 .site-nav {
-  padding-block: clamp(0.85rem, 1.35vw, 1.15rem);
+  padding-block: clamp(0.1rem, 0.15vw, 0.2rem);
 }
 
 .site-nav__inner {
@@ -285,7 +285,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 6rem 1.5rem 1.5rem;
+  padding: 5rem 1.5rem 1.5rem;
   position: relative;
   z-index: 1;
 }
@@ -300,18 +300,10 @@ body {
   z-index: 2;
 }
 
-.hero-statement__supporting-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-  max-width: 32rem;
-}
-
-.hero-statement__supporting-section .button-link {
+.hero-statement > .button-link {
   align-self: flex-start;
   color: #CCD0CF;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   letter-spacing: 0.02em;
 }
 
@@ -346,10 +338,11 @@ body {
 
 .hero-statement__intro {
   color: #CCD0CF;
-  font-size: 0.95rem;
-  font-weight: 400;
-  line-height: 1.55;
+  font-size: 0.88rem;
+  font-weight: 380;
+  line-height: 1.5;
   margin: 0;
+  margin-top: 2.75rem;
   max-width: 24rem;
 }
 
@@ -357,32 +350,40 @@ body {
   color: #CCD0CF;
   font-size: 0.8rem;
   font-weight: 380;
-  line-height: 1.4;
+  line-height: 1.35;
   margin: 0;
+}
+
+.hero-statement__body-anchor {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  align-items: flex-start;
 }
 
 .hero-statement__break {
   color: #CCD0CF;
   display: flex;
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
   width: 14px;
   height: 14px;
 }
 
-.hero-statement__body {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 0;
+.hero-statement__body--problems {
   max-width: 30rem;
+}
+
+.hero-statement__body--solution {
+  max-width: 30rem;
+  margin-top: 1.2rem;
 }
 
 .hero-statement__body p {
   color: #CCD0CF;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 350;
-  line-height: 1.85;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -438,7 +439,7 @@ body {
 @media (min-width: 640px) {
   .hero-statement {
     min-height: 100svh;
-    padding: 7rem 2.5rem 2.5rem;
+    padding: 6rem 2.5rem 2.5rem;
   }
 
   .hero-statement__lead {
@@ -446,8 +447,8 @@ body {
     margin-top: 4rem;
   }
 
-  .hero-statement__supporting-section {
-    margin-top: 3rem;
+  .hero-statement > .button-link {
+    margin-top: 2.5rem;
   }
 
   .hero-statement__lead h1 {
@@ -457,18 +458,28 @@ body {
   }
 
   .hero-statement__intro {
-    font-size: clamp(0.95rem, 1.1vw, 1.05rem);
-    font-weight: 400;
+    margin-top: 3.25rem;
+    font-size: clamp(0.88rem, 0.95vw, 1rem);
+    font-weight: 380;
+    line-height: 1.5;
   }
 
   .hero-statement__problems {
     font-size: clamp(0.8rem, 1vw, 0.9rem);
     font-weight: 380;
+    line-height: 1.35;
+  }
+
+  .hero-statement__body-anchor {
+    margin-top: 3.5rem;
   }
 
   .hero-statement__break {
-    margin-top: 3rem;
-    margin-bottom: 0.75rem;
+    margin-top: 0;
+  }
+
+  .hero-statement__body--solution {
+    margin-top: 1.2rem;
   }
 
   .hero-clients {
@@ -505,18 +516,30 @@ body {
     width: var(--lead-width);
   }
 
-  .hero-statement__supporting-section {
+  .hero-statement__intro {
     left: var(--lead-x);
     position: absolute;
     top: clamp(26rem, 32vh, 38vh);
-    width: clamp(40rem, 45vw, 52rem);
+    margin-top: 0;
   }
 
-  .hero-statement__body {
+  .hero-statement > .button-link {
+    left: var(--lead-x);
+    position: absolute;
+    top: clamp(24rem, 30vh, 36vh);
+  }
+
+  .hero-statement__body-anchor {
     left: var(--body-x);
     position: absolute;
     top: var(--body-y);
     width: var(--body-width);
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .hero-statement__body--solution {
+    margin-top: 1.5rem;
   }
 
   .hero-statement__lead h1 {
@@ -527,14 +550,14 @@ body {
   }
 
   .hero-statement__intro {
-    font-size: clamp(0.95rem, 0.95vw, 1rem);
-    font-weight: 400;
+    font-size: clamp(0.88rem, 0.9vw, 0.95rem);
+    font-weight: 380;
     max-width: 24rem;
   }
 
   .hero-statement__body p {
     font-size: clamp(0.62rem, 0.65vw, 0.68rem);
-    line-height: 1.85;
+    line-height: 1.6;
   }
 
   .hero-clients {

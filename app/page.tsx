@@ -183,16 +183,16 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="hero-statement__supporting-section">
-              <p className="hero-statement__intro">
-                In veranderopgaven botsen bestuurlijke keuzes met technische
-                realiteit en menselijk gedrag.
-              </p>
+            <PrimaryLink href="#expertise">
+              Expertise verkennen
+            </PrimaryLink>
 
-              <PrimaryLink href="#expertise">
-                Expertise verkennen
-              </PrimaryLink>
+            <p className="hero-statement__intro">
+              In veranderopgaven botsen bestuurlijke keuzes met technische
+              realiteit en menselijk gedrag.
+            </p>
 
+            <div className="hero-statement__body-anchor">
               <div className="hero-statement__break">
                 <svg
                   width="14"
@@ -222,23 +222,21 @@ export default function Home() {
                   />
                 </svg>
               </div>
-
-              <div className="hero-statement__body">
-                <div className="hero-statement__body--problems">
-                  <p>
-                    De vraag is niet scherp.<br />
-                    Plannen sluiten niet aan.<br />
-                    Uitvoering stokt.
-                  </p>
-                </div>
-                <div className="hero-statement__body--solution">
-                  <p>
-                    Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
-                    keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
-                    En wordt het daadwerkelijk uitgevoerd in de organisatie.
-                  </p>
-                </div>
+              <div className="hero-statement__body--problems">
+                <p>
+                  De vraag is niet scherp.<br />
+                  Plannen sluiten niet aan.<br />
+                  Uitvoering stokt.
+                </p>
               </div>
+            </div>
+
+            <div className="hero-statement__body--solution">
+              <p>
+                Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
+                keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
+                En wordt het daadwerkelijk uitgevoerd in de organisatie.
+              </p>
             </div>
           </div>
           <div className="hero-clients" aria-label="Opdrachtomgevingen">

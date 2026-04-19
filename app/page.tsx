@@ -7,6 +7,13 @@ const githubPrototypeUrl =
   "https://github.com/TinoiDam/Control-layer-affine-prototype";
 const contactEmail = "tinoi.dam@tfg.nl";
 
+const heroClients = [
+  { name: "Rabobank", src: "/images/logos/rabobank.svg", w: 541, h: 98, style: { height: 16 } },
+  { name: "DUO", src: "/images/logos/duo.png", w: 1536, h: 1024, style: { height: 16 } },
+  { name: "RIVM", src: "/images/logos/rivm.png", w: 1536, h: 1024, style: { height: 16 } },
+  { name: "Belastingdienst", src: "/images/logos/belastingdienst.png", w: 1536, h: 1024, style: { height: 18 } },
+];
+
 const portfolioItems = [
   {
     company: "DUO",
@@ -44,16 +51,6 @@ const portfolioItems = [
     action: "Structuur, ritme en besluitbaarheid verbonden aan lopend werk.",
     result: "Meer uitvoeringsduidelijkheid zonder extra organisatielaag.",
   },
-];
-
-const heroClients: { name: string; src: string; w: number; h: number; style?: React.CSSProperties }[] = [
-  { name: "4Blue", src: "/images/logos/4blue.png", w: 980, h: 412, style: { height: 30 } },
-  { name: "Eneco", src: "/images/logos/eneco.png", w: 800, h: 400, style: { height: 40 } },
-  { name: "Rabobank", src: "/images/logos/rabobank.svg", w: 541, h: 98, style: { height: 18 } },
-  { name: "Belastingdienst", src: "/images/logos/belastingdienst.png", w: 1536, h: 1024, style: { height: 150 } },
-  { name: "RIVM", src: "/images/logos/rivm.png", w: 1536, h: 1024, style: { height: 180 } },
-  { name: "Fudura", src: "/images/logos/fudura.png", w: 1536, h: 1024, style: { height: 110 } },
-  { name: "DUO", src: "/images/logos/duo.png", w: 1536, h: 1024, style: { height: 150 } },
 ];
 
 const services = [
@@ -242,9 +239,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="hero-clients" aria-label="Opdrachtomgevingen">
-            <p>Voorgangers</p>
-            <div>
+          <div className="hero-truststrip" aria-label="Vertrouwd door">
+            <p className="hero-truststrip__label">Vertrouwd door</p>
+            <div className="hero-truststrip__logos">
               {heroClients.map((client) => (
                 <Image
                   key={client.name}
@@ -252,11 +249,16 @@ export default function Home() {
                   alt={client.name}
                   width={client.w}
                   height={client.h}
-                  className="hero-clients__logo"
+                  className="hero-truststrip__logo"
                   style={client.style}
                 />
               ))}
             </div>
+          </div>
+
+          <div className="hero-scroll-indicator">
+            <p>Scroll voor aanpak</p>
+            <span className="hero-scroll-arrow">↓</span>
           </div>
         </section>
 

@@ -415,7 +415,7 @@ body {
 .hero-statement__lead h1 {
   color: #CCD0CF;
   font-family: var(--font-editorial);
-  font-size: clamp(2rem, 7.1vw, 4.35rem);
+  font-size: clamp(1.9rem, 6.9vw, 4.15rem);
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 0.75;
@@ -518,8 +518,8 @@ body {
 }
 
 
-.hero-clients {
-  border-top: 1px solid rgba(244, 240, 232, 0.08);
+.hero-truststrip {
+  border-top: 1px solid rgba(244, 240, 232, 0.15);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -528,8 +528,8 @@ body {
   width: 100%;
 }
 
-.hero-clients p {
-  color: rgba(244, 240, 232, 0.5);
+.hero-truststrip__label {
+  color: rgba(244, 240, 232, 0.65);
   font-size: 0.55rem;
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -537,19 +537,53 @@ body {
   text-transform: uppercase;
 }
 
-.hero-clients div {
-  align-items: center;
+.hero-truststrip__logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem 1.5rem;
+  gap: 1.5rem 2rem;
+  align-items: center;
   justify-content: flex-start;
 }
 
-.hero-clients__logo {
+.hero-truststrip__logo {
   filter: brightness(0) invert(1);
-  height: 24px;
-  opacity: 0.55;
+  opacity: 0.7;
+  transition: opacity 240ms ease;
+  max-height: 20px;
   width: auto;
+}
+
+.hero-scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 0 1.5rem;
+  opacity: 0.4;
+  color: rgba(244, 240, 232, 0.6);
+}
+
+.hero-scroll-indicator p {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero-scroll-arrow {
+  font-size: 1.2rem;
+  display: inline-block;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.3rem);
+  }
 }
 
 .hero-grid__body {
@@ -640,7 +674,7 @@ body {
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(2rem, 7.1vw, 4.35rem);
+    font-size: clamp(1.9rem, 6.9vw, 4.15rem);
     font-weight: 500;
     letter-spacing: -0.03em;
     line-height: 0.75;
@@ -751,7 +785,7 @@ body {
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(2rem, 7.1vw, 4.35rem);
+    font-size: clamp(1.9rem, 6.9vw, 4.15rem);
     font-weight: 500;
     letter-spacing: -0.03em;
     line-height: 0.75;

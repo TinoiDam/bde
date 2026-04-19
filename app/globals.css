@@ -420,6 +420,16 @@ body {
   max-width: 100%;
 }
 
+.hero-statement__subheading {
+  color: #CCD0CF;
+  font-size: 0.75rem;
+  font-weight: 380;
+  line-height: 1.5;
+  margin: 1rem 0 0 0;
+  max-width: 38rem;
+  opacity: 0.65;
+}
+
 .hero-statement__intro {
   font-size: 0.9rem;
   font-weight: 380;
@@ -628,6 +638,12 @@ body {
     font-size: clamp(2.05rem, 4.4vw, 2.75rem);
   }
 
+  .hero-statement__subheading {
+    font-size: clamp(0.75rem, 1vw, 0.88rem);
+    margin: 1.25rem 0 0 0;
+    max-width: 42rem;
+  }
+
   .hero-statement__intro {
     font-size: clamp(0.9rem, 1.2vw, 1rem);
     max-width: 36rem;
@@ -715,6 +731,12 @@ body {
     font-size: clamp(2.05rem, 2.9vw, 3.3rem);
     line-height: 1.15;
     max-width: 65rem;
+  }
+
+  .hero-statement__subheading {
+    font-size: clamp(0.78rem, 1.2vw, 0.92rem);
+    margin: 1.5rem 0 0 0;
+    max-width: 50rem;
   }
 
   .hero-statement__intro {

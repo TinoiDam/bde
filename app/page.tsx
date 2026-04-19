@@ -181,6 +181,9 @@ export default function Home() {
                 zijn concrete keuzes<br />
                 en uitvoering nodig.
               </h1>
+              <p className="hero-statement__subheading">
+                Strategie botst met techniek en gedrag. Uitvoering blijft uit.
+              </p>
             </div>
 
             <PrimaryLink href="#expertise">

@@ -180,6 +180,11 @@ export default function Home() {
               <span className="cta-label">Bekijk hoe dit wordt opgelost</span><span className="cta-arrow">&gt;</span>
             </PrimaryLink>
 
+            <div className="hero-truststrip">
+              <p className="hero-truststrip__label">Gewerkt met</p>
+              <p className="hero-truststrip__companies">DUO • Rabobank • RIVM • Belastingdienst • Eneco • Fudura</p>
+            </div>
+
             <p className="hero-statement__intro">
               In veranderopgaven botsen bestuurlijke keuzes met technische
               realiteit en menselijk gedrag.

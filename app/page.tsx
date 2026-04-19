@@ -192,16 +192,20 @@ export default function Home() {
             </div>
 
             <div className="hero-statement__body">
-              <p>
-                De vraag is niet scherp.<br />
-                Plannen sluiten niet aan.<br />
-                Uitvoering stokt.
-              </p>
-              <p>
-                Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
-                keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
-                En wordt het daadwerkelijk uitgevoerd in de organisatie.
-              </p>
+              <div className="hero-statement__body--problems">
+                <p>
+                  De vraag is niet scherp.<br />
+                  Plannen sluiten niet aan.<br />
+                  Uitvoering stokt.
+                </p>
+              </div>
+              <div className="hero-statement__body--solution">
+                <p>
+                  Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
+                  keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
+                  En wordt het daadwerkelijk uitgevoerd in de organisatie.
+                </p>
+              </div>
             </div>
           </div>
           <div className="hero-clients" aria-label="Opdrachtomgevingen">

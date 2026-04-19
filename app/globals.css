@@ -337,8 +337,8 @@ body {
 
 .hero-statement__intro {
   color: #CCD0CF;
-  font-size: 0.95rem;
-  font-weight: 380;
+  font-size: 1rem;
+  font-weight: 420;
   line-height: 1.65;
   margin: 0;
   max-width: 100%;
@@ -347,7 +347,7 @@ body {
 .hero-statement__top .button-link {
   align-self: flex-start;
   color: #CCD0CF;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   letter-spacing: 0.04em;
 }
 
@@ -355,7 +355,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   max-width: 30rem;
 }
 
@@ -440,7 +440,7 @@ body {
   }
 
   .hero-statement__intro {
-    font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
   }
 
   .hero-clients {
@@ -491,7 +491,7 @@ body {
   }
 
   .hero-statement__intro {
-    font-size: clamp(0.75rem, 0.8vw, 0.85rem);
+    font-size: clamp(0.95rem, 1vw, 1rem);
     max-width: 27rem;
   }
 

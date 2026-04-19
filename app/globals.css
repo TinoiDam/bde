@@ -294,7 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
   margin-bottom: auto;
   position: static;
   width: auto;
@@ -444,7 +444,7 @@ body {
 
   .hero-statement__lead {
     gap: 1.75rem;
-    margin-top: 10rem;
+    margin-top: 3rem;
     margin-bottom: auto;
   }
 

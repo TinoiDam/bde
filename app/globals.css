@@ -305,6 +305,10 @@ body {
   color: #CCD0CF;
   margin-top: 2rem;
   letter-spacing: 0.02em;
+  font-size: 0.62rem;
+  font-weight: 480;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
 }
 
 .hero-statement__bottom {
@@ -342,7 +346,7 @@ body {
   font-weight: 380;
   line-height: 1.6;
   margin: 0;
-  margin-top: 3.5rem;
+  margin-top: 5.5rem;
   max-width: 22rem;
 }
 
@@ -358,7 +362,7 @@ body {
   display: flex !important;
   flex-direction: row;
   gap: 0.5rem;
-  margin-top: 4rem;
+  margin-top: 6.5rem;
   align-items: baseline;
 }
 
@@ -459,6 +463,10 @@ body {
 
   .hero-statement > .button-link {
     margin-top: 2.5rem;
+    font-size: 0.62rem;
+    font-weight: 480;
+    letter-spacing: 0.12em;
+    opacity: 0.75;
   }
 
   .hero-statement__lead h1 {
@@ -468,7 +476,7 @@ body {
   }
 
   .hero-statement__intro {
-    margin-top: 3.75rem;
+    margin-top: 6rem;
     font-size: clamp(0.88rem, 0.95vw, 1rem);
     font-weight: 380;
     line-height: 1.6;
@@ -482,7 +490,7 @@ body {
   }
 
   .hero-statement__body-anchor {
-    margin-top: 4.5rem;
+    margin-top: 7rem;
   }
 
   .hero-statement__break {
@@ -538,6 +546,10 @@ body {
     left: var(--lead-x);
     position: absolute;
     top: clamp(24rem, 30vh, 36vh);
+    font-size: 0.62rem;
+    font-weight: 480;
+    letter-spacing: 0.12em;
+    opacity: 0.75;
   }
 
   .hero-statement__body-anchor {
@@ -564,6 +576,7 @@ body {
     font-weight: 380;
     max-width: 22rem;
     line-height: 1.6;
+    margin-top: 0;
   }
 
   .hero-statement__body p {

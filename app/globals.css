@@ -316,8 +316,9 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 
 .hero-statement__lead {
@@ -332,7 +333,7 @@ body {
 
 .hero-statement > .button-link {
   align-self: center;
-  color: #000000;
+  color: #000F1B !important;
   font-size: 0.62rem;
   font-weight: 850;
   letter-spacing: 0.18em;
@@ -348,7 +349,7 @@ body {
   justify-content: center;
   gap: 0.45rem;
   white-space: nowrap;
-  transition: all 240ms ease;
+  transition: all 200ms ease-out;
   border-radius: 9999px;
   box-shadow: 0 4px 20px rgba(224, 184, 119, 0.12), 0 0 36px rgba(224, 184, 119, 0.08);
   text-transform: uppercase;
@@ -362,8 +363,8 @@ body {
   font-size: 1.1rem;
   font-weight: 700;
   opacity: 1;
-  color: #000000;
-  transition: transform 240ms ease;
+  color: #000F1B !important;
+  transition: transform 200ms ease-out;
   display: inline-block;
   margin-left: 0.2rem;
 }
@@ -376,7 +377,7 @@ body {
   background: linear-gradient(to bottom, #F9F7F4 0%, #F1EEEA 100%);
   border-color: rgba(22, 33, 32, 0.15);
   box-shadow: 0 8px 32px rgba(224, 184, 119, 0.18), 0 0 48px rgba(224, 184, 119, 0.12);
-  transform: translateY(-2px);
+  transform: scale(1.03) translateY(-2px);
 }
 
 .hero-statement > .button-link:hover .cta-label {
@@ -384,7 +385,7 @@ body {
 }
 
 .hero-statement > .button-link:hover .cta-arrow {
-  transform: translateX(0.5rem);
+  transform: translateX(0.35rem);
 }
 
 .hero-statement__bottom {
@@ -414,12 +415,13 @@ body {
 .hero-statement__lead h1 {
   color: #CCD0CF;
   font-family: var(--font-editorial);
-  font-size: 2.85rem;
-  font-weight: 560;
-  letter-spacing: -0.032em;
-  line-height: 1.02;
+  font-size: clamp(2.8rem, 10vw, 6.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
   margin: 0;
-  max-width: 28rem;
+  width: 90%;
+  max-width: 100%;
 }
 
 .hero-statement__subheading {
@@ -668,21 +670,22 @@ body {
   }
 
   .hero-statement > .button-link {
-    padding: 1.05rem 1.85rem;
+    padding: 1.35rem 2.8rem;
     margin: 0;
-    margin-left: -1.85rem;
-    margin-right: -1.85rem;
-    color: #E0B877;
+    color: #000F1B !important;
     white-space: nowrap;
-    border: 1px solid rgba(224, 184, 119, 0.42);
-    background: rgba(224, 184, 119, 0.09);
-    font-size: 0.7rem;
-    font-weight: 520;
+    border: 1px solid rgba(22, 33, 32, 0.08);
+    background: linear-gradient(to bottom, #FDFDFC 0%, #F8F6F2 100%);
+    font-size: 0.62rem;
+    font-weight: 850;
+    border-radius: 9999px;
+    box-shadow: 0 4px 20px rgba(224, 184, 119, 0.12), 0 0 36px rgba(224, 184, 119, 0.08);
   }
 
   .hero-statement > .button-link:hover {
-    background: rgba(224, 184, 119, 0.16);
-    border-color: rgba(224, 184, 119, 0.62);
+    background: linear-gradient(to bottom, #F9F7F4 0%, #F1EEEA 100%);
+    border-color: rgba(22, 33, 32, 0.15);
+    box-shadow: 0 8px 32px rgba(224, 184, 119, 0.18), 0 0 48px rgba(224, 184, 119, 0.12);
   }
 
   .hero-statement > .button-link:hover .cta-arrow {
@@ -690,11 +693,7 @@ body {
   }
 
   .hero-statement > .button-link::after {
-    left: 1rem;
-    width: 28rem;
-    bottom: 0.4rem;
-    height: 0.85px;
-    background: #E0B877;
+    display: none;
   }
 
   .hero-statement > .button-link:hover .cta-arrow {
@@ -773,34 +772,31 @@ body {
     left: var(--lead-x);
     position: absolute;
     top: clamp(23rem, 28.5vh, 34vh);
-    font-size: 0.72rem;
-    font-weight: 520;
-    letter-spacing: 0.12em;
-    padding: 1.1rem 2rem;
+    font-size: 0.62rem;
+    font-weight: 850;
+    letter-spacing: 0.18em;
+    padding: 1.35rem 2.8rem;
     margin: 0;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    color: #E0B877;
+    color: #000F1B !important;
     white-space: nowrap;
-    border: 1px solid rgba(224, 184, 119, 0.45);
-    background: rgba(224, 184, 119, 0.1);
+    border: 1px solid rgba(22, 33, 32, 0.08);
+    background: linear-gradient(to bottom, #FDFDFC 0%, #F8F6F2 100%);
+    border-radius: 9999px;
+    box-shadow: 0 4px 20px rgba(224, 184, 119, 0.12), 0 0 36px rgba(224, 184, 119, 0.08);
   }
 
   .hero-statement > .button-link:hover {
-    background: rgba(224, 184, 119, 0.18);
-    border-color: rgba(224, 184, 119, 0.65);
+    background: linear-gradient(to bottom, #F9F7F4 0%, #F1EEEA 100%);
+    border-color: rgba(22, 33, 32, 0.15);
+    box-shadow: 0 8px 32px rgba(224, 184, 119, 0.18), 0 0 48px rgba(224, 184, 119, 0.12);
   }
 
   .hero-statement > .button-link:hover .cta-arrow {
-    transform: translateX(0.36rem);
+    transform: translateX(0.5rem);
   }
 
   .hero-statement > .button-link::after {
-    height: 0.9px;
-    left: 1.1rem;
-    width: 30rem;
-    bottom: 0.45rem;
-    background: #E0B877;
+    display: none;
   }
 
   .hero-statement > .button-link:hover .cta-arrow {

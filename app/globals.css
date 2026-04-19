@@ -331,7 +331,6 @@ body {
   font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 0.12em;
-  opacity: 1;
   text-decoration: none;
   border: none;
   background: transparent;
@@ -340,10 +339,20 @@ body {
   margin-left: -0.85rem;
   margin-right: -0.85rem;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.05rem;
   white-space: nowrap;
-  transition: opacity 200ms ease, background-color 240ms ease;
+  transition: background-color 240ms ease;
   border-radius: 0.35rem;
+}
+
+.cta-label {
+  transition: opacity 240ms ease;
+}
+
+.cta-arrow {
+  transition: transform 240ms ease;
 }
 
 .hero-statement > .button-link::after {
@@ -359,12 +368,21 @@ body {
 }
 
 .hero-statement > .button-link:hover {
-  opacity: 1;
   background-color: rgba(204, 208, 207, 0.06);
 }
 
+.hero-statement > .button-link:hover .cta-label {
+  opacity: 1.15;
+  filter: brightness(1.15);
+}
+
+.hero-statement > .button-link:hover .cta-arrow {
+  transform: translateX(0.25rem);
+}
+
 .hero-statement > .button-link:hover::after {
-  opacity: 0.6;
+  opacity: 0.7;
+  width: 24rem;
 }
 
 .hero-statement__bottom {
@@ -633,7 +651,6 @@ body {
     margin-left: -1rem;
     margin-right: -1rem;
     color: #E0E4E3;
-    opacity: 1;
     white-space: nowrap;
   }
 
@@ -642,6 +659,14 @@ body {
     width: 28rem;
     bottom: 0.4rem;
     height: 0.85px;
+  }
+
+  .hero-statement > .button-link:hover .cta-arrow {
+    transform: translateX(0.3rem);
+  }
+
+  .hero-statement > .button-link:hover::after {
+    width: 29rem;
   }
 
   .hero-2 {
@@ -707,7 +732,6 @@ body {
     font-size: 0.68rem;
     font-weight: 520;
     letter-spacing: 0.12em;
-    opacity: 1;
     margin-top: 0;
     margin-left: -1.1rem;
     margin-right: -1.1rem;
@@ -721,6 +745,14 @@ body {
     left: 1.1rem;
     width: 30rem;
     bottom: 0.45rem;
+  }
+
+  .hero-statement > .button-link:hover .cta-arrow {
+    transform: translateX(0.35rem);
+  }
+
+  .hero-statement > .button-link:hover::after {
+    width: 31rem;
   }
 
   .hero-statement__body {

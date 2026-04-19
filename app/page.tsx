@@ -183,7 +183,7 @@ export default function Home() {
             </div>
 
             <PrimaryLink href="#expertise">
-              Bekijk hoe dit wordt opgelost &gt;
+              <span className="cta-label">Bekijk hoe dit wordt opgelost</span><span className="cta-arrow">&gt;</span>
             </PrimaryLink>
 
             <p className="hero-statement__intro">

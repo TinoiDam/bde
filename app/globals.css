@@ -284,7 +284,6 @@ body {
 .hero-statement {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
   height: 100%;
   padding: 6rem 1.5rem 1.5rem;
   position: relative;
@@ -295,6 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 3rem;
   position: static;
   width: auto;
   z-index: 2;
@@ -304,6 +304,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 1.5rem;
   max-width: 32rem;
 }
 
@@ -362,8 +363,8 @@ body {
 .hero-statement__break {
   color: #CCD0CF;
   display: flex;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
   width: 14px;
   height: 14px;
 }
@@ -372,7 +373,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 0;
   max-width: 30rem;
 }
 
@@ -444,11 +445,15 @@ body {
   .hero-statement {
     min-height: 100svh;
     padding: 7rem 2.5rem 2.5rem;
-    gap: 2rem;
   }
 
   .hero-statement__lead {
     gap: 1.75rem;
+    margin-top: 4rem;
+  }
+
+  .hero-statement__supporting {
+    margin-top: 2rem;
   }
 
   .hero-statement__lead h1 {
@@ -462,6 +467,11 @@ body {
 
   .hero-statement__problems {
     font-size: clamp(0.8rem, 1vw, 0.95rem);
+  }
+
+  .hero-statement__break {
+    margin-top: 3rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero-clients {

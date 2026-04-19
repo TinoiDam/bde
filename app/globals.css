@@ -350,7 +350,7 @@ body {
   color: #CCD0CF;
   font-size: 0.8rem;
   font-weight: 380;
-  line-height: 1.35;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -475,7 +475,7 @@ body {
   .hero-statement__problems {
     font-size: clamp(0.8rem, 1vw, 0.9rem);
     font-weight: 380;
-    line-height: 1.35;
+    line-height: 1.5;
   }
 
   .hero-statement__body-anchor {

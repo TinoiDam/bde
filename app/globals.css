@@ -563,9 +563,13 @@ body {
   max-height: clamp(32px, 8vw, 48px);
   object-fit: contain;
   object-position: center;
-  opacity: 0.85;
+  opacity: 0.9;
   mix-blend-mode: lighten;
-  filter: saturate(0) brightness(1.1);
+  filter: saturate(0) brightness(1.2);
+}
+
+.hero-truststrip__logo-item:last-child .hero-truststrip__logo {
+  filter: saturate(0) brightness(1.4);
 }
 
 .hero-scroll-indicator {

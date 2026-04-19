@@ -340,10 +340,10 @@ body {
   color: #CCD0CF;
   font-size: 0.88rem;
   font-weight: 380;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
-  margin-top: 2.75rem;
-  max-width: 24rem;
+  margin-top: 3.5rem;
+  max-width: 22rem;
 }
 
 .hero-statement__problems {
@@ -356,22 +356,24 @@ body {
 
 .hero-statement__body-anchor {
   display: flex;
-  gap: 0.75rem;
-  margin-top: 3rem;
-  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  align-items: baseline;
 }
 
 .hero-statement__break {
   color: #CCD0CF;
   display: flex;
   flex-shrink: 0;
-  margin-top: 0.15rem;
+  margin-top: 0.05rem;
   width: 14px;
   height: 14px;
 }
 
 .hero-statement__body--problems {
   max-width: 30rem;
+  padding: 0;
+  margin: 0;
 }
 
 .hero-statement__body--solution {
@@ -458,10 +460,11 @@ body {
   }
 
   .hero-statement__intro {
-    margin-top: 3.25rem;
+    margin-top: 3.75rem;
     font-size: clamp(0.88rem, 0.95vw, 1rem);
     font-weight: 380;
-    line-height: 1.5;
+    line-height: 1.6;
+    max-width: 22rem;
   }
 
   .hero-statement__problems {
@@ -471,7 +474,7 @@ body {
   }
 
   .hero-statement__body-anchor {
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
   }
 
   .hero-statement__break {
@@ -535,7 +538,6 @@ body {
     top: var(--body-y);
     width: var(--body-width);
     margin-top: 0;
-    flex-direction: column;
   }
 
   .hero-statement__body--solution {
@@ -552,7 +554,8 @@ body {
   .hero-statement__intro {
     font-size: clamp(0.88rem, 0.9vw, 0.95rem);
     font-weight: 380;
-    max-width: 24rem;
+    max-width: 22rem;
+    line-height: 1.6;
   }
 
   .hero-statement__body p {

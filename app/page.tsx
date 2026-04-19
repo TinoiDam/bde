@@ -244,18 +244,42 @@ export default function Home() {
 
             <div className="hero-truststrip hero-truststrip--full-width">
               <p className="hero-truststrip__label">Gewerkt met</p>
-              <div className="hero-truststrip__logos">
-                {heroClients.map((client) => (
-                  <div key={client.name} className="hero-truststrip__logo-item">
-                    <Image
-                      src={client.src}
-                      alt={`${client.name} logo`}
-                      width={60}
-                      height={40}
-                      className="hero-truststrip__logo"
-                    />
-                  </div>
-                ))}
+              <div className="hero-truststrip__marquee">
+                <div className="hero-truststrip__track">
+                  {heroClients.map((client) => (
+                    <div key={`${client.name}-1`} className="hero-truststrip__logo-item">
+                      <Image
+                        src={client.src}
+                        alt={`${client.name} logo`}
+                        width={60}
+                        height={40}
+                        className="hero-truststrip__logo"
+                      />
+                    </div>
+                  ))}
+                  {heroClients.map((client) => (
+                    <div key={`${client.name}-2`} className="hero-truststrip__logo-item">
+                      <Image
+                        src={client.src}
+                        alt={`${client.name} logo`}
+                        width={60}
+                        height={40}
+                        className="hero-truststrip__logo"
+                      />
+                    </div>
+                  ))}
+                  {heroClients.map((client) => (
+                    <div key={`${client.name}-3`} className="hero-truststrip__logo-item">
+                      <Image
+                        src={client.src}
+                        alt={`${client.name} logo`}
+                        width={60}
+                        height={40}
+                        className="hero-truststrip__logo"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

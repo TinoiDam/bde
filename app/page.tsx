@@ -178,7 +178,8 @@ export default function Home() {
             <div className="hero-statement__lead">
               <h1>
                 Wanneer strategie vastloopt,<br />
-                zijn concrete keuzes en uitvoering nodig.
+                zijn concrete keuzes<br />
+                en uitvoering nodig.
               </h1>
             </div>
 

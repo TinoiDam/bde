@@ -371,20 +371,20 @@ body {
 }
 
 .hero-clients div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
   align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 1.5rem;
-  justify-content: flex-start;
+  justify-items: center;
   max-width: 100%;
-  min-height: auto;
   padding-inline: 0;
 }
 
 .hero-clients__logo {
   filter: brightness(0) invert(1);
-  height: 24px;
-  opacity: 0.55;
+  height: 28px;
+  max-width: 100%;
+  opacity: 0.58;
   width: auto;
 }
 

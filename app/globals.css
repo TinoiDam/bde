@@ -339,11 +339,11 @@ body {
 
 .hero-statement__intro {
   color: #CCD0CF;
-  font-size: 1.05rem;
-  font-weight: 450;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.55;
   margin: 0;
-  max-width: 28rem;
+  max-width: 24rem;
 }
 
 .hero-statement__problems {
@@ -457,8 +457,8 @@ body {
   }
 
   .hero-statement__intro {
-    font-size: clamp(1.05rem, 1.2vw, 1.15rem);
-    font-weight: 450;
+    font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+    font-weight: 400;
   }
 
   .hero-statement__problems {
@@ -527,9 +527,9 @@ body {
   }
 
   .hero-statement__intro {
-    font-size: clamp(1rem, 1vw, 1.05rem);
-    font-weight: 450;
-    max-width: 27rem;
+    font-size: clamp(0.95rem, 0.95vw, 1rem);
+    font-weight: 400;
+    max-width: 24rem;
   }
 
   .hero-statement__body p {

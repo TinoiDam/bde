@@ -310,7 +310,7 @@ body {
 }
 
 .hero-statement__lead h1 {
-  color: inherit;
+  color: #CCD0CF;
   font-family: var(--font-editorial);
   font-size: 2rem;
   font-weight: 600;
@@ -321,19 +321,18 @@ body {
 }
 
 .hero-statement__intro {
-  color: #E8EEF5;
+  color: #CCD0CF;
   font-size: 0.95rem;
   font-weight: 380;
   line-height: 1.65;
   margin: 0;
   max-width: 100%;
-  opacity: 1;
 }
 
 .hero-statement__top .button-link {
   align-self: flex-start;
+  color: #CCD0CF;
   margin-top: 1.25rem;
-  opacity: 0.8;
   letter-spacing: 0.04em;
 }
 
@@ -346,23 +345,17 @@ body {
 }
 
 .hero-statement__body p {
-  color: #D0D8E0;
+  color: #CCD0CF;
   font-size: 0.75rem;
   font-weight: 350;
   line-height: 1.9;
   margin: 0;
-  opacity: 1;
-}
-
-.hero-statement__body p:nth-child(n+2) {
-  color: #A8C0D8;
 }
 
 .hero-statement__body p:first-child {
   font-size: 0.80rem;
   font-weight: 390;
   line-height: 1.8;
-  color: #D0D8E0;
   margin-bottom: 0;
 }
 

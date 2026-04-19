@@ -427,7 +427,7 @@ body {
   line-height: 1.5;
   margin: 1rem 0 0 0;
   max-width: 38rem;
-  opacity: 0.65;
+  opacity: 1;
 }
 
 .hero-statement__intro {

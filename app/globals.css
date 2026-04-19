@@ -285,7 +285,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 5rem 1.5rem 1.5rem;
+  padding: 7rem 1.5rem 4rem;
   position: relative;
   z-index: 1;
 }
@@ -303,12 +303,11 @@ body {
 .hero-statement > .button-link {
   align-self: flex-start;
   color: #CCD0CF;
-  margin-top: 2rem;
-  letter-spacing: 0.02em;
-  font-size: 0.62rem;
-  font-weight: 480;
+  margin-top: 3rem;
+  font-size: 0.68rem;
+  font-weight: 520;
   letter-spacing: 0.12em;
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 .hero-statement__bottom {
@@ -332,12 +331,12 @@ body {
 .hero-statement__lead h1 {
   color: #CCD0CF;
   font-family: var(--font-editorial);
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 620;
   letter-spacing: -0.025em;
-  line-height: 1.0;
+  line-height: 1.15;
   margin: 0;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .hero-statement__intro {
@@ -439,7 +438,7 @@ body {
 @media (min-width: 640px) {
   .hero-statement {
     min-height: 100svh;
-    padding: 6rem 2.5rem 2.5rem;
+    padding: 8rem 2.5rem 4rem;
   }
 
   .hero-statement__lead {
@@ -448,17 +447,17 @@ body {
   }
 
   .hero-statement > .button-link {
-    margin-top: 2.5rem;
-    font-size: 0.62rem;
-    font-weight: 480;
+    margin-top: 3.5rem;
+    font-size: 0.68rem;
+    font-weight: 520;
     letter-spacing: 0.12em;
-    opacity: 0.75;
+    opacity: 0.9;
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: clamp(2.4rem, 4.5vw, 2.8rem);
     font-weight: 620;
-    line-height: 1.0;
+    line-height: 1.15;
   }
 
   .hero-statement__intro {
@@ -531,11 +530,11 @@ body {
   .hero-statement > .button-link {
     left: var(--lead-x);
     position: absolute;
-    top: clamp(24rem, 30vh, 36vh);
-    font-size: 0.62rem;
-    font-weight: 480;
+    top: clamp(26rem, 32vh, 38vh);
+    font-size: 0.68rem;
+    font-weight: 520;
     letter-spacing: 0.12em;
-    opacity: 0.75;
+    opacity: 0.9;
   }
 
   .hero-statement__body-anchor {
@@ -551,10 +550,10 @@ body {
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(2rem, 3.2vw, 2.8rem);
+    font-size: clamp(2.4rem, 3.5vw, 3.2rem);
     font-weight: 620;
-    line-height: 1.0;
-    max-width: 55rem;
+    line-height: 1.15;
+    max-width: 60rem;
   }
 
   .hero-statement__intro {

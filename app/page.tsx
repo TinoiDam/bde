@@ -87,7 +87,7 @@ const aiControls = [
 
 const heroClients = [
   { name: "DUO", src: "/images/logos/duo.png" },
-  { name: "Rabobank", src: "/images/logos/rabobank.png" },
+  { name: "Rabobank", src: "/images/logos/rabobank.svg" },
   { name: "RIVM", src: "/images/logos/rivm.png" },
   { name: "Belastingdienst", src: "/images/logos/belastingdienst.png" },
   { name: "Eneco", src: "/images/logos/eneco.png" },

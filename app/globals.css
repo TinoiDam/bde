@@ -513,8 +513,8 @@ body {
 .editorial-composition {
   align-items: start;
   display: grid;
-  gap: clamp(3rem, 7vw, 9rem);
-  grid-template-columns: minmax(20rem, 0.38fr) minmax(28rem, 0.62fr);
+  gap: clamp(2rem, 5vw, 3rem);
+  grid-template-columns: 1fr;
 }
 
 .editorial-composition > * {
@@ -1136,6 +1136,11 @@ body {
 
   .hero-grid__heading {
     padding-left: clamp(0rem, 1.1vw, 1.1rem);
+  }
+
+  .editorial-composition {
+    gap: clamp(3rem, 7vw, 9rem);
+    grid-template-columns: minmax(20rem, 0.38fr) minmax(28rem, 0.62fr);
   }
 
   .layout-grid--section {

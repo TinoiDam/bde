@@ -90,8 +90,9 @@ const heroClients = [
   { name: "Rabobank", src: "/images/logos/rabobank.svg" },
   { name: "RIVM", src: "/images/logos/rivm.svg" },
   { name: "Belastingdienst", src: "/images/logos/belastingdienst.svg" },
-  { name: "Eneco", src: "/images/logos/eneco.svg" },
+  { name: "Eneco", src: "/images/logos/eneco.png" },
   { name: "Fudura", src: "/images/logos/fudura.png" },
+  { name: "4Blue", src: "/images/logos/4blue.png" },
 ];
 
 const capabilityPrinciples = [

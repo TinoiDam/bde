@@ -344,7 +344,7 @@ body {
 }
 
 .hero-statement__body p {
-  color: #8FA3B5;
+  color: #96A8BC;
   font-size: 0.78rem;
   font-weight: 350;
   line-height: 1.58;
@@ -353,15 +353,14 @@ body {
 }
 
 .hero-statement__body p:nth-child(n+2) {
-  opacity: 0.9;
+  color: #96A8BC;
 }
 
 .hero-statement__body p:first-child {
   font-size: 0.82rem;
   font-weight: 390;
   line-height: 1.52;
-  color: #C9D1D9;
-  opacity: 0.85;
+  color: #B8C8D8;
   margin-bottom: 0;
 }
 

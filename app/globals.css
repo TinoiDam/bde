@@ -71,6 +71,7 @@ body {
       #083553 78%,
       #031D31 100%
     );
+  color: #CCD0CF;
   height: 100svh;
   isolation: isolate;
   overflow: hidden;
@@ -152,6 +153,10 @@ body {
   text-transform: uppercase;
 }
 
+.dark-hue-section .site-nav__brand {
+  color: #CCD0CF;
+}
+
 .site-nav__brand {
   color: var(--color-text-inverse);
   font-size: 0.62rem;
@@ -184,6 +189,11 @@ body {
   -webkit-backdrop-filter: blur(18px);
 }
 
+.dark-hue-section .site-nav__link,
+.dark-hue-section .site-nav__contact {
+  color: #CCD0CF;
+}
+
 .site-nav__link,
 .site-nav__contact {
   align-items: center;
@@ -202,6 +212,11 @@ body {
     background-color 160ms ease,
     color 160ms ease;
   z-index: 1;
+}
+
+.dark-hue-section .site-nav__link:hover,
+.dark-hue-section .site-nav__contact:hover {
+  color: #CCD0CF;
 }
 
 .site-nav__link:hover,
@@ -882,12 +897,15 @@ body {
 }
 
 .dark-hue-section .button-link {
-  color: var(--color-text-inverse);
-  opacity: 0.72;
+  color: #CCD0CF;
 }
 
 .dark-hue-section .button-link:hover {
-  color: var(--color-text-inverse);
+  color: #CCD0CF;
+  opacity: 1;
+}
+
+.dark-hue-section .button-link:hover::after {
   opacity: 1;
 }
 

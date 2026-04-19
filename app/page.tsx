@@ -167,6 +167,11 @@ export default function Home() {
                 >
                   Contact
                 </a>
+                <button className="site-nav__menu" aria-label="Menu" aria-expanded="false">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </header>
             </div>
           </div>
@@ -291,6 +296,11 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
+              </div>
+              <div className="hero-scroll-indicator" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 16L6 10H18L12 16Z" fill="currentColor" opacity="0.5" />
+                </svg>
               </div>
             </div>
           </div>

@@ -183,58 +183,61 @@ export default function Home() {
               </h1>
             </div>
 
-            <div className="hero-statement__supporting">
+            <PrimaryLink href="#expertise">
+              Bekijk expertise
+            </PrimaryLink>
+
+            <div className="hero-statement__supporting-section">
               <p className="hero-statement__intro">
                 In veranderopgaven botsen bestuurlijke keuzes met technische
                 realiteit en menselijk gedrag.
               </p>
-              <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
-            </div>
 
-            <div className="hero-statement__break">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <line
-                  x1="1"
-                  y1="1"
-                  x2="1"
-                  y2="10"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                />
-                <line
-                  x1="1"
-                  y1="10"
-                  x2="8"
-                  y2="10"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </div>
-
-            <div className="hero-statement__body">
-              <div className="hero-statement__body--problems">
-                <p>
-                  De vraag is niet scherp.<br />
-                  Plannen sluiten niet aan.<br />
-                  Uitvoering stokt.
-                </p>
+              <div className="hero-statement__break">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <line
+                    x1="1"
+                    y1="1"
+                    x2="1"
+                    y2="10"
+                    stroke="currentColor"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                  />
+                  <line
+                    x1="1"
+                    y1="10"
+                    x2="8"
+                    y2="10"
+                    stroke="currentColor"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                  />
+                </svg>
               </div>
-              <div className="hero-statement__body--solution">
-                <p>
-                  Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
-                  keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
-                  En wordt het daadwerkelijk uitgevoerd in de organisatie.
-                </p>
+
+              <div className="hero-statement__body">
+                <div className="hero-statement__body--problems">
+                  <p>
+                    De vraag is niet scherp.<br />
+                    Plannen sluiten niet aan.<br />
+                    Uitvoering stokt.
+                  </p>
+                </div>
+                <div className="hero-statement__body--solution">
+                  <p>
+                    Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
+                    keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
+                    En wordt het daadwerkelijk uitgevoerd in de organisatie.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

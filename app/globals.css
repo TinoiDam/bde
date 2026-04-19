@@ -318,13 +318,13 @@ body {
 }
 
 .hero-statement__intro {
-  color: #C8D0D8;
+  color: #A8C0D8;
   font-size: 0.95rem;
   font-weight: 380;
   line-height: 1.65;
   margin: 0;
   max-width: 100%;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .hero-statement__top .button-link {

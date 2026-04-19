@@ -182,8 +182,6 @@ export default function Home() {
                   In veranderopgaven botsen bestuurlijke keuzes met technische
                   realiteit en menselijk gedrag.
                 </p>
-              </div>
-              <div className="hero-statement__bottom">
                 <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
               </div>
             </div>
@@ -196,7 +194,7 @@ export default function Home() {
               <p>
                 Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
                 keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
-                En wordt het uitgevoerd in de organisatie.
+                En wordt het daadwerkelijk uitgevoerd in de organisatie.
               </p>
             </div>
           </div>

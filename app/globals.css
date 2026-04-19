@@ -523,10 +523,12 @@ body {
   border-top: 1px solid rgba(244, 240, 232, 0.12);
   display: flex;
   flex-direction: column;
-  gap: clamp(0.6rem, 1.5vw, 0.85rem);
-  padding: clamp(1.2rem, 2.5vw, 1.5rem) clamp(1rem, 4vw, 1.25rem);
-  position: static;
-  width: 100%;
+  gap: clamp(0.8rem, 2vw, 1.2rem);
+  padding: clamp(1.5rem, 3vw, 2rem) clamp(1rem, 4vw, 1.25rem);
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 .hero-truststrip__label {
@@ -535,28 +537,28 @@ body {
   font-weight: 600;
   letter-spacing: 0.16em;
   margin: 0;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .hero-truststrip__logos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1.2rem, 4vw, 2rem) clamp(0.8rem, 2vw, 1.2rem);
+  gap: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 3vw, 1.5rem);
   width: 100%;
-  max-width: 280px;
-  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 1.25rem);
 }
 
 .hero-truststrip__logo-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 45px;
+  min-height: 50px;
 }
 
 .hero-truststrip__logo {
   width: auto;
-  height: 32px;
+  height: clamp(32px, 8vw, 48px);
   object-fit: contain;
   opacity: 0.8;
   transition: opacity 160ms ease;

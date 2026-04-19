@@ -189,23 +189,6 @@ export default function Home() {
               <span className="cta-label">Bekijk hoe dit wordt opgelost</span><span className="cta-arrow">&gt;</span>
             </PrimaryLink>
 
-            <div className="hero-truststrip">
-              <p className="hero-truststrip__label">Gewerkt met</p>
-              <div className="hero-truststrip__logos">
-                {heroClients.map((client) => (
-                  <div key={client.name} className="hero-truststrip__logo-item">
-                    <Image
-                      src={client.src}
-                      alt={`${client.name} logo`}
-                      width={60}
-                      height={40}
-                      className="hero-truststrip__logo"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-
             <p className="hero-statement__intro">
               In veranderopgaven botsen bestuurlijke keuzes met technische
               realiteit en menselijk gedrag.
@@ -256,6 +239,23 @@ export default function Home() {
                 keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
                 En wordt het daadwerkelijk uitgevoerd in de organisatie.
               </p>
+            </div>
+
+            <div className="hero-truststrip hero-truststrip--full-width">
+              <p className="hero-truststrip__label">Gewerkt met</p>
+              <div className="hero-truststrip__logos">
+                {heroClients.map((client) => (
+                  <div key={client.name} className="hero-truststrip__logo-item">
+                    <Image
+                      src={client.src}
+                      alt={`${client.name} logo`}
+                      width={60}
+                      height={40}
+                      className="hero-truststrip__logo"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>

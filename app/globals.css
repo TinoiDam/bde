@@ -340,15 +340,16 @@ body {
 .hero-statement__body {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 2rem;
+  max-width: 33rem;
 }
 
 .hero-statement__body p {
   color: #96A8BC;
   font-size: 0.78rem;
   font-weight: 350;
-  line-height: 1.58;
+  line-height: 1.8;
   margin: 0;
   opacity: 1;
 }
@@ -360,7 +361,7 @@ body {
 .hero-statement__body p:first-child {
   font-size: 0.82rem;
   font-weight: 390;
-  line-height: 1.52;
+  line-height: 1.7;
   color: #B8C8D8;
   margin-bottom: 0;
 }

@@ -183,15 +183,15 @@ export default function Home() {
               </h1>
             </div>
 
-            <PrimaryLink href="#expertise">
-              Bekijk expertise
-            </PrimaryLink>
-
             <div className="hero-statement__supporting-section">
               <p className="hero-statement__intro">
                 In veranderopgaven botsen bestuurlijke keuzes met technische
                 realiteit en menselijk gedrag.
               </p>
+
+              <PrimaryLink href="#expertise">
+                Bekijk expertise
+              </PrimaryLink>
 
               <div className="hero-statement__break">
                 <svg

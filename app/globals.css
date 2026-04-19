@@ -300,19 +300,19 @@ body {
   z-index: 2;
 }
 
-.hero-statement__cta {
-  align-self: flex-start;
-  color: #CCD0CF;
-  margin-top: 1.5rem;
-  letter-spacing: 0.04em;
-}
-
 .hero-statement__supporting-section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 2.5rem;
   max-width: 32rem;
+}
+
+.hero-statement__supporting-section .button-link {
+  align-self: flex-start;
+  color: #CCD0CF;
+  margin-top: 0.5rem;
+  letter-spacing: 0.04em;
 }
 
 .hero-statement__bottom {

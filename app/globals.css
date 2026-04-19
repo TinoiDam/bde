@@ -300,10 +300,11 @@ body {
   z-index: 2;
 }
 
-.hero-statement__top {
+.hero-statement__supporting {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
+  max-width: 32rem;
 }
 
 .hero-statement__bottom {
@@ -341,13 +342,20 @@ body {
   font-weight: 420;
   line-height: 1.65;
   margin: 0;
-  max-width: 100%;
 }
 
-.hero-statement__top .button-link {
+.hero-statement__problems {
+  color: #CCD0CF;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.hero-statement__supporting .button-link {
   align-self: flex-start;
   color: #CCD0CF;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   letter-spacing: 0.04em;
 }
 
@@ -355,7 +363,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   max-width: 30rem;
 }
 
@@ -443,6 +451,10 @@ body {
     font-size: clamp(1rem, 1.2vw, 1.1rem);
   }
 
+  .hero-statement__problems {
+    font-size: clamp(0.8rem, 1vw, 0.95rem);
+  }
+
   .hero-clients {
     padding: 2.5rem;
     gap: 1.25rem;
@@ -477,6 +489,13 @@ body {
     width: var(--lead-width);
   }
 
+  .hero-statement__supporting {
+    left: var(--lead-x);
+    position: absolute;
+    top: clamp(26rem, 32vh, 38vh);
+    width: clamp(40rem, 45vw, 52rem);
+  }
+
   .hero-statement__body {
     left: var(--body-x);
     position: absolute;
@@ -497,11 +516,6 @@ body {
 
   .hero-statement__body p {
     font-size: clamp(0.62rem, 0.65vw, 0.68rem);
-  }
-
-  .hero-statement__body p:first-child {
-    font-size: clamp(0.78rem, 0.85vw, 0.92rem);
-    margin-bottom: clamp(1rem, 1.4vw, 1.5rem);
   }
 
   .hero-clients {

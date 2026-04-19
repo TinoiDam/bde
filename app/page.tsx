@@ -172,25 +172,25 @@ export default function Home() {
           </div>
           <div className="hero-statement">
             <div className="hero-statement__lead">
-              <div className="hero-statement__top">
-                <h1>
-                  Wanneer strategie vastloopt,<br />
-                  ontstaat behoefte aan<br />
-                  concrete keuzes en uitvoering.
-                </h1>
-                <p className="hero-statement__intro">
-                  In veranderopgaven botsen bestuurlijke keuzes met technische
-                  realiteit en menselijk gedrag.
-                </p>
-                <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
-              </div>
+              <h1>
+                Wanneer strategie vastloopt,<br />
+                ontstaat behoefte aan<br />
+                concrete keuzes en uitvoering.
+              </h1>
             </div>
-            <div className="hero-statement__body">
-              <p>
+            <div className="hero-statement__supporting">
+              <p className="hero-statement__intro">
+                In veranderopgaven botsen bestuurlijke keuzes met technische
+                realiteit en menselijk gedrag.
+              </p>
+              <p className="hero-statement__problems">
                 De vraag is niet scherp.<br />
                 Plannen sluiten niet aan.<br />
                 Uitvoering stokt.
               </p>
+              <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
+            </div>
+            <div className="hero-statement__body">
               <p>
                 Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
                 keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.

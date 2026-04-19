@@ -346,7 +346,7 @@ body {
   font-weight: 380;
   line-height: 1.6;
   margin: 0;
-  margin-top: 5.5rem;
+  margin-top: 3.5rem;
   max-width: 22rem;
 }
 
@@ -359,24 +359,21 @@ body {
 }
 
 .hero-statement__body-anchor {
-  display: flex !important;
-  flex-direction: row;
+  display: flex;
   gap: 0.5rem;
-  margin-top: 6.5rem;
-  align-items: baseline;
+  margin-top: 4rem;
+  align-items: center;
 }
 
 .hero-statement__break {
   color: #CCD0CF;
-  display: inline-flex;
+  display: flex;
   flex-shrink: 0;
   width: 14px;
   height: 14px;
-  margin-top: 0.25rem;
 }
 
 .hero-statement__body--problems {
-  flex: 1;
   max-width: 30rem;
   padding: 0;
   margin: 0;
@@ -385,7 +382,6 @@ body {
 .hero-statement__body--problems p {
   margin: 0;
   padding: 0;
-  display: inline;
 }
 
 .hero-statement__body--solution {
@@ -476,7 +472,7 @@ body {
   }
 
   .hero-statement__intro {
-    margin-top: 6rem;
+    margin-top: 3.75rem;
     font-size: clamp(0.88rem, 0.95vw, 1rem);
     font-weight: 380;
     line-height: 1.6;
@@ -490,7 +486,7 @@ body {
   }
 
   .hero-statement__body-anchor {
-    margin-top: 7rem;
+    margin-top: 4.5rem;
   }
 
   .hero-statement__break {

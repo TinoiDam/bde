@@ -314,7 +314,7 @@ body {
   font-size: 1.75rem;
   font-weight: 520;
   letter-spacing: -0.015em;
-  line-height: 1.25;
+  line-height: 1.1;
   margin: 0;
   max-width: 95%;
 }
@@ -427,7 +427,7 @@ body {
 
   .hero-statement__lead h1 {
     font-size: clamp(1.75rem, 3.5vw, 2.2rem);
-    line-height: 1.3;
+    line-height: 1.15;
   }
 
   .hero-statement__intro {

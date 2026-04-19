@@ -257,6 +257,64 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="hero-2">
+          <div className="site-container hero-2__composition">
+            <div className="hero-2__intro">
+              <p className="hero-2__kader">
+                In veranderopgaven botsen bestuurlijke keuzes met technische
+                realiteit en menselijk gedrag.
+              </p>
+            </div>
+
+            <div className="hero-2__problems">
+              <div className="hero-2__anker">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <line
+                    x1="1"
+                    y1="1"
+                    x2="1"
+                    y2="10"
+                    stroke="currentColor"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                  />
+                  <line
+                    x1="1"
+                    y1="10"
+                    x2="8"
+                    y2="10"
+                    stroke="currentColor"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </div>
+              <div className="hero-2__probleem">
+                <p>
+                  De vraag is niet scherp.<br />
+                  Plannen sluiten niet aan.<br />
+                  Uitvoering stokt.
+                </p>
+              </div>
+            </div>
+
+            <div className="hero-2__solution">
+              <p>
+                Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
+                keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.
+                En wordt het daadwerkelijk uitgevoerd in de organisatie.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="editorial-section">
           <div className="site-container editorial-composition">
             <div className="editorial-anchor">

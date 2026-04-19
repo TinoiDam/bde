@@ -90,7 +90,7 @@ const heroClients = [
   { name: "Rabobank", src: "/images/logos/rabobank.svg" },
   { name: "RIVM", src: "/images/logos/rivm.png" },
   { name: "Belastingdienst", src: "/images/logos/belastingdienst.png" },
-  { name: "Eneco", src: "/images/logos/eneco.png" },
+  { name: "Eneco", src: "/images/logos/eneco.svg" },
   { name: "Fudura", src: "/images/logos/fudura.png" },
   { name: "4Blue", src: "/images/logos/4blue.png" },
 ];

@@ -190,7 +190,7 @@ export default function Home() {
               </p>
 
               <PrimaryLink href="#expertise">
-                Bekijk expertise
+                Expertise verkennen
               </PrimaryLink>
 
               <div className="hero-statement__break">

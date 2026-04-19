@@ -7,13 +7,6 @@ const githubPrototypeUrl =
   "https://github.com/TinoiDam/Control-layer-affine-prototype";
 const contactEmail = "tinoi.dam@tfg.nl";
 
-const heroClients = [
-  { name: "Rabobank", src: "/images/logos/rabobank.svg", w: 541, h: 98, style: { height: 16 } },
-  { name: "DUO", src: "/images/logos/duo.png", w: 1536, h: 1024, style: { height: 16 } },
-  { name: "RIVM", src: "/images/logos/rivm.png", w: 1536, h: 1024, style: { height: 16 } },
-  { name: "Belastingdienst", src: "/images/logos/belastingdienst.png", w: 1536, h: 1024, style: { height: 18 } },
-];
-
 const portfolioItems = [
   {
     company: "DUO",
@@ -238,27 +231,6 @@ export default function Home() {
                 En wordt het daadwerkelijk uitgevoerd in de organisatie.
               </p>
             </div>
-          </div>
-          <div className="hero-truststrip" aria-label="Vertrouwd door">
-            <p className="hero-truststrip__label">Vertrouwd door</p>
-            <div className="hero-truststrip__logos">
-              {heroClients.map((client) => (
-                <Image
-                  key={client.name}
-                  src={client.src}
-                  alt={client.name}
-                  width={client.w}
-                  height={client.h}
-                  className="hero-truststrip__logo"
-                  style={client.style}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="hero-scroll-indicator">
-            <p>Scroll voor aanpak</p>
-            <span className="hero-scroll-arrow">↓</span>
           </div>
         </section>
 

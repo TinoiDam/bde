@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #0B1F33;
+  --color-primary: #0F3554;
   --color-primary-soft: #0F2D25;
   --color-secondary: #4f5256;
   --color-accent: #7e5252;
   --color-bg-default: #f4f5f6;
   --color-bg-alt: #F0ECE6;
-  --color-text-inverse: #E6E8EB;
+  --color-text-inverse: #F1F3F5;
   --color-text-primary: #162120;
   --color-text-secondary: #4f5256;
   --color-surface-primary: #f4f5f6;
   --color-surface-secondary: #e7e1d6;
-  --color-border: rgba(79, 82, 86, 0.1);
+  --color-border: rgba(255, 255, 255, 0.08);
   --color-divider: rgba(79, 82, 86, 0.08);
-  --color-border-inverse: rgba(230, 232, 235, 0.09);
-  --color-text-inverse-secondary: rgba(230, 232, 235, 0.62);
+  --color-border-inverse: rgba(255, 255, 255, 0.08);
+  --color-text-inverse-secondary: #C9D1D9;
 }
 
 * {
@@ -50,9 +50,10 @@ body {
 
 .dark-hue-section {
   background:
-    radial-gradient(ellipse 70% 55% at 18% 28%, rgba(41, 72, 58, 0.07) 0%, transparent 100%),
-    radial-gradient(ellipse 55% 48% at 80% 74%, rgba(41, 72, 58, 0.06) 0%, transparent 100%),
-    #0B1F33;
+    linear-gradient(to bottom, rgba(255,255,255,0.03), rgba(0,0,0,0.05)),
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.04), transparent 40%),
+    radial-gradient(circle at 80% 60%, rgba(0,0,0,0.08), transparent 50%),
+    #0F3554;
   isolation: isolate;
   min-height: 100svh;
   overflow: hidden;
@@ -286,13 +287,13 @@ body {
 }
 
 .hero-statement__eyebrow {
-  color: var(--color-text-inverse-secondary);
+  color: #8FA3B5;
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.26em;
   line-height: 1;
   margin: 0 0 0.25rem;
-  opacity: 0.46;
+  opacity: 1;
   text-transform: uppercase;
 }
 
@@ -307,13 +308,13 @@ body {
 }
 
 .hero-statement__intro {
-  color: var(--color-text-inverse);
+  color: #C9D1D9;
   font-size: 0.95rem;
   font-weight: 380;
   line-height: 1.65;
   margin: 0;
   max-width: 100%;
-  opacity: 0.65;
+  opacity: 1;
 }
 
 .hero-statement__bottom .button-link {
@@ -331,23 +332,24 @@ body {
 }
 
 .hero-statement__body p {
-  color: var(--color-text-inverse);
+  color: #8FA3B5;
   font-size: 0.78rem;
   font-weight: 350;
   line-height: 1.58;
   margin: 0;
-  opacity: 0.45;
+  opacity: 1;
 }
 
 .hero-statement__body p:nth-child(n+2) {
-  opacity: 0.42;
+  opacity: 0.9;
 }
 
 .hero-statement__body p:first-child {
   font-size: 0.82rem;
   font-weight: 390;
   line-height: 1.52;
-  opacity: 0.7;
+  color: #C9D1D9;
+  opacity: 1;
   margin-bottom: 0;
 }
 

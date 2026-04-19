@@ -564,7 +564,7 @@ body {
   object-fit: contain;
   object-position: center;
   opacity: 1;
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
 }
 
 .hero-scroll-indicator {

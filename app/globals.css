@@ -543,7 +543,7 @@ body {
 
 .hero-truststrip__marquee {
   overflow: hidden;
-  width: calc((100% - clamp(2rem, 8vw, 2.5rem) * 2) * 0.8);
+  width: calc(100% - clamp(2rem, 8vw, 2.5rem) * 2);
   margin-left: auto;
   margin-right: auto;
   mask-image: linear-gradient(

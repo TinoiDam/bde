@@ -183,7 +183,7 @@ export default function Home() {
             </div>
 
             <PrimaryLink href="#expertise">
-              Bekijk hoe dit wordt opgelost
+              Bekijk hoe dit wordt opgelost →
             </PrimaryLink>
 
             <p className="hero-statement__intro">

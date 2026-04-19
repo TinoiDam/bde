@@ -565,7 +565,6 @@ body {
 .hero-truststrip__track {
   display: flex;
   gap: 0.05rem;
-  padding: 0 clamp(1rem, 4vw, 1.25rem);
   animation: marquee-scroll 20s linear infinite;
 }
 

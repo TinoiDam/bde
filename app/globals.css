@@ -563,7 +563,9 @@ body {
   max-height: clamp(32px, 8vw, 48px);
   object-fit: contain;
   object-position: center;
-  opacity: 1;
+  opacity: 0.75;
+  mix-blend-mode: lighten;
+  filter: saturate(0);
 }
 
 .hero-scroll-indicator {

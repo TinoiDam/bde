@@ -178,19 +178,20 @@ export default function Home() {
                   ontstaat behoefte aan<br />
                   concrete keuzes en uitvoering.
                 </h1>
-              </div>
-              <div className="hero-statement__bottom">
                 <p className="hero-statement__intro">
                   In veranderopgaven botsen bestuurlijke keuzes met technische
                   realiteit en menselijk gedrag.
                 </p>
+              </div>
+              <div className="hero-statement__bottom">
                 <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
               </div>
             </div>
             <div className="hero-statement__body">
               <p>
-                De vraag is niet scherp. Plannen sluiten niet aan. Of uitvoering
-                stokt.
+                De vraag is niet scherp.<br />
+                Plannen sluiten niet aan.<br />
+                Uitvoering stokt.
               </p>
               <p>
                 Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete

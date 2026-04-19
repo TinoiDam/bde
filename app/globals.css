@@ -324,7 +324,10 @@ body {
 }
 
 .hero-statement__body {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .hero-statement__body p {

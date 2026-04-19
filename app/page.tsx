@@ -279,6 +279,17 @@ export default function Home() {
                       />
                     </div>
                   ))}
+                  {heroClients.map((client) => (
+                    <div key={`${client.name}-4`} className="hero-truststrip__logo-item">
+                      <Image
+                        src={client.src}
+                        alt={`${client.name} logo`}
+                        width={60}
+                        height={40}
+                        className="hero-truststrip__logo"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

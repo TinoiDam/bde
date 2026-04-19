@@ -329,27 +329,28 @@ body {
 .hero-statement__lead h1 {
   color: #CCD0CF;
   font-family: var(--font-editorial);
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
+  font-size: 2rem;
+  font-weight: 620;
+  letter-spacing: -0.025em;
+  line-height: 1.0;
   margin: 0;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 .hero-statement__intro {
   color: #CCD0CF;
-  font-size: 1rem;
-  font-weight: 420;
-  line-height: 1.65;
+  font-size: 1.05rem;
+  font-weight: 450;
+  line-height: 1.6;
   margin: 0;
+  max-width: 28rem;
 }
 
 .hero-statement__problems {
   color: #CCD0CF;
-  font-size: 0.85rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  font-weight: 380;
+  line-height: 1.4;
   margin: 0;
 }
 
@@ -381,15 +382,8 @@ body {
   color: #CCD0CF;
   font-size: 0.75rem;
   font-weight: 350;
-  line-height: 1.9;
+  line-height: 1.85;
   margin: 0;
-}
-
-.hero-statement__body p:first-child {
-  font-size: 0.80rem;
-  font-weight: 390;
-  line-height: 1.8;
-  margin-bottom: 0;
 }
 
 
@@ -457,16 +451,19 @@ body {
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    line-height: 1.1;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 620;
+    line-height: 1.0;
   }
 
   .hero-statement__intro {
-    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    font-size: clamp(1.05rem, 1.2vw, 1.15rem);
+    font-weight: 450;
   }
 
   .hero-statement__problems {
-    font-size: clamp(0.8rem, 1vw, 0.95rem);
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    font-weight: 380;
   }
 
   .hero-statement__break {
@@ -524,17 +521,20 @@ body {
 
   .hero-statement__lead h1 {
     font-size: clamp(2rem, 3.2vw, 2.8rem);
-    line-height: 1.08;
+    font-weight: 620;
+    line-height: 1.0;
     max-width: 55rem;
   }
 
   .hero-statement__intro {
-    font-size: clamp(0.95rem, 1vw, 1rem);
+    font-size: clamp(1rem, 1vw, 1.05rem);
+    font-weight: 450;
     max-width: 27rem;
   }
 
   .hero-statement__body p {
     font-size: clamp(0.62rem, 0.65vw, 0.68rem);
+    line-height: 1.85;
   }
 
   .hero-clients {

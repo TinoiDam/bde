@@ -569,7 +569,7 @@ body {
 }
 
 .hero-truststrip__logo-item:last-child .hero-truststrip__logo {
-  filter: saturate(0) brightness(1.4);
+  filter: saturate(0) brightness(1.3) contrast(1.8);
 }
 
 .hero-scroll-indicator {

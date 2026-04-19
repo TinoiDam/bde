@@ -271,7 +271,8 @@ body {
   flex-direction: column;
   gap: 1.75rem;
   height: 100%;
-  padding: 7.5rem 1.5rem 0;
+  overflow: hidden;
+  padding: 7.5rem 1.5rem 1.5rem;
   position: relative;
   z-index: 1;
 }
@@ -321,7 +322,7 @@ body {
 }
 
 .hero-statement__intro {
-  color: #A8C0D8;
+  color: #E8EEF5;
   font-size: 0.95rem;
   font-weight: 380;
   line-height: 1.65;
@@ -346,7 +347,7 @@ body {
 }
 
 .hero-statement__body p {
-  color: #A8C0D8;
+  color: #D0D8E0;
   font-size: 0.75rem;
   font-weight: 350;
   line-height: 1.9;
@@ -362,7 +363,7 @@ body {
   font-size: 0.80rem;
   font-weight: 390;
   line-height: 1.8;
-  color: #A8C0D8;
+  color: #D0D8E0;
   margin-bottom: 0;
 }
 

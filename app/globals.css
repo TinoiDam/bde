@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #141b18;
+  --color-primary: #0B1F33;
   --color-primary-soft: #0F2D25;
   --color-secondary: #4f5256;
   --color-accent: #7e5252;
   --color-bg-default: #f4f5f6;
   --color-bg-alt: #F0ECE6;
-  --color-text-inverse: #f4f0e8;
+  --color-text-inverse: #E6E8EB;
   --color-text-primary: #162120;
   --color-text-secondary: #4f5256;
   --color-surface-primary: #f4f5f6;
   --color-surface-secondary: #e7e1d6;
   --color-border: rgba(79, 82, 86, 0.1);
   --color-divider: rgba(79, 82, 86, 0.08);
-  --color-border-inverse: rgba(244, 240, 232, 0.09);
-  --color-text-inverse-secondary: rgba(244, 240, 232, 0.62);
+  --color-border-inverse: rgba(230, 232, 235, 0.09);
+  --color-text-inverse-secondary: rgba(230, 232, 235, 0.62);
 }
 
 * {
@@ -50,9 +50,9 @@ body {
 
 .dark-hue-section {
   background:
-    radial-gradient(ellipse 70% 55% at 18% 28%, rgba(41, 72, 58, 0.13) 0%, transparent 100%),
-    radial-gradient(ellipse 55% 48% at 80% 74%, rgba(56, 42, 38, 0.07) 0%, transparent 100%),
-    #141b18;
+    radial-gradient(ellipse 70% 55% at 18% 28%, rgba(41, 72, 58, 0.07) 0%, transparent 100%),
+    radial-gradient(ellipse 55% 48% at 80% 74%, rgba(41, 72, 58, 0.06) 0%, transparent 100%),
+    #0B1F33;
   isolation: isolate;
   min-height: 100svh;
   overflow: hidden;
@@ -303,7 +303,7 @@ body {
   letter-spacing: -0.015em;
   line-height: 1.25;
   margin: 0;
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .hero-statement__intro {
@@ -332,7 +332,7 @@ body {
 
 .hero-statement__body p {
   color: var(--color-text-inverse);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 350;
   line-height: 1.58;
   margin: 0;
@@ -344,7 +344,7 @@ body {
 }
 
 .hero-statement__body p:first-child {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 390;
   line-height: 1.52;
   opacity: 0.7;
@@ -387,7 +387,7 @@ body {
   filter: brightness(0) invert(1);
   height: 32px;
   max-width: 100%;
-  opacity: 0.58;
+  opacity: 0.65;
   width: auto;
 }
 

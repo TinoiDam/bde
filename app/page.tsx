@@ -171,6 +171,10 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-statement">
+            <div className="hero-statement__brand">
+              {/* merkregel - placeholder voor branding signal */}
+            </div>
+
             <div className="hero-statement__lead">
               <h1>
                 Wanneer strategie vastloopt,<br />
@@ -178,19 +182,21 @@ export default function Home() {
                 concrete keuzes en uitvoering.
               </h1>
             </div>
+
             <div className="hero-statement__supporting">
               <p className="hero-statement__intro">
                 In veranderopgaven botsen bestuurlijke keuzes met technische
                 realiteit en menselijk gedrag.
               </p>
-              <p className="hero-statement__problems">
+              <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
+            </div>
+
+            <div className="hero-statement__body">
+              <p>
                 De vraag is niet scherp.<br />
                 Plannen sluiten niet aan.<br />
                 Uitvoering stokt.
               </p>
-              <PrimaryLink href="#expertise">Bekijk expertise</PrimaryLink>
-            </div>
-            <div className="hero-statement__body">
               <p>
                 Wat ontbreekt wordt expliciet gemaakt en vertaald naar concrete
                 keuzes. Zodat duidelijk is wat moet gebeuren, waarom en door wie.

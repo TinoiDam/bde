@@ -184,7 +184,7 @@ export default function Home() {
 
             <PrimaryLink href="#expertise">
               <span className="cta-text">Bekijk hoe dit wordt opgelost</span>
-              <span className="cta-arrow">→</span>
+              <span className="cta-arrow">&gt;</span>
             </PrimaryLink>
 
             <p className="hero-statement__intro">

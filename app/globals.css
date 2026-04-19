@@ -538,13 +538,27 @@ body {
   text-transform: uppercase;
 }
 
-.hero-truststrip__companies {
-  color: rgba(244, 240, 232, 0.78);
-  font-size: clamp(0.75rem, 2vw, 0.9rem);
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  margin: 0;
-  line-height: 1.5;
+.hero-truststrip__logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-truststrip__logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.hero-truststrip__logo {
+  width: auto;
+  height: clamp(28px, 6vw, 40px);
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 160ms ease;
 }
 
 .hero-scroll-indicator {

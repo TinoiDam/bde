@@ -85,6 +85,15 @@ const aiControls = [
   ["Human approval", "Menselijke goedkeuring waar impact of risico dat vereist."],
 ];
 
+const heroClients = [
+  { name: "DUO", src: "/images/logos/duo.png" },
+  { name: "Rabobank", src: "/images/logos/rabobank.svg" },
+  { name: "RIVM", src: "/images/logos/rivm.svg" },
+  { name: "Belastingdienst", src: "/images/logos/belastingdienst.svg" },
+  { name: "Eneco", src: "/images/logos/eneco.svg" },
+  { name: "Fudura", src: "/images/logos/fudura.svg" },
+];
+
 const capabilityPrinciples = [
   ["Outcome over activity", "Elke interventie leidt tot een besluit, structuur of meetbare voortgang."],
   ["Risk-reduction framing", "Werk voorkomt stagnatie, misalignment of governance failure."],
@@ -182,7 +191,19 @@ export default function Home() {
 
             <div className="hero-truststrip">
               <p className="hero-truststrip__label">Gewerkt met</p>
-              <p className="hero-truststrip__companies">DUO • Rabobank • RIVM • Belastingdienst • Eneco • Fudura</p>
+              <div className="hero-truststrip__logos">
+                {heroClients.map((client) => (
+                  <div key={client.name} className="hero-truststrip__logo-item">
+                    <Image
+                      src={client.src}
+                      alt={`${client.name} logo`}
+                      width={60}
+                      height={40}
+                      className="hero-truststrip__logo"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
             <p className="hero-statement__intro">

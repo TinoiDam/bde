@@ -355,22 +355,24 @@ body {
 }
 
 .hero-statement__body-anchor {
-  display: flex;
+  display: flex !important;
+  flex-direction: row;
   gap: 0.5rem;
   margin-top: 4rem;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .hero-statement__break {
   color: #CCD0CF;
-  display: flex;
+  display: inline-flex;
   flex-shrink: 0;
-  margin-top: 0.2rem;
   width: 14px;
   height: 14px;
+  margin-top: 0.25rem;
 }
 
 .hero-statement__body--problems {
+  flex: 1;
   max-width: 30rem;
   padding: 0;
   margin: 0;
@@ -379,6 +381,7 @@ body {
 .hero-statement__body--problems p {
   margin: 0;
   padding: 0;
+  display: inline;
 }
 
 .hero-statement__body--solution {

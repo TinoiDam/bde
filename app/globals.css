@@ -300,7 +300,14 @@ body {
   z-index: 2;
 }
 
-.hero-statement__supporting {
+.hero-statement__cta {
+  align-self: flex-start;
+  color: #CCD0CF;
+  margin-top: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.hero-statement__supporting-section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -352,13 +359,6 @@ body {
   font-weight: 380;
   line-height: 1.4;
   margin: 0;
-}
-
-.hero-statement__supporting .button-link {
-  align-self: flex-start;
-  color: #CCD0CF;
-  margin-top: 0.5rem;
-  letter-spacing: 0.04em;
 }
 
 .hero-statement__break {
@@ -446,7 +446,7 @@ body {
     margin-top: 4rem;
   }
 
-  .hero-statement__supporting {
+  .hero-statement__supporting-section {
     margin-top: 3rem;
   }
 
@@ -505,7 +505,7 @@ body {
     width: var(--lead-width);
   }
 
-  .hero-statement__supporting {
+  .hero-statement__supporting-section {
     left: var(--lead-x);
     position: absolute;
     top: clamp(26rem, 32vh, 38vh);

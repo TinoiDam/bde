@@ -311,10 +311,11 @@ body {
 
 .hero-statement__lead h1 {
   color: inherit;
-  font-size: 1.75rem;
-  font-weight: 520;
-  letter-spacing: -0.015em;
-  line-height: 1.1;
+  font-family: var(--font-editorial);
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
   margin: 0;
   max-width: 95%;
 }
@@ -425,8 +426,8 @@ body {
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(1.75rem, 3.5vw, 2.2rem);
-    line-height: 1.15;
+    font-size: clamp(2.25rem, 4.5vw, 3rem);
+    line-height: 1.1;
   }
 
   .hero-statement__intro {
@@ -475,8 +476,8 @@ body {
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(1.65rem, 2.35vw, 2.65rem);
-    line-height: 1.12;
+    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+    line-height: 1.08;
     max-width: 55rem;
   }
 

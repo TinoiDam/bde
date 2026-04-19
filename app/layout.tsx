@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Inter } from "next/font/google";
+import { IBM_Plex_Sans, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const primary = Inter({
@@ -14,6 +14,12 @@ const secondary = IBM_Plex_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const editorial = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-editorial",
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata = {
   title: "BDE Management Consulting | Governance, IV & AI-context",
   description:
@@ -26,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={`${primary.variable} ${secondary.variable}`}>
+    <html lang="nl" className={`${primary.variable} ${secondary.variable} ${editorial.variable}`}>
       <body>{children}</body>
     </html>
   );

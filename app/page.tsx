@@ -91,7 +91,7 @@ const heroClients = [
   { name: "RIVM", src: "/images/logos/rivm.svg" },
   { name: "Belastingdienst", src: "/images/logos/belastingdienst.svg" },
   { name: "Eneco", src: "/images/logos/eneco.svg" },
-  { name: "Fudura", src: "/images/logos/fudura.svg" },
+  { name: "Fudura", src: "/images/logos/fudura.png" },
 ];
 
 const capabilityPrinciples = [

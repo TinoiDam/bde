@@ -415,23 +415,24 @@ body {
 .hero-statement__lead h1 {
   color: #CCD0CF;
   font-family: var(--font-editorial);
-  font-size: clamp(2.8rem, 10vw, 6.5rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 0.95;
+  font-size: clamp(2rem, 7.1vw, 4.35rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 0.75;
   margin: 0;
-  width: 90%;
-  max-width: 100%;
+  width: 95%;
+  max-width: none;
 }
 
 .hero-statement__subheading {
   color: #CCD0CF;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 380;
   line-height: 1.5;
   margin: 0;
-  max-width: 48rem;
-  opacity: 1;
+  max-width: 35rem;
+  opacity: 0.8;
+  letter-spacing: 0.02em;
 }
 
 .hero-statement__intro {
@@ -639,17 +640,20 @@ body {
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(2.85rem, 5.8vw, 3.75rem);
-    font-weight: 560;
-    letter-spacing: -0.032em;
-    line-height: 0.99;
-    max-width: 35rem;
+    font-size: clamp(2rem, 7.1vw, 4.35rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 0.75;
+    width: 100%;
+    max-width: none;
   }
 
   .hero-statement__subheading {
-    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    font-size: clamp(0.85rem, 1.1vw, 0.95rem);
     margin: 0;
-    max-width: 52rem;
+    max-width: 38rem;
+    opacity: 0.8;
+    letter-spacing: 0.02em;
   }
 
   .hero-statement__intro {
@@ -747,17 +751,20 @@ body {
   }
 
   .hero-statement__lead h1 {
-    font-size: clamp(2.85rem, 4.2vw, 4.5rem);
-    font-weight: 560;
-    letter-spacing: -0.032em;
-    line-height: 0.96;
-    max-width: 42rem;
+    font-size: clamp(2rem, 7.1vw, 4.35rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 0.75;
+    width: 100%;
+    max-width: none;
   }
 
   .hero-statement__subheading {
-    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
     margin: 0;
-    max-width: 55rem;
+    max-width: 40rem;
+    opacity: 0.8;
+    letter-spacing: 0.02em;
   }
 
   .hero-statement__intro {

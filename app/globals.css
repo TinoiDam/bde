@@ -358,14 +358,14 @@ body {
   display: flex;
   gap: 0.5rem;
   margin-top: 4rem;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .hero-statement__break {
   color: #CCD0CF;
   display: flex;
   flex-shrink: 0;
-  margin-top: 0.05rem;
+  margin-top: 0.2rem;
   width: 14px;
   height: 14px;
 }
@@ -374,6 +374,11 @@ body {
   max-width: 30rem;
   padding: 0;
   margin: 0;
+}
+
+.hero-statement__body--problems p {
+  margin: 0;
+  padding: 0;
 }
 
 .hero-statement__body--solution {

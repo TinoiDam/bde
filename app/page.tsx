@@ -186,14 +186,15 @@ export default function Home() {
                 maar niet<br />
                 uitvoerbaar.
               </h1>
-              <p className="hero-statement__subheading">
-                Besluitvorming mist samenhang in complexe omgevingen.
-              </p>
+              <div className="hero-statement__subline">
+                <p className="hero-statement__subheading">
+                  Besluitvorming mist samenhang in complexe omgevingen.
+                </p>
+                <PrimaryLink href="#expertise">
+                  <span className="cta-label">bekijk aanpak</span><span className="cta-arrow">→</span>
+                </PrimaryLink>
+              </div>
             </div>
-
-            <PrimaryLink href="#expertise">
-              <span className="cta-label">bekijk aanpak</span><span className="cta-arrow">→</span>
-            </PrimaryLink>
 
             <p className="hero-statement__intro">
               In veranderopgaven botsen bestuurlijke keuzes met technische

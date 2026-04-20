@@ -651,7 +651,7 @@ body {
 .hero-truststrip__logo-item:nth-child(10) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(17) .hero-truststrip__logo {
   width: 240%;
-  max-height: clamp(123.4px, 26.2vw, 152.5px);
+  max-height: clamp(135.7px, 28.9vw, 167.8px);
 }
 
 .hero-truststrip__logo-item:nth-child(4) .hero-truststrip__logo,
@@ -672,7 +672,7 @@ body {
 .hero-truststrip__logo-item:nth-child(12) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(19) .hero-truststrip__logo {
   width: 70%;
-  max-height: clamp(23.8px, 4.8vw, 30.9px);
+  max-height: clamp(21.4px, 4.3vw, 27.8px);
   filter: saturate(0) brightness(1.15);
 }
 

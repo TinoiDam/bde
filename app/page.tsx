@@ -250,50 +250,32 @@ export default function Home() {
             <div className="hero-truststrip hero-truststrip--full-width">
               <div className="hero-truststrip__marquee">
                 <div className="hero-truststrip__track">
-                  {heroClients.map((client) => (
-                    <div key={`${client.name}-1`} className="hero-truststrip__logo-item">
-                      <Image
-                        src={client.src}
-                        alt={`${client.name} logo`}
-                        width={60}
-                        height={40}
-                        className="hero-truststrip__logo"
-                      />
-                    </div>
-                  ))}
-                  {heroClients.map((client) => (
-                    <div key={`${client.name}-2`} className="hero-truststrip__logo-item">
-                      <Image
-                        src={client.src}
-                        alt={`${client.name} logo`}
-                        width={60}
-                        height={40}
-                        className="hero-truststrip__logo"
-                      />
-                    </div>
-                  ))}
-                  {heroClients.map((client) => (
-                    <div key={`${client.name}-3`} className="hero-truststrip__logo-item">
-                      <Image
-                        src={client.src}
-                        alt={`${client.name} logo`}
-                        width={60}
-                        height={40}
-                        className="hero-truststrip__logo"
-                      />
-                    </div>
-                  ))}
-                  {heroClients.map((client) => (
-                    <div key={`${client.name}-4`} className="hero-truststrip__logo-item">
-                      <Image
-                        src={client.src}
-                        alt={`${client.name} logo`}
-                        width={60}
-                        height={40}
-                        className="hero-truststrip__logo"
-                      />
-                    </div>
-                  ))}
+                  <div className="hero-truststrip__set">
+                    {heroClients.map((client) => (
+                      <div key={`${client.name}-1`} className="hero-truststrip__logo-item">
+                        <Image
+                          src={client.src}
+                          alt={`${client.name} logo`}
+                          width={60}
+                          height={40}
+                          className="hero-truststrip__logo"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                  <div className="hero-truststrip__set">
+                    {heroClients.map((client) => (
+                      <div key={`${client.name}-2`} className="hero-truststrip__logo-item">
+                        <Image
+                          src={client.src}
+                          alt={`${client.name} logo`}
+                          width={60}
+                          height={40}
+                          className="hero-truststrip__logo"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

@@ -190,7 +190,7 @@ export default function Home() {
                   Besluitvorming mist samenhang in complexe omgevingen.
                 </p>
                 <PrimaryLink href="#expertise">
-                  <span className="cta-label">bekijk aanpak</span><span className="cta-arrow">→</span>
+                  <span className="cta-label">AANPAK BEKIJKEN</span><span className="cta-arrow">→</span>
                 </PrimaryLink>
               </div>
             </div>

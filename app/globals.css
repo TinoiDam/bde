@@ -628,7 +628,7 @@ body {
   max-height: clamp(31.7px, 6.6vw, 42.2px);
   object-fit: contain;
   object-position: center;
-  opacity: 0.9;
+  opacity: 0.7;
   mix-blend-mode: lighten;
   filter: saturate(0) brightness(1.2);
 }

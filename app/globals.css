@@ -563,7 +563,7 @@ body {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-top: auto;
-  margin-bottom: 20svh;
+  margin-bottom: 18svh;
   overflow: hidden;
 }
 
@@ -599,7 +599,7 @@ body {
 
 .hero-truststrip__track {
   display: flex;
-  gap: clamp(0.3rem, 1vw, 0.5rem);
+  gap: clamp(0.75rem, 2vw, 1.25rem);
   animation: marquee-scroll 20s linear infinite;
 }
 

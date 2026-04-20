@@ -467,17 +467,17 @@ body {
   letter-spacing: -0.03em;
   line-height: 0.73;
   margin: 0;
-  width: 95%;
-  max-width: 65rem;
+  width: 100%;
+  max-width: 80rem;
 }
 
 .hero-statement__subheading {
   color: #CCD0CF;
-  font-size: clamp(0.8rem, 2vw, 0.95rem);
+  font-size: clamp(0.85rem, 2.2vw, 1.05rem);
   font-weight: 380;
   line-height: 1.6;
   margin: 0;
-  max-width: 38rem;
+  max-width: 58rem;
   opacity: 0.8;
   letter-spacing: 0.02em;
 }

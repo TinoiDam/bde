@@ -583,7 +583,7 @@ body {
   width: calc(100% - clamp(1rem, 4vw, 1.5rem) * 2);
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(0.5rem, 2vw, 1rem);
+  padding-left: clamp(0.35rem, 1.85vw, 0.9rem);
   mask-image: linear-gradient(
     to right,
     transparent 0%,
@@ -602,7 +602,7 @@ body {
 
 .hero-truststrip__track {
   display: flex;
-  gap: clamp(0.32rem, 1vw, 0.62rem);
+  gap: clamp(0.3rem, 0.95vw, 0.59rem);
   animation: marquee-scroll 20s linear infinite;
 }
 

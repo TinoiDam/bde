@@ -706,13 +706,13 @@ body {
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  opacity: 0.65;
+  opacity: 0.52;
   z-index: 2;
 }
 
 .hero-scroll-indicator svg {
-  width: clamp(1.5rem, 4vw, 2rem);
-  height: clamp(1.5rem, 4vw, 2rem);
+  width: clamp(1.35rem, 3.6vw, 1.8rem);
+  height: clamp(1.35rem, 3.6vw, 1.8rem);
 }
 
 .hero-scroll-arrow {

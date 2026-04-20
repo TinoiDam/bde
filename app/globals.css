@@ -427,6 +427,7 @@ body {
   gap: 1.2rem;
   display: flex;
   align-items: center;
+  font-size: clamp(0.98rem, 2.5vw, 1.2rem);
 }
 
 .cta-label {

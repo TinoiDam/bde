@@ -368,8 +368,8 @@ body {
 }
 
 .hero-statement > .button-link {
-  align-self: center;
-  transform: translateX(clamp(1rem, 5vw, 1.5rem)) scale(0.75);
+  align-self: flex-start;
+  transform: scale(0.85);
   color: #DADADA !important;
   font-size: clamp(0.6rem, 1.8vw, 0.65rem);
   background: rgba(255, 255, 255, 0.14) !important;
@@ -379,11 +379,9 @@ body {
   font-weight: 900;
   letter-spacing: 0.18em;
   text-decoration: none;
-  border: 1px solid rgba(22, 33, 32, 0.12);
-  background: linear-gradient(to bottom, #FDFDFC 0%, #F8F6F2 100%);
   cursor: pointer;
   padding: clamp(0.45rem, 1.28vw, 0.56rem) clamp(0.9rem, 2.1vw, 1.2rem);
-  margin: auto 0 clamp(4rem, 8vw, 6rem) 0;
+  margin: clamp(-0.3rem, -0.8vw, -0.2rem) 0 clamp(4rem, 8vw, 6rem) 0;
   position: relative;
   display: inline-flex;
   align-items: center;

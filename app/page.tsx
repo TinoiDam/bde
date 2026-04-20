@@ -183,8 +183,7 @@ export default function Home() {
             <div className="hero-statement__lead">
               <h1>
                 Strategie is helder,<br />
-                maar niet<br />
-                uitvoerbaar.
+                maar niet uitvoerbaar.
               </h1>
               <p className="hero-statement__subheading">
                 Besluitvorming mist samenhang in complexe omgevingen.

@@ -361,8 +361,6 @@ body {
   align-self: center;
   transform: translateX(clamp(1rem, 5vw, 1.5rem)) scale(0.75);
   color: #000A10 !important;
-  position: relative;
-  z-index: 10;
   font-size: clamp(0.6rem, 1.8vw, 0.65rem);
   font-weight: 900;
   letter-spacing: 0.18em;
@@ -558,13 +556,12 @@ body {
   flex-direction: column;
   gap: clamp(1rem, 2.5vw, 1.5rem);
   padding: 0 0 clamp(2rem, 4vw, 2.5rem) 0;
-  position: absolute;
-  bottom: 30svh;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: auto;
+  margin-bottom: 25svh;
   overflow: hidden;
-  z-index: 1;
 }
 
 @keyframes marquee-scroll {

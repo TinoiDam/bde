@@ -199,7 +199,7 @@ export default function Home() {
               <div className="hero-statement__subline">
                 <div className="hero-actions">
                   <p className="hero-cta">
-                    <span className="cta-label">Bekijk hoe dit uitvoerbaar wordt</span><span className="cta-arrow">→</span>
+                    <span className="cta-label">Lees hoe je dit oplost</span><span className="cta-arrow">→</span>
                   </p>
                 </div>
               </div>

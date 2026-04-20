@@ -372,16 +372,16 @@ body {
   transform: scale(0.85);
   color: #DADADA !important;
   font-size: clamp(0.64rem, 1.94vw, 0.7rem);
+  font-weight: 600;
   background: rgba(255, 255, 255, 0.14) !important;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
   box-shadow: 0 16px 32px rgba(180, 210, 240, 0.15);
-  font-weight: 900;
   letter-spacing: 0.18em;
   text-decoration: none;
   cursor: pointer;
   padding: clamp(0.45rem, 1.28vw, 0.56rem) clamp(0.9rem, 2.1vw, 1.2rem);
-  margin: clamp(-0.3rem, -0.8vw, -0.2rem) 0 clamp(4rem, 8vw, 6rem) 0;
+  margin: clamp(-0.3rem, -0.8vw, -0.2rem) 0 clamp(3.6rem, 7.2vw, 5.4rem) 0;
   position: relative;
   display: inline-flex;
   align-items: center;

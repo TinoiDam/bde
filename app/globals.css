@@ -387,7 +387,7 @@ body {
   border: none !important;
   border-radius: 0;
   padding: 0;
-  color: #F0F0F0 !important;
+  color: #888888 !important;
   font-size: clamp(0.72rem, 1.6vw, 0.82rem);
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -411,18 +411,18 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 800;
   color: #FFFFFF !important;
   background: none;
   border-radius: 0;
   width: auto;
   height: auto;
-  transition: transform 220ms ease-out;
+  transition: transform 220ms ease-out, filter 220ms ease-out;
   flex-shrink: 0;
   margin-left: 0.1rem;
   opacity: 1;
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 16px rgba(255, 255, 255, 0.4));
 }
 
 .hero-statement__subline > .button-link::after {
@@ -442,7 +442,7 @@ body {
 
 .hero-statement__subline > .button-link:hover .cta-arrow {
   transform: translateX(5px);
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1)) drop-shadow(0 0 24px rgba(255, 255, 255, 0.6));
 }
 
 .hero-statement__bottom {

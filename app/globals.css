@@ -414,11 +414,12 @@ body {
   font-size: 1.5rem;
   font-weight: 900;
   color: #FFFFFF !important;
-  background: none;
-  border-radius: 0;
-  width: auto;
-  height: auto;
-  transition: transform 220ms ease-out, filter 220ms ease-out;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  transition: transform 220ms ease-out, filter 220ms ease-out, background 220ms ease-out;
   flex-shrink: 0;
   margin-left: 0.3rem;
   opacity: 1;
@@ -442,6 +443,8 @@ body {
 
 .hero-statement__subline > .button-link:hover .cta-arrow {
   transform: translateX(6px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1)) drop-shadow(0 0 12px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 24px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 32px rgba(255, 255, 255, 0.4));
 }
 

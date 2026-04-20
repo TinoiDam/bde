@@ -424,7 +424,9 @@ body {
 
 .hero-statement__subline .hero-cta {
   cursor: default;
-  gap: 0;
+  gap: 1.2rem;
+  display: flex;
+  align-items: center;
 }
 
 .cta-label {
@@ -474,7 +476,7 @@ body {
 
 .cta-arrow::before {
   content: "→";
-  font-size: 1.65rem;
+  font-size: 1.35rem;
   font-weight: 700;
   line-height: 1;
   transform: translateX(0);

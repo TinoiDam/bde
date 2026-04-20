@@ -379,89 +379,182 @@ body {
   gap: 6.25rem;
 }
 
-.hero-statement__subline > .button-link {
+.hero-actions {
+  --hero-action-size: clamp(1.14rem, 1.46vw, 1.42rem);
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+}
+
+.hero-statement__subline .hero-cta,
+.hero-statement__subline .hero-cue {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  background: rgba(255, 255, 255, 0.05) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-radius: 0.48rem;
-  padding: 0.9rem 1.5rem !important;
-  color: #FFFFFF !important;
-  font-size: clamp(0.8rem, 1.8vw, 0.95rem);
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  width: auto;
+  min-height: 0;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: rgba(244, 248, 250, 0.78) !important;
+  font-family: var(--font-editorial), serif !important;
+  font-size: var(--hero-action-size) !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.25 !important;
+  text-transform: none;
   text-decoration: none;
-  cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
-  min-height: auto;
-  white-space: nowrap;
+  box-shadow: none !important;
+  white-space: normal;
   flex-shrink: 0;
-  margin: 0;
+  margin: 0 !important;
   position: relative;
-  transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  opacity: 1;
+  transform: none !important;
+  transition:
+    color 220ms ease,
+    background 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 220ms ease;
+}
+
+.hero-statement__subline .hero-cta {
+  cursor: default;
+  gap: 0;
 }
 
 .cta-label {
-  transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  font-weight: 700;
+  font-weight: inherit;
+  line-height: 1.25;
+  transition: color 220ms ease;
 }
 
-@keyframes subtle-arrow {
-  0%, 100% {
-    transform: translateX(0);
-    opacity: 0.7;
-  }
-  50% {
-    transform: translateX(3px);
-    opacity: 1;
-  }
+.hero-cta .cta-label,
+.hero-cue .hero-cue__label {
+  font-family: var(--font-editorial), serif !important;
+  font-size: inherit;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: inherit;
+  text-transform: none;
 }
 
 .cta-arrow {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #FFFFFF !important;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 50%;
-  width: 2.6rem;
-  height: 2.6rem;
-  transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1), border-color 300ms ease-out, background 300ms ease-out;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: currentColor;
+  font-family: var(--font-editorial), serif;
+  font-size: 0;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
+  transition: color 220ms ease;
   flex-shrink: 0;
-  margin-left: 0.5rem;
-  opacity: 0.7;
-  animation: subtle-arrow 2.4s ease-in-out infinite;
 }
 
-.hero-statement__subline > .button-link::after {
+.cta-arrow::before {
+  content: "→";
+  font-size: 1.48rem;
+  line-height: 1;
+  transform: translateX(0);
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hero-statement__subline .hero-cta::before,
+.hero-statement__subline .hero-cta::after {
+  content: none !important;
   display: none;
 }
 
-.hero-statement__subline > .button-link:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.15);
-  transform: translateY(-2px);
+.hero-statement__subline .hero-cta:hover {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #FFFFFF !important;
+  opacity: 1;
+  transform: none !important;
 }
 
-.hero-statement__subline > .button-link:hover .cta-label {
-  opacity: 1;
-  transform: letterSpacing(0.2em);
+.hero-statement__subline .hero-cta:hover .cta-label {
+  color: currentColor;
 }
 
-.hero-statement__subline > .button-link:hover .cta-arrow {
-  transform: translateX(4px);
-  border-color: rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.15);
+.hero-statement__subline .hero-cta:hover .cta-arrow {
+  color: currentColor;
+}
+
+.hero-statement__subline .hero-cta:hover .cta-arrow::before {
+  transform: translateX(5px);
+}
+
+.dark-hue-section .hero-statement__subline .hero-cta {
+  color: rgba(244, 248, 250, 0.78) !important;
+}
+
+.dark-hue-section .hero-statement__subline .hero-cta:hover {
+  color: #FFFFFF !important;
+}
+
+.hero-statement__subline .hero-cue {
+  gap: 0.34rem;
+}
+
+.hero-cue::before,
+.hero-cue::after {
+  content: none !important;
+  display: none !important;
+}
+
+.hero-cue__arrow {
+  display: inline-block;
+  font-family: var(--font-editorial), serif;
+  font-size: 0;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
   opacity: 1;
-  animation: none;
+  width: 0.86em;
+  transition:
+    opacity 220ms ease,
+    transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hero-cue__arrow::before {
+  color: rgba(255, 255, 255, 0.98);
+  content: "→";
+  display: inline-block;
+  font-family: var(--font-editorial), serif;
+  font-size: calc(var(--hero-action-size) * 1.18);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.9;
+  text-shadow: 0 0 0.018em currentColor;
+  transform: translateX(0) scaleX(0.68);
+  transform-origin: left center;
+  transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hero-cue:hover {
+  color: rgba(255, 255, 255, 0.96) !important;
+  opacity: 1 !important;
+}
+
+.hero-cue:hover .hero-cue__arrow {
+  transform: none;
+}
+
+.hero-cue:hover .hero-cue__arrow::before {
+  transform: translateX(3px) scaleX(0.68);
 }
 
 .hero-statement__bottom {

@@ -124,9 +124,17 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   return <p className="section-label">{children}</p>;
 }
 
-function PrimaryLink({ href, children }: { href: string; children: React.ReactNode }) {
+function PrimaryLink({
+  href,
+  children,
+  className,
+}: {
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <a href={href} className="button-link">
+    <a href={href} className={className ? `button-link ${className}` : "button-link"}>
       {children}
     </a>
   );
@@ -189,9 +197,14 @@ export default function Home() {
                 <p className="hero-statement__subheading">
                   Besluitvorming mist samenhang in complexe omgevingen
                 </p>
-                <PrimaryLink href="#expertise">
-                  <span className="cta-label">AANPAK BEKIJKEN</span><span className="cta-arrow">→</span>
-                </PrimaryLink>
+                <div className="hero-actions">
+                  <p className="hero-cta">
+                    <span className="cta-label">Maak besluitvorming uitvoerbaar</span>
+                  </p>
+                  <PrimaryLink href="#expertise" className="hero-cue">
+                    <span className="hero-cue__label">zie hoe dit werkt</span><span className="hero-cue__arrow">→</span>
+                  </PrimaryLink>
+                </div>
               </div>
             </div>
 

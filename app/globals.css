@@ -643,7 +643,7 @@ body {
   opacity: 0.82;
   mix-blend-mode: lighten;
   filter: saturate(0) brightness(1.2);
-  transform: scale(1.15);
+  transform: scale(1.5);
   transform-origin: center;
 }
 

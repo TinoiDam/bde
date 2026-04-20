@@ -483,29 +483,15 @@ body {
 }
 
 .hero-statement__subheading {
-  color: #FFFFFF;
+  color: #CCD0CF;
   font-size: clamp(0.98rem, 2.5vw, 1.2rem);
   font-weight: 380;
   line-height: 1.6;
   margin: 0;
   max-width: 58rem;
+  opacity: 0.8;
   letter-spacing: 0.02em;
   text-align: left;
-  border: 1px solid #FFFFFF;
-  background: transparent;
-  padding: 0.8rem 1.2rem;
-  border-radius: 6px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.hero-statement__subheading::after {
-  content: "→";
-  font-weight: 700;
-  font-size: 1.1em;
-  color: #FFFFFF;
-  flex-shrink: 0;
 }
 
 .hero-statement__intro {

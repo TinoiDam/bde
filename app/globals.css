@@ -555,14 +555,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: clamp(1rem, 2.5vw, 1.5rem);
-  padding: clamp(8rem, 14vw, 10rem) 0 clamp(2rem, 4vw, 2.5rem) 0;
-  position: relative;
+  padding: 0 0 clamp(2rem, 4vw, 2.5rem) 0;
+  position: absolute;
+  bottom: 25svh;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-top: auto;
-  margin-bottom: 0;
   overflow: hidden;
-  transform: translateY(clamp(-3rem, -12vw, -4rem));
 }
 
 @keyframes marquee-scroll {

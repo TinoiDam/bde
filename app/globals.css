@@ -609,7 +609,7 @@ body {
   color: #E8E8E8;
   font-family: var(--font-editorial);
   font-size: clamp(3rem, 9.5vw, 5.5rem);
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: -0.03em;
   line-height: 1.08;
   margin: 0;
@@ -1072,7 +1072,7 @@ body {
 
   .hero-statement__lead h1 {
     font-size: clamp(1.65rem, 5.9vw, 3.5rem);
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: -0.03em;
     line-height: 0.75;
     text-align: left;

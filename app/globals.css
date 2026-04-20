@@ -378,19 +378,19 @@ body {
 }
 
 .hero-statement__lead > .button-link {
-  transform: scale(1.15);
+  transform: scale(1.0);
   color: #FFFFFF !important;
-  font-size: clamp(0.7rem, 2.1vw, 0.8rem);
+  font-size: clamp(0.65rem, 1.9vw, 0.75rem);
   font-weight: 600;
-  background: rgba(180, 210, 240, 0.65) !important;
+  background: rgba(180, 210, 240, 0.5) !important;
   backdrop-filter: none;
   border: none !important;
-  box-shadow: 0 8px 32px rgba(180, 210, 240, 0.2);
+  box-shadow: 0 4px 16px rgba(180, 210, 240, 0.12);
   letter-spacing: 0.18em;
   text-decoration: none;
   cursor: pointer;
-  padding: clamp(0.65rem, 1.5vw, 0.8rem) clamp(1rem, 2.5vw, 1.4rem);
-  margin: clamp(1.2rem, 3vw, 2rem) 0 0 0;
+  padding: clamp(0.55rem, 1.3vw, 0.7rem) clamp(0.85rem, 2.2vw, 1.2rem);
+  margin: clamp(0.5rem, 1.5vw, 0.8rem) 0 0 0;
   align-self: flex-end;
   white-space: nowrap;
   position: relative;
@@ -574,7 +574,7 @@ body {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-top: auto;
-  margin-bottom: 21.6svh;
+  margin-bottom: 18.4svh;
   overflow: hidden;
 }
 

@@ -189,21 +189,18 @@ export default function Home() {
             </div>
 
             <div className="hero-statement__lead">
+              <p className="hero-statement__subheading">
+                Besluitvorming mist samenhang
+              </p>
               <h1>
                 Strategie is helder,<br />
                 maar niet uitvoerbaar.
               </h1>
-              <p className="hero-statement__subheading">
-                Stuur op samenhang niet alleen voortgang.
-              </p>
               <div className="hero-statement__subline">
                 <div className="hero-actions">
                   <p className="hero-cta">
-                    <span className="cta-label">Bde aanpak</span>
+                    <span className="cta-label">Bekijk hoe dit uitvoerbaar wordt</span>
                   </p>
-                  <PrimaryLink href="#expertise" className="hero-cue">
-                    <span className="hero-cue__label">zie hoe dit werkt</span><span className="hero-cue__arrow">→</span>
-                  </PrimaryLink>
                 </div>
               </div>
             </div>

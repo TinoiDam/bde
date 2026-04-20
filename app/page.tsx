@@ -248,7 +248,6 @@ export default function Home() {
             </div>
 
             <div className="hero-truststrip hero-truststrip--full-width">
-              <p className="hero-truststrip__label">Gewerkt met</p>
               <div className="hero-truststrip__marquee">
                 <div className="hero-truststrip__track">
                   {heroClients.map((client) => (

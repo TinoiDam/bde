@@ -380,30 +380,27 @@ body {
 }
 
 .hero-statement__subline > .button-link {
-  transform: scale(1.0);
-  color: #FFFFFF !important;
-  font-size: clamp(0.65rem, 1.9vw, 0.75rem);
-  font-weight: 600;
-  background: rgba(180, 210, 240, 0.5) !important;
-  backdrop-filter: none;
-  border: none !important;
-  box-shadow: 0 4px 16px rgba(180, 210, 240, 0.12);
-  letter-spacing: 0.18em;
-  text-decoration: none;
-  cursor: pointer;
-  padding: clamp(0.55rem, 1.3vw, 0.7rem) clamp(0.85rem, 2.2vw, 1.2rem);
-  margin: 0;
-  flex-shrink: 0;
-  white-space: nowrap;
-  position: relative;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.38rem;
-  min-height: 52px;
+  gap: 0.85rem;
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 10px;
+  padding: 0.6rem 0.6rem 0.6rem 1.1rem;
+  color: #F0F0F0 !important;
+  font-size: clamp(0.72rem, 1.6vw, 0.82rem);
+  font-weight: 450;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
   transition: all 200ms ease-out;
-  border-radius: 6px;
-  text-transform: uppercase;
+  box-shadow: none;
+  min-height: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin: 0;
+  position: relative;
 }
 
 .cta-label {
@@ -411,14 +408,20 @@ body {
 }
 
 .cta-arrow {
-  font-size: 1.1rem;
-  font-weight: 800;
-  opacity: 1;
-  color: #B4D2F0 !important;
-  transition: transform 200ms ease-out;
-  display: inline-block;
-  margin-left: 0.2rem;
-  text-shadow: 0 0 0.3px rgba(0, 10, 16, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #FFFFFF !important;
+  transition: transform 220ms ease-out;
+  flex-shrink: 0;
+  margin-left: 0;
+  text-shadow: none;
 }
 
 .hero-statement__subline > .button-link::after {
@@ -426,13 +429,10 @@ body {
 }
 
 .hero-statement__subline > .button-link:hover {
-  background: linear-gradient(to bottom, #FAFAF8 0%, #F3F0EB 100%);
-  border-color: rgba(22, 33, 32, 0.18);
-  box-shadow:
-    0 12px 40px rgba(224, 184, 119, 0.22),
-    0 0 60px rgba(224, 184, 119, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  transform: scale(0.88) translateY(-3px);
+  background: rgba(255, 255, 255, 0.11) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: none;
+  transform: none;
 }
 
 .hero-statement__subline > .button-link:hover .cta-label {
@@ -440,8 +440,7 @@ body {
 }
 
 .hero-statement__subline > .button-link:hover .cta-arrow {
-  transform: translateX(0.45rem);
-  opacity: 1;
+  transform: translateX(3px);
 }
 
 .hero-statement__bottom {

@@ -182,12 +182,12 @@ export default function Home() {
 
             <div className="hero-statement__lead">
               <h1>
-                Als strategie vastloopt<br />
-                in uitvoering,<br />
-                worden besluiten niet genomen.
+                Strategie is helder,<br />
+                maar niet<br />
+                uitvoerbaar.
               </h1>
               <p className="hero-statement__subheading">
-                Strategie botst met techniek en gedrag. Uitvoering blijft uit.
+                Samenhang ontbreekt waar keuzes gemaakt moeten worden.
               </p>
             </div>
 

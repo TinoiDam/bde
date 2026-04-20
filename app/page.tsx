@@ -185,12 +185,14 @@ export default function Home() {
                 Strategie is helder,<br />
                 maar niet uitvoerbaar.
               </h1>
-              <p className="hero-statement__subheading">
-                Besluitvorming mist samenhang in complexe omgevingen.
-              </p>
-              <PrimaryLink href="#expertise">
-                <span className="cta-label">bekijk aanpak</span><span className="cta-arrow">→</span>
-              </PrimaryLink>
+              <div className="hero-statement__subline">
+                <p className="hero-statement__subheading">
+                  Besluitvorming mist samenhang in complexe omgevingen.
+                </p>
+                <PrimaryLink href="#expertise">
+                  <span className="cta-label">bekijk aanpak</span><span className="cta-arrow">→</span>
+                </PrimaryLink>
+              </div>
             </div>
 
             <p className="hero-statement__intro">

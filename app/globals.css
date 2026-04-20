@@ -563,7 +563,7 @@ body {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-top: auto;
-  margin-bottom: 25svh;
+  margin-bottom: 22svh;
   overflow: hidden;
 }
 
@@ -625,7 +625,7 @@ body {
 .hero-truststrip__logo {
   width: 80%;
   height: auto;
-  max-height: clamp(24px, 5vw, 32px);
+  max-height: clamp(28.8px, 6vw, 38.4px);
   object-fit: contain;
   object-position: center;
   opacity: 0.9;
@@ -637,42 +637,42 @@ body {
 .hero-truststrip__logo-item:nth-child(8) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(15) .hero-truststrip__logo {
   width: 130%;
-  max-height: clamp(44px, 10vw, 55px);
+  max-height: clamp(52.8px, 12vw, 66px);
 }
 
 .hero-truststrip__logo-item:nth-child(2) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(9) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(16) .hero-truststrip__logo {
   width: 60%;
-  max-height: clamp(20px, 4.5vw, 26px);
+  max-height: clamp(24px, 5.4vw, 31.2px);
 }
 
 .hero-truststrip__logo-item:nth-child(3) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(10) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(17) .hero-truststrip__logo {
   width: 240%;
-  max-height: clamp(85px, 18vw, 105px);
+  max-height: clamp(102px, 21.6vw, 126px);
 }
 
 .hero-truststrip__logo-item:nth-child(4) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(11) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(18) .hero-truststrip__logo {
   width: 220%;
-  max-height: clamp(85px, 19vw, 105px);
+  max-height: clamp(102px, 22.8vw, 126px);
 }
 
 .hero-truststrip__logo-item:nth-child(6) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(13) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(20) .hero-truststrip__logo {
   width: 170%;
-  max-height: clamp(62px, 14vw, 78px);
+  max-height: clamp(74.4px, 16.8vw, 93.6px);
 }
 
 .hero-truststrip__logo-item:nth-child(5) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(12) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(19) .hero-truststrip__logo {
   width: 70%;
-  max-height: clamp(20px, 4vw, 26px);
+  max-height: clamp(24px, 4.8vw, 31.2px);
   filter: saturate(0) brightness(1.15);
 }
 
@@ -680,7 +680,7 @@ body {
 .hero-truststrip__logo-item:nth-child(14) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(21) .hero-truststrip__logo {
   width: 60%;
-  max-height: clamp(18px, 4vw, 24px);
+  max-height: clamp(21.6px, 4.8vw, 28.8px);
   filter: invert(1) saturate(0) brightness(1);
 }
 

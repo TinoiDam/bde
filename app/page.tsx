@@ -187,7 +187,7 @@ export default function Home() {
                 uitvoerbaar.
               </h1>
               <p className="hero-statement__subheading">
-                Samenhang ontbreekt bij het maken van keuzes.
+                Besluitvorming mist samenhang in complexe omgevingen.
               </p>
             </div>
 

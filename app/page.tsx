@@ -187,7 +187,7 @@ export default function Home() {
               </h1>
               <div className="hero-statement__subline">
                 <p className="hero-statement__subheading">
-                  Besluitvorming mist samenhang in complexe omgevingen.
+                  Aanpak bekijken
                 </p>
                 <PrimaryLink href="#expertise">
                   <span className="cta-label">AANPAK BEKIJKEN</span><span className="cta-arrow">→</span>

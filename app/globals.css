@@ -542,15 +542,6 @@ body {
   display: none;
 }
 
-.hero-statement__body p {
-  color: #CCD0CF;
-  font-size: 0.7rem;
-  font-weight: 350;
-  line-height: 1.6;
-  margin: 0;
-}
-
-
 .hero-truststrip {
   display: flex;
   flex-direction: column;
@@ -694,7 +685,7 @@ body {
 
 .hero-scroll-indicator {
   position: absolute;
-  bottom: clamp(14svh, 16vw, 18svh);
+  bottom: 16svh;
   right: clamp(1rem, 4vw, 1.25rem);
   display: flex;
   align-items: center;

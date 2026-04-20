@@ -737,14 +737,17 @@ body {
 
 .hero-truststrip__track {
   display: flex;
+  width: max-content;
   animation: marquee-scroll 14s linear infinite;
+  will-change: transform;
 }
 
 .hero-truststrip__set {
   display: flex;
-  flex-shrink: 0;
+  flex: 0 0 auto;
   gap: clamp(4.5rem, 13vw, 7.5rem);
   padding-right: clamp(4.5rem, 13vw, 7.5rem);
+  width: max-content;
 }
 
 .hero-truststrip__label {
@@ -761,9 +764,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
   min-height: 58px;
   aspect-ratio: 1.5;
-  flex: 1;
 }
 
 .hero-truststrip__logo {

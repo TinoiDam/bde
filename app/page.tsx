@@ -276,7 +276,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <div className="hero-truststrip__set">
+                  <div className="hero-truststrip__set" aria-hidden="true">
                     {heroClients.map((client) => (
                       <div key={`${client.name}-2`} className="hero-truststrip__logo-item">
                         <Image

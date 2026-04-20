@@ -557,11 +557,13 @@ body {
   gap: clamp(1rem, 2.5vw, 1.5rem);
   padding: 0 0 clamp(2rem, 4vw, 2.5rem) 0;
   position: absolute;
-  bottom: 25svh;
+  bottom: 30svh;
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
   overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
 }
 
 @keyframes marquee-scroll {

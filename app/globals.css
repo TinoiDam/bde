@@ -376,7 +376,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  gap: 3.75rem;
+  gap: 6.25rem;
 }
 
 .hero-statement__subline > .button-link {

@@ -601,7 +601,7 @@ body {
 
 .hero-truststrip__track {
   display: flex;
-  gap: clamp(0.75rem, 2vw, 1.25rem);
+  gap: clamp(0.55rem, 1.5vw, 0.95rem);
   animation: marquee-scroll 20s linear infinite;
 }
 
@@ -627,10 +627,10 @@ body {
 .hero-truststrip__logo {
   width: 80%;
   height: auto;
-  max-height: clamp(31.7px, 6.6vw, 42.2px);
+  max-height: clamp(36.8px, 7.3vw, 48.9px);
   object-fit: contain;
   object-position: center;
-  opacity: 0.7;
+  opacity: 0.82;
   mix-blend-mode: lighten;
   filter: saturate(0) brightness(1.2);
 }

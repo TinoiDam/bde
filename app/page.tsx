@@ -194,7 +194,7 @@ export default function Home() {
                 maar niet uitvoerbaar.
               </h1>
               <p className="hero-statement__subheading">
-                Besluitvorming mist samenhang in complexe omgevingen
+                Stuur op samenhang, niet op alleen op voortgang
               </p>
               <div className="hero-statement__subline">
                 <div className="hero-actions">

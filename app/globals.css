@@ -378,12 +378,12 @@ body {
   font-weight: 600;
   background: rgba(255, 255, 255, 0.19) !important;
   backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.40) !important;
+  border: 1px solid rgba(255, 255, 255, 0.48) !important;
   box-shadow: 0 12px 24px rgba(180, 210, 240, 0.08);
   letter-spacing: 0.18em;
   text-decoration: none;
   cursor: pointer;
-  padding: clamp(0.45rem, 1.28vw, 0.56rem) clamp(0.65rem, 1.8vw, 0.95rem);
+  padding: clamp(0.45rem, 1.28vw, 0.56rem) clamp(0.58rem, 1.65vw, 0.85rem);
   margin: clamp(-0.3rem, -0.8vw, -0.2rem) 0 clamp(4rem, 8vw, 6rem) 0;
   position: relative;
   display: inline-flex;

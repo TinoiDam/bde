@@ -563,7 +563,7 @@ body {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-top: auto;
-  margin-bottom: 22svh;
+  margin-bottom: 20svh;
   overflow: hidden;
 }
 

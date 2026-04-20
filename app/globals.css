@@ -372,7 +372,7 @@ body {
 
 .hero-statement > .button-link {
   align-self: flex-start;
-  transform: translateX(clamp(12px, 3vw, 20px)) scale(0.85);
+  transform: translateX(clamp(20px, 4.5vw, 32px)) scale(0.85);
   color: #DADADA !important;
   font-size: clamp(0.64rem, 1.94vw, 0.7rem);
   font-weight: 600;

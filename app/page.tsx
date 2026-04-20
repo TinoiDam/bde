@@ -186,14 +186,12 @@ export default function Home() {
                 maar niet<br />
                 uitvoerbaar.
               </h1>
-              <div className="hero-statement__subline">
-                <p className="hero-statement__subheading">
-                  Besluitvorming mist samenhang in complexe omgevingen.
-                </p>
-                <PrimaryLink href="#expertise">
-                  <span className="cta-label">bekijk aanpak</span><span className="cta-arrow">→</span>
-                </PrimaryLink>
-              </div>
+              <p className="hero-statement__subheading">
+                Besluitvorming mist samenhang in complexe omgevingen.
+              </p>
+              <PrimaryLink href="#expertise">
+                <span className="cta-label">bekijk aanpak</span><span className="cta-arrow">→</span>
+              </PrimaryLink>
             </div>
 
             <p className="hero-statement__intro">

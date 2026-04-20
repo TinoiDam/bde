@@ -637,7 +637,7 @@ body {
 .hero-truststrip__logo {
   width: 80%;
   height: auto;
-  max-height: clamp(40.5px, 8vw, 53.8px);
+  max-height: clamp(61px, 12vw, 81px);
   object-fit: contain;
   object-position: center;
   opacity: 0.82;
@@ -651,42 +651,42 @@ body {
 .hero-truststrip__logo-item:nth-child(8) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(15) .hero-truststrip__logo {
   width: 130%;
-  max-height: clamp(58.1px, 13.2vw, 72.6px);
+  max-height: clamp(87px, 19.8vw, 109px);
 }
 
 .hero-truststrip__logo-item:nth-child(2) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(9) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(16) .hero-truststrip__logo {
   width: 60%;
-  max-height: clamp(26.4px, 5.9vw, 34.3px);
+  max-height: clamp(40px, 8.85vw, 51px);
 }
 
 .hero-truststrip__logo-item:nth-child(3) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(10) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(17) .hero-truststrip__logo {
   width: 240%;
-  max-height: clamp(135.7px, 28.9vw, 167.8px);
+  max-height: clamp(204px, 43.35vw, 252px);
 }
 
 .hero-truststrip__logo-item:nth-child(4) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(11) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(18) .hero-truststrip__logo {
   width: 220%;
-  max-height: clamp(112.2px, 25.1vw, 138.6px);
+  max-height: clamp(168px, 37.65vw, 208px);
 }
 
 .hero-truststrip__logo-item:nth-child(6) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(13) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(20) .hero-truststrip__logo {
   width: 170%;
-  max-height: clamp(81.8px, 18.5vw, 103px);
+  max-height: clamp(123px, 27.75vw, 155px);
 }
 
 .hero-truststrip__logo-item:nth-child(5) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(12) .hero-truststrip__logo,
 .hero-truststrip__logo-item:nth-child(19) .hero-truststrip__logo {
   width: 70%;
-  max-height: clamp(21.4px, 4.3vw, 27.8px);
+  max-height: clamp(32px, 6.45vw, 42px);
   filter: saturate(0) brightness(1.15);
 }
 

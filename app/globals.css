@@ -373,7 +373,7 @@ body {
   color: #DADADA !important;
   font-size: clamp(0.64rem, 1.94vw, 0.7rem);
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.14) !important;
+  background: rgba(255, 255, 255, 0.19) !important;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.30) !important;
   box-shadow: 0 16px 32px rgba(180, 210, 240, 0.15);

@@ -464,9 +464,9 @@ body {
   color: #E8E8E8;
   font-family: var(--font-editorial);
   font-size: clamp(1.75rem, 6vw, 3.5rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.03em;
-  line-height: 0.80;
+  line-height: 0.76;
   margin: 0;
   width: 90%;
   max-width: 55rem;

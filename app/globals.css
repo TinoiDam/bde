@@ -361,6 +361,8 @@ body {
   align-self: center;
   transform: translateX(clamp(1rem, 5vw, 1.5rem)) scale(0.75);
   color: #000A10 !important;
+  position: relative;
+  z-index: 10;
   font-size: clamp(0.6rem, 1.8vw, 0.65rem);
   font-weight: 900;
   letter-spacing: 0.18em;
@@ -562,8 +564,7 @@ body {
   transform: translateX(-50%);
   width: 100vw;
   overflow: hidden;
-  z-index: 0;
-  pointer-events: none;
+  z-index: 1;
 }
 
 @keyframes marquee-scroll {

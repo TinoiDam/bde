@@ -379,11 +379,10 @@ body {
 
 .hero-statement__subline {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
-  gap: clamp(1rem, 3vw, 2rem);
+  gap: 1.25rem;
 }
 
 .hero-statement__subline > .button-link {

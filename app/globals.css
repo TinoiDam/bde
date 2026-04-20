@@ -607,7 +607,7 @@ body {
 }
 
 .hero-statement__lead h1 {
-  color: #E8E8E8;
+  color: #FFFFFF;
   font-family: var(--font-editorial);
   font-size: clamp(3rem, 9.5vw, 5.5rem);
   font-weight: 300;

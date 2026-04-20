@@ -383,7 +383,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   padding: clamp(0.45rem, 1.28vw, 0.56rem) clamp(0.9rem, 2.1vw, 1.2rem);
-  margin: clamp(-0.3rem, -0.8vw, -0.2rem) 0 clamp(3.6rem, 7.2vw, 5.4rem) 0;
+  margin: 60px 0 clamp(3.6rem, 7.2vw, 5.4rem) 0;
   position: relative;
   display: inline-flex;
   align-items: center;

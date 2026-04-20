@@ -189,13 +189,13 @@ export default function Home() {
             </div>
 
             <div className="hero-statement__lead">
-              <h1>
-                Besluitvorming mist samenhang in complexe omgevingen
-              </h1>
               <p className="hero-statement__subheading">
+                Besluitvorming mist samenhang in complexe omgevingen
+              </p>
+              <h1>
                 Strategie is helder,<br />
                 maar niet uitvoerbaar.
-              </p>
+              </h1>
               <div className="hero-statement__subline">
                 <div className="hero-actions">
                   <p className="hero-cta">

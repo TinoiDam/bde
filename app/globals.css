@@ -377,13 +377,13 @@ body {
   font-size: clamp(0.64rem, 1.94vw, 0.7rem);
   font-weight: 600;
   background: rgba(255, 255, 255, 0.19) !important;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.30) !important;
-  box-shadow: 0 16px 32px rgba(180, 210, 240, 0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.40) !important;
+  box-shadow: 0 12px 24px rgba(180, 210, 240, 0.08);
   letter-spacing: 0.18em;
   text-decoration: none;
   cursor: pointer;
-  padding: clamp(0.45rem, 1.28vw, 0.56rem) clamp(0.9rem, 2.1vw, 1.2rem);
+  padding: clamp(0.45rem, 1.28vw, 0.56rem) clamp(0.65rem, 1.8vw, 0.95rem);
   margin: 60px 0 clamp(3.6rem, 7.2vw, 5.4rem) 0;
   position: relative;
   display: inline-flex;
@@ -393,8 +393,7 @@ body {
   white-space: nowrap;
   min-height: 44px;
   transition: all 200ms ease-out;
-  border-radius: 9999px;
-  box-shadow: 0 4px 20px rgba(224, 184, 119, 0.12), 0 0 36px rgba(224, 184, 119, 0.08);
+  border-radius: 4px;
   text-transform: uppercase;
 }
 

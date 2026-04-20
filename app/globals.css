@@ -377,6 +377,7 @@ body {
   align-items: flex-start;
   width: 100%;
   gap: 6.25rem;
+  margin-top: 6.25rem;
 }
 
 .hero-actions {
@@ -1072,6 +1073,14 @@ body {
     opacity: 0.8;
     letter-spacing: 0.02em;
     text-align: left;
+  }
+
+  .hero-statement__subline {
+    left: var(--lead-x);
+    margin-top: 0;
+    position: absolute;
+    top: calc(var(--lead-y) + clamp(18rem, 22vw, 24rem));
+    width: var(--lead-width);
   }
 
   .hero-statement__intro {

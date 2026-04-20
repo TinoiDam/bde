@@ -189,14 +189,14 @@ export default function Home() {
             </div>
 
             <div className="hero-statement__lead">
+              <p className="hero-statement__subheading">
+                Besluitvorming mist samenhang
+              </p>
               <h1>
                 Strategie is helder,<br />
                 maar niet uitvoerbaar.
               </h1>
               <div className="hero-statement__subline">
-                <p className="hero-statement__subheading">
-                  Besluitvorming mist samenhang in complexe omgevingen
-                </p>
                 <div className="hero-actions">
                   <p className="hero-cta">
                     <span className="cta-label">Maak besluitvorming uitvoerbaar</span>

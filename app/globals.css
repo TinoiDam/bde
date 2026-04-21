@@ -893,13 +893,13 @@ body {
 
 .hero-scroll-indicator {
   position: absolute;
-  bottom: 8vh;
+  bottom: 7vh;
   right: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  opacity: 0.75;
+  opacity: 0.35;
   z-index: 10;
   animation: scroll-breathe 2.2s ease-in-out infinite;
 }
@@ -914,9 +914,11 @@ body {
 @keyframes scroll-breathe {
   0%, 100% {
     transform: translateY(0);
+    opacity: 0.25;
   }
   50% {
     transform: translateY(8px);
+    opacity: 0.35;
   }
 }
 

@@ -620,6 +620,26 @@ body {
   max-width: 80rem;
 }
 
+@keyframes subcopy-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes logorow-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(4px) translateY(-20%);
+  }
+  100% {
+    opacity: 0.85;
+    transform: translateY(0) translateY(-20%);
+  }
+}
+
 .hero-statement__subheading {
   color: #FFFFFF;
   font-size: clamp(0.98rem, 2.5vw, 1.2rem);
@@ -630,6 +650,7 @@ body {
   opacity: 0.85;
   letter-spacing: 0.02em;
   text-align: left;
+  animation: subcopy-fade-in 550ms ease-in-out 300ms both;
 }
 
 .hero-statement__intro {
@@ -739,9 +760,7 @@ body {
   justify-content: center;
   transform: translateY(-20%);
   opacity: 0.85;
-  animation:
-    marquee-fade-in 800ms ease-in 600ms forwards,
-    marquee-slide-up 700ms ease-out 600ms forwards;
+  animation: logorow-enter 700ms ease-out 700ms both;
 }
 
 @keyframes marquee-scroll {

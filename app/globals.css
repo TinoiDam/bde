@@ -897,9 +897,11 @@ body {
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  opacity: 0.45;
+  opacity: 0;
   z-index: 50;
-  animation: scroll-breathe 2.2s ease-in-out infinite;
+  animation:
+    scroll-indicator-enter 450ms ease-out 2100ms forwards,
+    scroll-breathe 2.5s ease-in-out 2550ms infinite;
 }
 
 .hero-scroll-indicator svg {
@@ -909,14 +911,21 @@ body {
   stroke: currentColor;
 }
 
+@keyframes scroll-indicator-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.35;
+  }
+}
+
 @keyframes scroll-breathe {
   0%, 100% {
     transform: translateY(0);
-    opacity: 0.35;
   }
   50% {
-    transform: translateY(8px);
-    opacity: 0.50;
+    transform: translateY(5px);
   }
 }
 

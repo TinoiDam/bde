@@ -347,7 +347,7 @@ body {
 .hero-statement {
   display: flex;
   flex-direction: column;
-  gap: clamp(1.8rem, 4vw, 2.5rem);
+  gap: clamp(1.44rem, 3.2vw, 2rem);
   min-height: 100svh;
   padding: clamp(4rem, 10vh, 7rem) clamp(1rem, 4vw, 1.25rem) clamp(8rem, 11vh, 14rem);
   position: relative;

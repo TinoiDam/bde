@@ -632,11 +632,9 @@ body {
 @keyframes logorow-enter {
   0% {
     opacity: 0;
-    transform: translateY(4px) translateY(-20%);
   }
   100% {
     opacity: 0.85;
-    transform: translateY(0) translateY(-20%);
   }
 }
 
@@ -760,7 +758,7 @@ body {
   justify-content: center;
   transform: translateY(-20%);
   opacity: 0.85;
-  animation: logorow-enter 700ms ease-out 700ms both;
+  animation: logorow-enter 350ms ease-out 1050ms both;
 }
 
 @keyframes marquee-scroll {

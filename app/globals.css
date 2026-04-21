@@ -874,7 +874,7 @@ body {
 
 .hero-scroll-indicator {
   position: absolute;
-  bottom: 10vh;
+  bottom: 8vh;
   right: 2.5rem;
   display: flex;
   align-items: center;

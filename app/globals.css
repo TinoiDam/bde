@@ -874,14 +874,15 @@ body {
 
 .hero-scroll-indicator {
   position: absolute;
-  bottom: calc(1.5rem + 5svh);
-  right: 1.5rem;
+  bottom: 4vh;
+  right: clamp(2rem, 6vw, 4rem);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  opacity: 0.52;
+  opacity: 0.5;
   z-index: 2;
+  animation: scroll-breathe 2.2s ease-in-out infinite;
 }
 
 .hero-scroll-indicator svg {
@@ -891,19 +892,20 @@ body {
   transform: scale(0.90);
 }
 
+@keyframes scroll-breathe {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.5;
+  }
+}
+
 .hero-scroll-arrow {
   font-size: 1.2rem;
   display: inline-block;
-  animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(0.3rem);
-  }
 }
 
 .hero-grid__body {

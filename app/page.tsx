@@ -305,19 +305,22 @@ export default function Home() {
 
                 <div className="waar-concreet__block">
                   <h3 className="waar-concreet__block-title">Veranderprogramma's die niet landen</h3>
-                  <p className="waar-concreet__block-body">Strategie is helder. Maar de uitvoering raakt versnipperd.<br/><br/>Ik structureer de uitvoering, maak keuzes expliciet en organiseer de besluitvorming.</p>
+                  <p className="waar-concreet__block-problem">Strategie is helder. Maar de uitvoering raakt versnipperd.</p>
+                  <p className="waar-concreet__block-intervention">Ik structureer de uitvoering, maak keuzes expliciet en organiseer de besluitvorming.</p>
                   <p className="waar-concreet__block-role">(project- / programmaleiding)</p>
                 </div>
 
                 <div className="waar-concreet__block">
                   <h3 className="waar-concreet__block-title">Informatievoorziening zonder grip</h3>
-                  <p className="waar-concreet__block-body">Er is veel data. Maar weinig overzicht.<br/><br/>Ik structureer IV en data, en maak risico's en keuzes inzichtelijk.</p>
+                  <p className="waar-concreet__block-problem">Er is veel data. Maar weinig overzicht.</p>
+                  <p className="waar-concreet__block-intervention">Ik structureer IV en data, en maak risico's en keuzes inzichtelijk.</p>
                   <p className="waar-concreet__block-role">(business analist / IV lead)</p>
                 </div>
 
                 <div className="waar-concreet__block">
                   <h3 className="waar-concreet__block-title">Voortgang zonder samenhang</h3>
-                  <p className="waar-concreet__block-body">Teams leveren. Maar niet in lijn met de strategie.<br/><br/>Ik organiseer sturing op samenhang en borg de strategische richting in governance.</p>
+                  <p className="waar-concreet__block-problem">Teams leveren. Maar niet in lijn met de strategie.</p>
+                  <p className="waar-concreet__block-intervention">Ik organiseer sturing op samenhang en borg de strategische richting in governance.</p>
                   <p className="waar-concreet__block-role">(lead / adviseur sturing &amp; governance)</p>
                 </div>
 

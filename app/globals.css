@@ -2032,11 +2032,20 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.waar-concreet__block-body {
-  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+.waar-concreet__block-problem {
+  font-size: clamp(0.92rem, 1.5vw, 1rem);
   font-weight: 400;
   color: var(--color-text-secondary);
-  line-height: 1.75;
+  line-height: 1.55;
+  opacity: 0.8;
+  margin-bottom: 0.85rem;
+}
+
+.waar-concreet__block-intervention {
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  line-height: 1.65;
   margin-bottom: 0.65rem;
 }
 

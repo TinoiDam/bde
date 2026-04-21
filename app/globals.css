@@ -706,6 +706,24 @@ body {
   display: none;
 }
 
+@keyframes marquee-fade-in {
+  0% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes marquee-slide-up {
+  0% {
+    transform: translateY(6px) translateY(-17%);
+  }
+  100% {
+    transform: translateY(0) translateY(-17%);
+  }
+}
+
 .hero-truststrip {
   display: flex;
   flex-direction: column;
@@ -720,6 +738,10 @@ body {
   align-items: center;
   justify-content: center;
   transform: translateY(-17%);
+  opacity: 0.85;
+  animation:
+    marquee-fade-in 800ms ease-in 600ms forwards,
+    marquee-slide-up 700ms ease-out 600ms forwards;
 }
 
 @keyframes marquee-scroll {

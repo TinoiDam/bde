@@ -719,6 +719,7 @@ body {
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  transform: translateY(-15%);
 }
 
 @keyframes marquee-scroll {

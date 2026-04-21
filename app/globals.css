@@ -758,7 +758,7 @@ body {
   justify-content: center;
   transform: translateY(-20%);
   opacity: 0.85;
-  animation: logorow-enter 350ms ease-out 1050ms both;
+  animation: logorow-enter 350ms cubic-bezier(0.22, 1, 0.36, 1) 1050ms both;
 }
 
 @keyframes marquee-scroll {

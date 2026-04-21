@@ -194,7 +194,8 @@ export default function Home() {
                 maar niet uitvoerbaar.
               </h1>
               <p className="hero-statement__subheading">
-                Eerst samenhang, dan voortgang
+                Zonder regie op samenhang<br />
+                wijkt voortgang af van de strategie.
               </p>
               <div className="hero-statement__subline">
                 <div className="hero-actions">

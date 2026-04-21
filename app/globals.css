@@ -843,22 +843,22 @@ body {
 
 .hero-truststrip__set .hero-truststrip__logo-item:nth-child(1) .hero-truststrip__logo {
   width: 216.67%;
-  max-height: clamp(58.1px, 13.2vw, 72.6px);
+  max-height: clamp(48px, 10.8vw, 58px);
 }
 
 .hero-truststrip__set .hero-truststrip__logo-item:nth-child(2) .hero-truststrip__logo {
   width: 100%;
-  max-height: clamp(26.4px, 5.9vw, 34.3px);
+  max-height: clamp(38px, 8.5vw, 48px);
 }
 
 .hero-truststrip__set .hero-truststrip__logo-item:nth-child(3) .hero-truststrip__logo {
   width: 400%;
-  max-height: clamp(135.7px, 28.9vw, 167.8px);
+  max-height: clamp(95px, 20vw, 115px);
 }
 
 .hero-truststrip__set .hero-truststrip__logo-item:nth-child(4) .hero-truststrip__logo {
   width: 366.67%;
-  max-height: clamp(112.2px, 25.1vw, 138.6px);
+  max-height: clamp(85px, 18.5vw, 105px);
 }
 
 .hero-truststrip__set .hero-truststrip__logo-item:nth-child(6) .hero-truststrip__logo {
@@ -874,7 +874,7 @@ body {
 
 .hero-truststrip__set .hero-truststrip__logo-item:nth-child(7) .hero-truststrip__logo {
   width: 100%;
-  max-height: clamp(23.8px, 5.3vw, 31.7px);
+  max-height: clamp(35px, 7.8vw, 45px);
   filter: invert(1) saturate(0) brightness(1);
 }
 

@@ -634,7 +634,7 @@ body {
     opacity: 0;
   }
   100% {
-    opacity: 0.85;
+    opacity: 0.8;
   }
 }
 
@@ -757,8 +757,8 @@ body {
   align-items: center;
   justify-content: center;
   transform: translateY(-20%);
-  opacity: 0.85;
-  animation: logorow-enter 350ms cubic-bezier(0.22, 1, 0.36, 1) 1200ms both;
+  opacity: 0.8;
+  animation: logorow-enter 500ms cubic-bezier(0.22, 1, 0.36, 1) 1200ms both;
 }
 
 @keyframes marquee-scroll {

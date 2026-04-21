@@ -195,14 +195,9 @@ export default function Home() {
               </h1>
               <p className="hero-statement__subheading">
                 Zonder regie op samenhang<br />
-                wijkt voortgang af van de strategie.
+                ontstaat voortgang buiten de strategie.
               </p>
               <div className="hero-statement__subline">
-                <div className="hero-actions">
-                  <p className="hero-cta">
-                    <span className="cta-label">Lees hoe je dit oplost</span><span className="cta-arrow">→</span>
-                  </p>
-                </div>
               </div>
             </div>
 
